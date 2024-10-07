@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en-US" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <title>Play</title>
+  <link rel="stylesheet" href="css/default.css" />
+  <link rel="stylesheet" href="css/Body_style.css" />
+  <link rel="stylesheet" href="css/BodyColor_style.css" />
+  <script type="text/javascript" src="js/lib/zepto.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/page_06.js"></script>
+  <script type="text/javascript" src="js/use_scroll_icon.js"></script>
+</head>
+<body class="bg06" onload="Cmn.notifyPlayReport(10);" onunload="/*キャッシュクリアのためにunloadイベントに空の関数をフック*/">
+<section epub:type="part" aria-label="Play" id="part-1">
+  <div class="header">
+    <a href="page_00.xhtml">
+      <img class="logo" src="img/img_logo.svg" alt="" />
+    </a>
+    <div class="header-icon">
+      <a href="page_01.xhtml" class="page-01">
+        <img class="top-img" src="img/ico_page_01_edit.png" alt="" />
+      </a>
+      <a href="page_02.xhtml" class="page-02">
+        <img class="top-img" src="img/ico_page_02_eraser.png" alt="" />
+      </a>
+      <a href="page_03.xhtml" class="page-03">
+        <img class="top-img" src="img/ico_page_03_controlbtn.png" alt="" />
+      </a>
+      <a href="page_04.xhtml" class="page-04">
+        <img class="top-img" src="img/ico_page_04_menu.png" alt="" />
+      </a>
+      <a href="page_05.xhtml" class="page-05">
+        <img class="top-img" src="img/img_step_03_1.png" alt="" />
+      </a>
+      <p class="pickup">
+        <img class="top-img here" src="img/ico_page_06_play.svg" alt="" />
+      </p>
+      <a href="page_07.xhtml" class="page-07">
+        <img class="top-img" src="img/ico_page_07_user.svg" alt="" />
+      </a>
+      <a href="page_08.xhtml" class="page-08">
+        <img class="top-img" src="img/ico_page_09_question.png" alt="" />
+      </a>
+      <a href="page_09.xhtml" class="page-09">
+        <img class="top-img" src="img/ico_page_09_star.png" alt="" />
+      </a>
+    </div>
+  </div>
+  <div class="page-top page-06">
+    <table class="top-box">
+      <tr>
+        <td><img class="top-img" src="img/ico_page_06_play.svg" alt="" /></td>
+        <td><h2><span data-msgid="textbox_id-1">Play</span>
+          </h2>
+          <p class="text-sub"><span data-msgid="textbox_id-2">A whole world of courses to explore!</span>
+          </p></td>
+      </tr>
+    </table>
+  </div>
+  <div class="bg06">
+    <div class="comment-box">
+      <div class="comment">
+        <p><span data-msgid="textbox_id-3">If things get a bit too bumpy while playing a course, you can always press  to access the pause menu and take a breather.</span><!-- textbox_id-3 Mary O. text -->
+        </p>
+        <p><span data-msgid="textbox_id-4">So, don't be afraid to jump on in already—take a course or two for a test run! (Really, what are you waiting for?)</span><!-- textbox_id-4 Mary O. text -->
+        </p>
+      </div>
+      <div class="mashiko">
+        <img src="img/img_mashiko.png" ontouchstart="Cmn.notifyMashikoTouchReport(); Cmn.changeImgOnTouch(this,'img/img_mashiko_action01.png','img/img_mashiko.png', 60 , 0);" alt="" />
+      </div>
+    </div>
+
+    <!--////【10人マリオチャレンジ】//////////////////////////////////////////////////////////////////////-->
+    <section epub:type="chapter" aria-label="10 Mario Challenge" id="chapter-1">
+      <div class="frame-box">
+        <div class="icon-flag play-icon01"></div>
+        <h4 class="title-large color_06"><span data-msgid="textbox_id-5">10 Mario Challenge</span>
+        </h4>
+        <div class="txt-box">
+          <div class="play-float">
+            <img src="img/pic_page_06_10mario.jpg" alt="" />
+          </div>
+          <p class="txt-contents"><span data-msgid="textbox_id-6">Play a sequence of eight courses using a total of 10 lives. This mode can be played even when not connected to the Internet, and any courses you clear will be added to Coursebot's Sample Courses panel. If you exit the mode or lose all 10 lives, you'll have to start over from course one—but the courses will be different each time you play, so it's worth giving it another go!</span><!-- textbox_id-6 150604: Minor text update - TM
+150623: No change - TM -->
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--////【世界のコース】//////////////////////////////////////////////////////////////////////-->
+    <section epub:type="chapter" aria-label="Course World" id="chapter-3">
+      <div class="frame-box">
+        <div class="icon-flag play-icon03"></div>
+        <h4 class="title-large color_06"><span data-msgid="textbox_id-10">Course World</span>
+        </h4>
+        <div class="txt-box">
+          <p class="txt-contents"><span data-msgid="textbox_id-11">Connect to the Internet, and play courses created by other makers. If you open the pause menu with  while playing, you can comment on courses or star them at any time. You can also change your  <a class="link-txt" href="page_04.xhtml#chapter-2">  <span style="white-space: nowrap">  <img src="img/ico_page_04_setting.png" alt="" />Settings</span></a> and choose whether to show other players' comments while playing.</span><!-- textbox_id-11 HTML and text updated
+150609: HTML updated - TM
+150622: HTML udpated - TM -->
+          </p>
+        </div>
+
+        <!--////【100人マリオチャレンジ】//////////////////////////////////////////////////////////////////////-->
+        <section id="chapter-4">
+          <div class="dot06" id="play01">
+            <h5 class="title-small title-play01"><span data-msgid="textbox_id-12">100 Mario Challenge</span>
+            </h5>
+            <p><span data-msgid="textbox_id-13">An ever-changing selection of courses!</span>
+            </p>
+            <div class="txt-box">
+              <div class="play-float">
+                <img src="img/pic_page_06_100mario.jpg" alt="" />
+              </div>
+              <p class="txt-contents"><span data-msgid="textbox_id-14">In this mode, you can play recommended courses created by other makers one after another. If a course seems too difficult, you can skip it by touching the screen and sliding or by holding . You'll start with 100 lives, so use them wisely! Your progress will be automatically saved whenever you clear a course.</span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--////【コースをさがす】////////////////////////////////////////////////////////////////////////-->
+        <section>
+          <div class="dot06" id="play02">
+            <h5 class="title-small title-play02"><span data-msgid="textbox_id-15">Courses</span><!-- textbox_id-15 150624: Changed to just "Courses" - TM -->
+            </h5>
+            <p><span data-msgid="textbox_id-16">Search through three different categories!</span>
+            </p>
+            <div class="touch">
+              <div class="touch-balloon">
+                <p class="attention"><span data-msgid="textbox_id-17"><img src="img/ico_touch.png" alt="" /> Touch <span class="small">the flashing parts!</span></span>
+                </p>
+              </div>
+              <div id="dialog">
+                <img class="touch-pict page6" src="img/pic_page_06_course.jpg" alt="" usemap="#linkmap" />
+                <span>
+                  <a href="#open01">
+                    <div class="touch-mark click06-01"></div>
+                    <div class="touch-mark-frame click06-01"></div>
+                  </a>
+                  <a href="#open02">
+                    <div class="touch-mark click06-02"></div>
+                    <div class="touch-mark-frame click06-02"></div>
+                  </a>
+                  <a href="#open03">
+                    <div class="touch-mark click06-03"></div>
+                    <div class="touch-mark-frame click06-03"></div>
+                  </a>
+                  <a href="#open04">
+                    <div class="touch-mark click06-04"></div>
+                    <div class="touch-mark-frame click06-04"></div>
+                  </a>
+                  <a href="#open05">
+                    <div class="touch-mark click06-05"></div>
+                    <div class="touch-mark-frame click06-05"></div>
+                  </a>
+                  <a href="#open06">
+                    <div class="touch-mark click06-06"></div>
+                    <div class="touch-mark-frame click06-06"></div>
+                  </a>
+                  <a href="#open07">
+                    <div class="touch-mark click06-07"></div>
+                    <div class="touch-mark-frame click06-07"></div>
+                  </a>
+                  <a href="#open08">
+                    <div class="touch-mark click06-08"></div>
+                    <div class="touch-mark-frame click06-08"></div>
+                  </a>
+                  <a href="#open09">
+                    <div class="touch-mark click06-09"></div>
+                    <div class="touch-mark-frame click06-09"></div>
+                  </a>
+                  <a href="#open10">
+                    <div class="touch-mark click06-10"></div>
+                    <div class="touch-mark-frame click06-10"></div>
+                  </a>
+                  <a href="#open11">
+                    <div class="touch-mark click06-11"></div>
+                    <div class="touch-mark-frame click06-11"></div>
+                  </a>
+                  <a href="#open12">
+                    <div class="touch-mark click06-12"></div>
+                    <div class="touch-mark-frame click06-12"></div>
+                  </a>
+                  <a href="#open13">
+                    <div class="touch-mark click06-13"></div>
+                    <div class="touch-mark-frame click06-13"></div>
+                  </a>
+                  <a href="#open14">
+                    <div class="touch-mark click06-14"></div>
+                    <div class="touch-mark-frame click06-14"></div>
+                  </a>
+                  <a href="#open15">
+                    <div class="touch-mark click06-15"></div>
+                    <div class="touch-mark-frame click06-15"></div>
+                  </a>
+                  <a href="#open16">
+                    <div class="touch-mark click06-16"></div>
+                    <div class="touch-mark-frame click06-16"></div>
+                  </a>
+                  <a href="#open17">
+                    <div class="touch-mark click06-17"></div>
+                    <div class="touch-mark-frame click06-17"></div>
+                  </a>
+                  <a href="#open18">
+                    <div class="touch-mark click06-18"></div>
+                    <div class="touch-mark-frame click06-18"></div>
+                  </a>
+                  <a href="#open20">
+                    <div class="touch-mark click06-20"></div>
+                    <div class="touch-mark-frame click06-20"></div>
+                  </a>
+                </span>
+                <div id="modal">
+                  <div id="open01"><!--///【ユーザー情報】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-18"><img src="img/ico_page_07_user.png" alt="" />  User Info</span><!-- textbox_id-18 HTML and text updated -->
+                          <div id="btn-close01" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-19">View your own User Info.</span>
+                      </p>
+                      <span data-msgid="textbox_id-101"><a href="page_07.xhtml#user-1">  			    <p class="btn-link" ontouchend='Cmn.onUpBtn(this, "btn-link")' ontouchstart='Cmn.onDownBtn(this, "btn-link-select")' ontouchcancel='Cmn.onUpBtn(this, "btn-link")'><img src="img/icon_linkbtn.png" alt="" />　More Info</p>  </a></span>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open01--><!--///【ユーザー情報】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open02"><!--///【コースIDでさがす】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-20"><img src="img/ico_page_06_search.png" alt="" />  Course ID Search</span><!-- textbox_id-20 Text updated -->
+                          <div id="btn-close02" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-21">Find a course by entering its 16-character course ID.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open02--><!--///【コースIDでさがす】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open03"><!--///【全期間/ 週間】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-22">All-Time/Weekly</span><!-- textbox_id-22 HTML removed
+150604: No change - TM -->
+                        <div id="btn-close03" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-23">This option can only be adjusted when viewing the Star Ranking, where courses are ranked by how many players have starred them. You can choose to include all stars ever given or only stars from the past week.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open03--><!--///【全期間/ 週間】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open04"><!--///【世界/ 国内】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-24">Global/Regional</span><!-- textbox_id-24 HTML removed
+150604: No change - TM -->
+                        <div id="btn-close04" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-25">This option can only be adjusted when viewing the Star Ranking. You can choose to show courses created by makers around the world or only those created by makers in your own console region.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open04--><!--///【世界/ 国内】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open05"><!--///【むずかしさの設定】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-26">Difficulty Setting</span><!-- textbox_id-26 HTML removed -->
+                        <div id="btn-close05" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-27">Filter the displayed courses based on difficulty. Courses are automatically divided into Easy, Normal, and Expert difficulties based on how many people have managed to clear them.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open05--><!--///【むずかしさの設定】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open06"><!--///【コースの情報】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-28">Course Info</span><!-- textbox_id-28 HTML removed -->
+                        <div id="btn-close06" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-29">Shows an overview of the whole course and the course's game style and name.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open06--><!--///【コースの情報】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open07"><!--///【職人のユーザー情報】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-30">Maker's User Info</span><!-- textbox_id-30 HTML removed -->
+                        <div id="btn-close07" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-31">View the User Info of the maker who created the course.</span>
+                      </p>
+                      <span data-msgid="textbox_id-102"><a href="page_07.xhtml#user-2">  			    <p class="btn-link" ontouchend='Cmn.onUpBtn(this, "btn-link")' ontouchstart='Cmn.onDownBtn(this, "btn-link-select")' ontouchcancel='Cmn.onUpBtn(this, "btn-link")'><img src="img/icon_linkbtn.png" alt="" />　More Info</p>  </a></span>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open07--><!--///【プレイ情報】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open08"><!--///【コースの評価】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-32">Course Statistics</span><!-- textbox_id-32 HTML removed -->
+                        <div id="btn-close08" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-33">Shows how many users have <img src="img/ico_page_06_yeah.png" alt="" /> starred the course and how many people have <img src="img/ico_page_06_footprint.png" alt="" /> played it. Touch the button to view details on the users who have played the course. The <img src="img/ico_page_07_clear.png" alt="" /> icon indicates people who have cleared it, while the <img src="img/ico_page_07_yeah.png" alt="" /> icon indicates people who have starred it.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open08--><!--///【コースの評価】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open09"><!--///【クリア率】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-34">Clear Rate</span><!-- textbox_id-34 HTML removed -->
+                        <div id="btn-close09" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-35">Shows the number of times the course has been cleared, compared to the number of times it has been played.</span><!-- textbox_id-35 150604: No change - TM -->
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open09--><!--///【クリア率】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open10"><!--///【メダル / 国】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-36">Medals/Country</span><!-- textbox_id-36 HTML removed
+150604: No change - TM -->
+                        <div id="btn-close10" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-37">Shows the maker's country of residence and any medals they have received.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open10--><!--///【メダル / 国】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open11"><!--///【コースID】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-38">Course ID</span><!-- textbox_id-38 HTML removed -->
+                        <div id="btn-close11" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-39">Touch <img src="img/ico_page_03_ID.png" alt="" /> to view the ID for this course. You can find this course again by touching <img src="img/ico_page_06_search.png" alt="" /> and entering this ID.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open10--><!--///【コースID】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open12"><!--///【セーブ】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-40">Download</span><!-- textbox_id-40 HTML removed and text updated
+150623: Updated to "Download" to match in-game - TM -->
+                        <div id="btn-close12" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-41">Download this course and save it to Coursebot.</span><!-- textbox_id-41 150604: Minor text update for clarity - TM -->
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open12--><!--///【セーブ】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open13"><!--///【あそぶ】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-42">Play</span><!-- textbox_id-42 HTML removed -->
+                        <div id="btn-close13" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-43">Play this course.</span><!-- textbox_id-43 Text updated -->
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open13--><!--///【あそぶ】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open14"><!--///【コメントを見に行く】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-44"><img src="img/ico_miiverse.png" alt="" />  View Comments</span><!-- textbox_id-44 HTML updated -->
+                          <div id="btn-close14" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-45">Open Miiverse to view the comments on this course.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open14--><!--///【コメントを見に行く】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open15"><!--///【通報する】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-46">Report</span><!-- textbox_id-46 HTML removed -->
+                        <div id="btn-close15" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-47">You can use this button to report courses that are inappropriate. If they are found to violate the Miiverse Code of Conduct, they will be deleted. However, reported courses may not be deleted if they are not found to violate the Code of Conduct. Please do not report courses unless they are inappropriate.</span><!-- textbox_id-47 150604: No change - TM -->
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open15--><!--///【通報する】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open16"><!--///【あそんだコース】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-48">Played Courses</span><!-- textbox_id-48 HTML removed -->
+                        <div id="btn-close16" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-49">Courses you've played are marked with <img src="img/ico_page_06_clear.png" alt="" />, and courses you've cleared are marked with <img src="img/ico_page_07_clear.png" alt="" />.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open16--><!--///【あそんだコース】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open17"><!--///【注目コース】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-50">Featured</span><!-- textbox_id-50 HTML removed -->
+                        <div id="btn-close17" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-51">These are courses that are popular with other users.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open17--><!--///【注目コース】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open18"><!--///【いいね！ランキング】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-52">Star Ranking</span><!-- textbox_id-52 HTML removed and text updated -->
+                        <div id="btn-close18" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-53">Courses here are ranked by how many players have starred them.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open18--><!--///【いいね！ランキング】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open20"><!--///【新着コース】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-54">Up &amp; Coming</span><!-- textbox_id-54 HTML and text updated -->
+                        <div id="btn-close20" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-55">These are newly uploaded courses that nobody has played yet. Be adventurous and give them their first play!</span><!-- textbox_id-55 150604: Text updated - TM -->
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open16--><!--///【新着コース】////////////////////////////////////////////////////////////////////////-->
+
+                </div>
+                <!--/#modal-->
+              </div>
+              <!--/#dialog-->
+
+            </div>
+            <!--/#touch-->
+          </div>
+        </section>
+
+        <!--////【職人をさがす】////////////////////////////////////////////////////////////////////////-->
+        <section>
+          <div class="dot06" id="play03">
+            <h5 class="title-small title-play03"><span data-msgid="textbox_id-56">Makers</span><!-- textbox_id-56 150624: Changed to just "Makers" - TM -->
+            </h5>
+            <p><span data-msgid="textbox_id-57">Find courses based on the people who created them.</span>
+            </p>
+            <div class="touch">
+              <div class="touch-balloon">
+                <p class="attention"><span data-msgid="textbox_id-58"><img src="img/ico_touch.png" alt="" /> Touch <span class="small">the flashing parts!</span></span>
+                </p>
+              </div>
+              <div id="dialog-02">
+                <img class="touch-pict page6" src="img/pic_page_06_user.jpg" alt="" usemap="#linkmap" />
+                <span>
+                  <a href="#open21">
+                    <div class="touch-mark click06-21"></div>
+                    <div class="touch-mark-frame click06-21"></div>
+                  </a>
+                  <a href="#open23">
+                    <div class="touch-mark click06-23"></div>
+                    <div class="touch-mark-frame click06-23"></div>
+                  </a>
+                  <a href="#open24">
+                    <div class="touch-mark click06-24"></div>
+                    <div class="touch-mark-frame click06-24"></div>
+                  </a>
+                  <a href="#open25">
+                    <div class="touch-mark click06-25"></div>
+                    <div class="touch-mark-frame click06-25"></div>
+                  </a>
+                  <a href="#open26">
+                    <div class="touch-mark click06-26"></div>
+                    <div class="touch-mark-frame click06-26"></div>
+                  </a>
+                  <a href="#open27">
+                    <div class="touch-mark click06-27"></div>
+                    <div class="touch-mark-frame click06-27"></div>
+                  </a>
+                </span>
+                <div id="modal">
+                  <div id="open21"><!--///【ユーザー情報】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-59"><img src="img/ico_page_07_user.png" alt="" />  User Info</span><!-- textbox_id-59 HTML updated -->
+                          <div id="btn-close21" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-60">View your own User Info.</span>
+                      </p>
+                      <span data-msgid="textbox_id-103"><a href="page_07.xhtml#user-1">  			    <p class="btn-link" ontouchend='Cmn.onUpBtn(this, "btn-link")' ontouchstart='Cmn.onDownBtn(this, "btn-link-select")' ontouchcancel='Cmn.onUpBtn(this, "btn-link")'><img src="img/icon_linkbtn.png" alt="" />　More Info</p>  </a></span>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open21--><!--///【ユーザー情報】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open23"><!--///【全期間 / 週間】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-63">All-Time/Weekly</span><!-- textbox_id-63 HTML removed
+150604: No change - TM -->
+                        <div id="btn-close23" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-64">This option can only be adjusted when viewing the Star Ranking, where courses are ranked by how many players have starred them. You can choose to include all stars ever given or only stars from the past week.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open23--><!--///【全期間 / 週間】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open24"><!--///【世界 / 国内】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-65">Global/Regional</span>
+                        <div id="btn-close24" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-66">This option can only be adjusted when viewing the Star Ranking. You can choose to show courses created by makers around the world or only those created by makers in your own console region.</span><!-- textbox_id-66 150528: Changed "users" to "Makers" - TM -->
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open24--><!--///【世界/ 国内】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open25"><!--///【職人のユーザー情報】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-67">Maker's User Info</span><!-- textbox_id-67 150604: No change - TM -->
+                        <div id="btn-close25" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-68">View the User Info of the maker who created the course.</span>
+                      </p>
+                      <span data-msgid="textbox_id-104"><a href="page_07.xhtml#user-2">  			    <p class="btn-link" ontouchend='Cmn.onUpBtn(this, "btn-link")' ontouchstart='Cmn.onDownBtn(this, "btn-link-select")' ontouchcancel='Cmn.onUpBtn(this, "btn-link")'><img src="img/icon_linkbtn.png" alt="" />　More Info</p>  </a></span>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open25--><!--///【職人のユーザー情報】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open26"><!--///【いいね！ランキング】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-69">Star Ranking</span><!-- textbox_id-69 150604: Text updated - TM
+150611: Updated to "Star Ranking" to match in-game - TM -->
+                        <div id="btn-close26" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-70">This shows makers ranked by how many stars they have received.</span>
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open25--><!--///【いいね！ランキング】////////////////////////////////////////////////////////////////////////-->
+
+                  <div id="open27"><!--///【おきにいり】////////////////////////////////////////////////////////////////////////-->
+                    <div class="close_overlay"></div>
+                    <div class="modal_window">
+                      <h5 class="dialog-title">
+                        <span data-msgid="textbox_id-71">Following</span><!-- textbox_id-71 150604: No change - TM -->
+                        <div id="btn-close27" tabindex="0" class="btn-close"></div>
+                      </h5>
+                      <p><span data-msgid="textbox_id-72">View the users you have chosen to <a class="link-txt-d" href="page_07.xhtml#open10"><span style="white-space: nowrap">follow</span></a>.</span><!-- textbox_id-72 150609: HTML updated - TM -->
+                      </p>
+                    </div>
+                    <!--/.modal_window-->
+                  </div>
+                  <!--/#open27--><!--///【おきにいり】////////////////////////////////////////////////////////////////////////-->
+
+                </div>
+                <!--/#modal-->
+              </div>
+              <!--/#dialog-->
+            </div>
+            <!--/#touch-->
+          </div>
+          <!--/bg_03-->
+        </section>
+      </div>
+    </section>
+  </div>
+  <!--bg-06-->
+  <div class="patternU"></div>
+  <div class="bg_under03">
+    <div class="patternD">
+      <img class="under-img01" src="img/img_dokan_NSM_U.png" alt="" />
+      <img class="under-img05" src="img/bg_courseSMU_cloud.png" alt="" />
+      <div class="balloon-mini"><span data-msgid="textbox_id-73">#3</span><!-- textbox_id-73 150604: Text added - TM -->
+      </div>
+    </div>
+    <div class="underside-column SMU">
+      <h3><span data-msgid="textbox_id-75"><span class="large">Developer</span> Talk</span>
+      </h3>
+      <div class="underside-box">
+        <img class="undersideR-img" src="img/pic_column_03.png" alt="" />
+        <p><span data-msgid="textbox_id-76">To test out whether the Course World feature was enjoyable to use, we ran a series of tests including not only the development team but also the localization teams from America and Europe. We got a few groups of people to create their own courses, upload them, and try out each other's creations.</span><!-- textbox_id-76 150604: No change - TM -->
+        </p>
+        <p><span data-msgid="textbox_id-78">The people from different parts of the world tended to create courses in slightly different ways, sometimes using enemies in ways we'd never even thought of. We were pretty impressed, but more importantly, we were pleased to see that everyone seemed to be having a lot of fun. That's why we decided that Course World should bring courses together from makers all around the world, not just from any one country or region.</span><!-- textbox_id-78 150604: No change - TM -->
+        </p>
+        <p><span data-msgid="textbox_id-79">With courses from all around the globe at your fingertips, we hope you'll take the time to appreciate the variety. And don't forget to star and comment on courses that you enjoy. Who knows, it might encourage players to play your courses as well!</span>
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="toppage-link top-margin"><span data-msgid="textbox_id-77"><a href="page_00.xhtml" class="btn-toplink" ontouchend='Cmn.onUpBtn(this, "btn-toplink")' ontouchstart='Cmn.onDownBtn(this, "btn-toplink-select")' ontouchcancel='Cmn.onUpBtn(this, "btn-toplink")'>Back to Main Page</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- textbox_id_counter-104 --></body>
+</html>

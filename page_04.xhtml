@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en-US" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <title>Main Menu</title>
+  <link rel="stylesheet" href="css/default.css" />
+  <link rel="stylesheet" href="css/Body_style.css" />
+  <link rel="stylesheet" href="css/BodyColor_style.css" />
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/lib/zepto.min.js"></script>
+  <script type="text/javascript" src="js/page_04.js"></script>
+  <script type="text/javascript" src="js/use_scroll_icon.js"></script>
+</head>
+<body class="bg04" onload="Cmn.notifyPlayReport(8);" onunload="/*キャッシュクリアのためにunloadイベントに空の関数をフック*/">
+<section epub:type="part" aria-label="Main Menu" id="part-1">
+  <div class="header">
+    <a href="page_00.xhtml">
+      <img class="logo" src="img/img_logo.svg" alt="" />
+    </a>
+    <div class="header-icon">
+      <a href="page_01.xhtml" class="page-01">
+        <img class="top-img" src="img/ico_page_01_edit.png" alt="" />
+      </a>
+      <a href="page_02.xhtml" class="page-02">
+        <img class="top-img" src="img/ico_page_02_eraser.png" alt="" />
+      </a>
+      <a href="page_03.xhtml" class="page-03">
+        <img class="top-img" src="img/ico_page_03_controlbtn.png" alt="" />
+      </a>
+      <p class="pickup">
+        <img class="top-img here" src="img/ico_page_04_menu.png" alt="" />
+      </p>
+      <a href="page_05.xhtml" class="page-05">
+        <img class="top-img" src="img/img_step_03_1.png" alt="" />
+      </a>
+      <a href="page_06.xhtml" class="page-06">
+        <img class="top-img" src="img/ico_page_06_play.svg" alt="" />
+      </a>
+      <a href="page_07.xhtml" class="page-07">
+        <img class="top-img" src="img/ico_page_07_user.svg" alt="" />
+      </a>
+      <a href="page_08.xhtml" class="page-08">
+        <img class="top-img" src="img/ico_page_09_question.png" alt="" />
+      </a>
+      <a href="page_09.xhtml" class="page-09">
+        <img class="top-img" src="img/ico_page_09_star.png" alt="" />
+      </a>
+    </div>
+  </div>
+  <div class="page-top page-04">
+    <table class="top-box">
+      <tr>
+        <td><img class="top-img" src="img/ico_page_04_menu.png" alt="" /></td>
+        <td><h2><span data-msgid="textbox_id-1">Main Menu</span>
+          </h2>
+          <p class="text-sub"><span data-msgid="textbox_id-2">Your reliable starting point!</span>
+          </p></td>
+      </tr>
+    </table>
+  </div>
+  <div class="bg04">
+    <div class="touch">
+      <div class="touch-balloon">
+        <p id="attention" class="attention"><span data-msgid="textbox_id-3"><img src="img/ico_touch.png" alt="" /> Touch <span class="small">the flashing parts!</span></span>
+        </p>
+      </div>
+      <div id="dialog">
+        <img class="touch-pict page4" src="img/pic_page_04_menu.jpg" alt="" usemap="#linkmap" />
+        <span>
+          <a href="#open01">
+            <div class="touch-mark click04-01"></div>
+            <div class="touch-mark-frame click04-01"></div>
+          </a>
+          <a href="#open02">
+            <div class="touch-mark click04-02"></div>
+            <div class="touch-mark-frame click04-02"></div>
+          </a>
+          <a href="#open03">
+            <div class="touch-mark click04-03"></div>
+            <div class="touch-mark-frame click04-03"></div>
+          </a>
+          <a href="#open05">
+            <div class="touch-mark click04-05"></div>
+            <div class="touch-mark-frame click04-05"></div>
+          </a>
+          <a href="#open06">
+            <div class="touch-mark click04-06"></div>
+            <div class="touch-mark-frame click04-06"></div>
+          </a>
+          <a href="#open07">
+            <div class="touch-mark click04-07"></div>
+            <div class="touch-mark-frame click04-07"></div>
+          </a>
+          <a href="#open08">
+            <div class="touch-mark click04-08"></div>
+            <div class="touch-mark-frame click04-08"></div>
+          </a>
+          <a href="#open09">
+            <div class="touch-mark click04-09"></div>
+            <div class="touch-mark-frame click04-09"></div>
+          </a>
+          <a href="#open10">
+            <div class="touch-mark click04-10"></div>
+            <div class="touch-mark-frame click04-10"></div>
+          </a>
+        </span>
+        <div id="modal">
+          <div id="open01"><!--///【エディット】////////////////////////////////////////////////////////////////////////-->
+            <div class="close_overlay"></div>
+            <div class="modal_window">
+              <h5 class="dialog-title">
+                <span data-msgid="textbox_id-4"><img src="img/ico_make01.png" alt="" />  Course Maker</span><!-- textbox_id-4 HTML and text updated
+150611: Updated to "Course Maker" to match in-game -->
+                  <div id="btn-close01" tabindex="0" class="btn-close"></div>
+              </h5>
+              <p><span data-msgid="textbox_id-5">Touch here to go to the course-creation screen, where your wildest Super Mario Maker dreams can come true.</span><!-- textbox_id-5 150603: Updated text - TM -->
+              </p>
+              <span data-msgid="textbox_id-63"><a href="page_01.xhtml">  			    <p class="btn-link" ontouchend='Cmn.onUpBtn(this, "btn-link")' ontouchstart='Cmn.onDownBtn(this, "btn-link-select")' ontouchcancel='Cmn.onUpBtn(this, "btn-link")'><img src="img/icon_linkbtn.png" alt="" />　More Info</p>  </a></span>
+            </div>
+            <!--/.modal_window-->
+          </div>
+          <!--/#open01--><!--///【エディット】////////////////////////////////////////////////////////////////////////-->
+
+          <div id="open02"><!--///【きろくロボット】////////////////////////////////////////////////////////////////////////-->
+            <div class="close_overlay"></div>
+            <div class="modal_window">
+              <h5 class="dialog-title">
+                <span data-msgid="textbox_id-6"><img src="img/img_step_03_1.png" alt="" />  Coursebot</span><!-- textbox_id-6 HTML updated -->
+                  <div id="btn-close02" tabindex="0" class="btn-close"></div>
+              </h5>
+              <p><span data-msgid="textbox_id-7">Pay your old buddy Coursebot a visit to manage your saved courses. Editing and uploading them are just a few of the things he can help you do!</span><!-- textbox_id-7 150604: Text updated - TM -->
+              </p>
+            </div>
+            <!--/.modal_window-->
+          </div>
+          <!--/#open02--><!--///【きろくロボット】////////////////////////////////////////////////////////////////////////-->
+
+          <div id="open03"><!--///【世界のコース】////////////////////////////////////////////////////////////////////////-->
+            <div class="close_overlay"></div>
+            <div class="modal_window">
+              <h5 class="dialog-title">
+                <span data-msgid="textbox_id-8"><img src="img/ico_play.png" alt="" />  Course World</span><!-- textbox_id-8 HTML updated -->
+                  <div id="btn-close03" tabindex="0" class="btn-close"></div>
+              </h5>
+              <p><span data-msgid="textbox_id-9">Look no further for a whole wide world of unique courses from other makers! Hop in and play individual courses, try your hand at the 100 Mario Challenge, or search for other makers by touching here. Please note that broadband Internet access is required for online play. For more info, go to support.nintendo.com.</span><!-- textbox_id-9 150603: Text updated - TM
+150616: Sentence about broadband internet added per NOA Legal - TM -->
+              </p>
+              <span data-msgid="textbox_id-10"><a href="page_06.xhtml#chapter-3">  			  <p class="btn-link" ontouchend='Cmn.onUpBtn(this, "btn-link")' ontouchstart='Cmn.onDownBtn(this, "btn-link-select")' ontouchcancel='Cmn.onUpBtn(this, "btn-link")'><img src="img/icon_linkbtn.png" alt="" />　More Info</p>  </a></span>
+            </div>
+            <!--/.modal_window-->
+          </div>
+          <!--/#open03--><!--///【世界のコース】////////////////////////////////////////////////////////////////////////-->
+
+          <div id="open05"><!--///【お知らせ】////////////////////////////////////////////////////////////////////////-->
+            <div class="close_overlay"></div>
+            <div class="modal_window">
+              <h5 class="dialog-title">
+                <span data-msgid="textbox_id-11"><img src="img/ico_page_04_news.png" alt="" />  Notifications</span><!-- textbox_id-11 HTML updated -->
+                  <div id="btn-close05" tabindex="0" class="btn-close"></div>
+              </h5>
+              <p><span data-msgid="textbox_id-12">Touch here to see the latest updates on things like who's been playing your courses and when new official courses are added. You can change your notification settings in 			  <img src="img/ico_page_04_setting.png" alt="" />  			 Settings.</span><!-- textbox_id-12 150604: HTML added, text updated a bit - TM -->
+              </p>
+            </div>
+            <!--/.modal_window-->
+          </div>
+          <!--/#open05--><!--///【お知らせ】////////////////////////////////////////////////////////////////////////-->
+
+          <div id="open06"><!--///【オプション】////////////////////////////////////////////////////////////////////////-->
+            <div class="close_overlay"></div>
+            <div class="modal_window">
+              <h5 class="dialog-title">
+                <span data-msgid="textbox_id-13"><img src="img/ico_page_04_setting.png" alt="" />  Settings</span><!-- textbox_id-13 HTML and text updated -->
+                  <div id="btn-close06" tabindex="0" class="btn-close"></div>
+              </h5>
+              <p><span data-msgid="textbox_id-14">Adjust various options, including the buttons used to control Mario, whether to show comments while playing courses, whether to use 3D audio, and notification settings.</span>
+              </p>
+            </div>
+            <!--/.modal_window-->
+          </div>
+          <!--/#open06--><!--///【オプション】////////////////////////////////////////////////////////////////////////-->
+
+          <div id="open07"><!--///【説明書】////////////////////////////////////////////////////////////////////////-->
+            <div class="close_overlay"></div>
+            <div class="modal_window">
+              <h5 class="dialog-title">
+                <span data-msgid="textbox_id-15"><img src="img/ico_page_04_manual.png" alt="" />  Manual</span><!-- textbox_id-15 HTML updated -->
+                  <div id="btn-close07" tabindex="0" class="btn-close"></div>
+              </h5>
+              <p><span data-msgid="textbox_id-16">Opens this manual (but you already knew that, didn't you?).</span><!-- textbox_id-16 150603: Text updated - TM -->
+              </p>
+            </div>
+            <!--/.modal_window-->
+          </div>
+          <!--/#open07--><!--///【説明書】////////////////////////////////////////////////////////////////////////-->
+
+          <div id="open08"><!--///【メインメニュー】////////////////////////////////////////////////////////////////////////-->
+            <div class="close_overlay"></div>
+            <div class="modal_window">
+              <h5 class="dialog-title">
+                <span data-msgid="textbox_id-17">Main Menu</span><!-- textbox_id-17 HTML removed -->
+                <div id="btn-close08" tabindex="0" class="btn-close"></div>
+              </h5>
+              <p><span data-msgid="textbox_id-67">You can open this by touching <img src="img/ico_page_04_menu.png" alt="" /></span>
+                <span data-msgid="textbox_id-18">or by pressing .</span>
+              </p>
+            </div>
+            <!--/.modal_window-->
+          </div>
+          <!--/#open08--><!--///【メインメニュー】////////////////////////////////////////////////////////////////////////-->
+
+          <div id="open09"><!--///【10人マリオチャレンジ】////////////////////////////////////////////////////////////////////////-->
+            <div class="close_overlay"></div>
+            <div class="modal_window">
+              <h5 class="dialog-title">
+                <span data-msgid="textbox_id-19"><img src="img/ico_10mario.png" alt="" />  10 Mario Challenge</span><!-- textbox_id-19 HTML updated -->
+                  <div id="btn-close09" tabindex="0" class="btn-close"></div>
+              </h5>
+              <p><span data-msgid="textbox_id-20">Try to clear a sequence of eight courses using 10 lives. You can tackle this challenge even while not connected to the Internet.</span><!-- textbox_id-20 150604: Text updated - TM -->
+              </p>
+              <span data-msgid="textbox_id-21"><a href="page_06.xhtml#chapter-1">  			  <p class="btn-link" ontouchend='Cmn.onUpBtn(this, "btn-link")' ontouchstart='Cmn.onDownBtn(this, "btn-link-select")' ontouchcancel='Cmn.onUpBtn(this, "btn-link")'><img src="img/icon_linkbtn.png" alt="" />　More Info</p>  </a></span>
+            </div>
+            <!--/.modal_window-->
+          </div>
+          <!--/#open08--><!--///【10人マリオチャレンジ】////////////////////////////////////////////////////////////////////////-->
+
+          <div id="open10"><!--///【ドア】////////////////////////////////////////////////////////////////////////-->
+            <div class="close_overlay"></div>
+            <div class="modal_window">
+              <h5 class="dialog-title">
+                <span data-msgid="textbox_id-77"><img src="img/ico_dialog_door.png" alt="" />  Door</span><!-- textbox_id-77 HTML updated -->
+                  <div id="btn-close10" tabindex="0" class="btn-close"></div>
+              </h5>
+              <p><span data-msgid="textbox_id-78">Return to the title screen.</span>
+              </p>
+            </div>
+            <!--/.modal_window-->
+          </div>
+          <!--/#open08--><!--///【ドア】////////////////////////////////////////////////////////////////////////-->
+
+        </div>
+        <!--/#modal-->
+      </div>
+      <!--/#dialog-->
+    </div>
+    <!--/#touch-->
+
+    <section epub:type="chapter" aria-label="Coursebot" id="chapter-1">
+      <dl class="topic-box dotless">
+        <dl class="topic-img">
+          <div class="circle-icon">
+            <img src="img/img_step_03_1.png" alt="" />
+          </div>
+        </dl>
+        <dd class="topic-txt">
+          <h4 class="color_04"><span data-msgid="textbox_id-22">Coursebot</span>
+          </h4>
+          <p><span data-msgid="textbox_id-23">Coursebot is here to help you manage the courses you've saved. Courses created by other makers appear with <img src="img/ico_page_04_download.png" alt="" />, and courses you've uploaded are marked with <img src="img/ico_page_04_upload.png" alt="" />. Coursebot is a clever fellow, so he can remember up to 120 courses at once!</span><!-- textbox_id-23 150528: Changed "users" to "Makers" - TM
+150604: Was marked; please check HTML to be safe - TM -->
+          </p>
+        </dd>
+      </dl>
+      <div class="box_lists">
+        <ul class="box_list04">
+          <li>
+            <dl>
+              <dt><span data-msgid="textbox_id-24">Edit</span>
+              </dt>
+              <dd><span data-msgid="textbox_id-25">Load a saved course to make changes.</span>
+              </dd>
+            </dl>
+            <dl>
+              <dt><span data-msgid="textbox_id-26">Play</span>
+              </dt>
+              <dd><span data-msgid="textbox_id-27">Play through a course.</span>
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt><span data-msgid="textbox_id-28">Upload</span>
+              </dt>
+              <dd><span data-msgid="textbox_id-29"><a class="link-txt" href="page_05.xhtml"><span style="white-space: nowrap">Upload</span></a> a course to share it with other players.</span><!-- textbox_id-29 150609: HTML updated - TM -->
+              </dd>
+            </dl>
+            <dl>
+              <dt><span data-msgid="textbox_id-30">Change Name</span>
+              </dt>
+              <dd><span data-msgid="textbox_id-31">Change the name of a course. This will allow you to upload it as a new course.</span>
+              </dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt><span data-msgid="textbox_id-32">Delete</span>
+              </dt>
+              <dd><span data-msgid="textbox_id-33">Delete a course from Coursebot's memory.</span>
+                <p class="indent"><span data-msgid="textbox_id-34">◆ To delete a course from the server after you've uploaded it, select <a class="link-txt" href="page_07.xhtml#open02"><span style="white-space: nowrap">Uploaded Courses</span></a> from your own User Info page.</span><!-- textbox_id-34 150609: HTML updated - TM -->
+                </p>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+        <div class="comment-box-sad">
+          <div class="comment">
+            <p class="comment-sad"><span data-msgid="textbox_id-35">Once you save over a course or delete it, the original data is lost forever. When saving changes or deleting courses, you should be very careful to avoid losing data!</span><!-- textbox_id-35 Mary O. text
+150604: Text updated - TM -->
+            </p>
+          </div>
+          <div class="mashiko">
+            <img src="img/img_mashiko_sad.png" ontouchstart="Cmn.notifyMashikoTouchReport(); Cmn.changeImgOnTouch(this,'img/img_mashiko_action02.png','img/img_mashiko_sad.png', 60 , 0)" alt="" />
+          </div>
+        </div>
+		<div class="title-margin">
+          <h5 class="title-small page-04"><span data-msgid="textbox_id-36">Switching Panels</span>
+          </h5>
+        <p><span data-msgid="textbox_id-37">Touch the button in the top left   <img src="img/ico_page_04_course.png" alt="" />  		to switch between Coursebot's panels.</span><!-- textbox_id-37 150604: HTML added and text updated - TM -->
+        </p>
+        <ul class="box_list04">
+          <li class="robot-menu">
+            <dl>
+              <dt><span data-msgid="textbox_id-38">My Courses</span>
+              </dt>
+              <dd><span data-msgid="textbox_id-39">This panel shows courses you have created.</span>
+              </dd>
+            </dl>
+            <dl>
+              <dt><span data-msgid="textbox_id-40">Sample Courses</span><!-- textbox_id-40 150623: No change - TM -->
+              </dt>
+              <dd><span data-msgid="textbox_id-41">This panel includes sample courses, such as those you have cleared in <a class="link-txt" href="page_06.xhtml#chapter-1"><span style="white-space: nowrap">10 Mario Challenge</span></a>.</span><!-- textbox_id-41 150609: HTML updated - TM -->
+                <p class="indent"><span data-msgid="textbox_id-68">◆ You can't upload courses created by editing sample courses.</span><!-- textbox_id-68 150623: No change - TM -->
+                </p>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+		</div>
+		<div class="title-margin">
+          <h5 class="title-small page-04"><span data-msgid="textbox_id-42">Adjusting Courses</span>
+          </h5>
+        <p><span data-msgid="textbox_id-43">Once you've saved a few courses, get experimenting!</span>
+        </p>
+        <ul class="box_list04">
+          <li class="robot-menu">
+            <dl>
+              <dt><span data-msgid="textbox_id-44">Making Worlds</span>
+              </dt>
+              <dd><span data-msgid="textbox_id-45">If you save four courses on one row, they'll form a world. You can play them as a set by touching <img src="img/ico_page_01_worldplay.png" alt="" />.</span>
+              </dd>
+            </dl>
+            <dl>
+              <dt><span data-msgid="textbox_id-46">Moving Courses</span>
+              </dt>
+              <dd><span data-msgid="textbox_id-47">If you touch and hold a course, you can drag it to a different slot. This will change the order of the stages when played as a single world.</span><!-- textbox_id-47 150604: Added a line for clarity - TM -->
+              </dd>
+            </dl>
+          </li>
+        </ul>
+		</div>
+      </div>
+    </section>
+    <section epub:type="chapter" aria-label="Settings" id="chapter-2">
+      <section id="djb-8">
+        <dl class="topic-box margin-space dot04">
+          <dl class="topic-img">
+            <div class="circle-icon">
+              <img src="img/ico_page_04_setting.png" alt="" />
+            </div>
+          </dl>
+          <dd class="topic-txt">
+            <h4 class="color_04"><span data-msgid="textbox_id-48">Settings</span><!-- textbox_id-48 150603: Updated to reflect in-game text - TM -->
+            </h4>
+            <p><span data-msgid="textbox_id-49">Change various settings.</span>
+            </p>
+          </dd>
+        </dl>
+        <ul class="box_list04">
+          <li class="robot-menu">
+            <dl>
+              <dt><span data-msgid="textbox_id-69">Controls</span>
+              </dt>
+              <dd><span data-msgid="textbox_id-70">Change the buttons used to make Mario dash and jump.</span>
+              </dd>
+            </dl>
+            <dl>
+              <dt><span data-msgid="textbox_id-71">Important Information about Uploading Courses</span><!-- textbox_id-71 150608: No change - TM
+150609: Adjusted per NCL - TM -->
+              </dt>
+              <dd><span data-msgid="textbox_id-72">Shows important information that you should read before uploading courses.</span>
+              </dd>
+            </dl>
+          </li>
+          <li class="robot-menu">
+            <dl>
+              <dt><span data-msgid="textbox_id-75">GamePad 3D Audio</span><!-- textbox_id-75 150608: Updated to reflect in-game text - TM -->
+              </dt>
+              <dd><span data-msgid="textbox_id-76">Configures 3D audio. With the <span style="white-space: nowrap">Wii U</span> GamePad controller's speakers you can enjoy a 3D-like audio experience, so be sure to crank up the volume on the GamePad when this option is activated!</span><!-- textbox_id-76 150604: Minor text updates; was marked for retranslation, please double-check HTML - TM
+150612: Minor text update - TM
+150622: Added "controller's speakers" to second sentence - TM -->
+              </dd>
+            </dl>
+            <dl>
+              <dt><span data-msgid="textbox_id-73">Course Comments</span><!-- textbox_id-73 150608: Updated to reflect in-game text - TM -->
+              </dt>
+              <dd><span data-msgid="textbox_id-74">Lets you choose whether to show comments from players all around the world while playing courses or only comments from players in your own console region.</span><!-- textbox_id-74 150604: Was marked, but no apparent changes - TM -->
+              </dd>
+            </dl>
+          </li>
+          <li class="robot-menu" id="news">
+            <dl>
+              <dt><span data-msgid="textbox_id-55">Notifications to<br />Course Creators</span>
+              </dt>
+              <dd><span data-msgid="textbox_id-56">When you play a course created by another maker, the course creator may be notified every time you are playing the course. You can turn off this notification in Settings. Otherwise, when you play courses created by other makers, the course creators will be notified of the following actions:</span><!-- textbox_id-56 150611: Added text per NOA Legal - TM
+150527: Edited per retranslation - TM -->
+                <ul class="indent-list">
+                  <li><span data-msgid="textbox_id-57">● When you play a course</span>
+                  </li>
+                  <li><span data-msgid="textbox_id-58">● When you star a course</span>
+                  </li>
+                  <li><span data-msgid="textbox_id-59">● When you comment on a course</span>
+                  </li>
+                </ul>
+                <p class="indent"><span data-msgid="textbox_id-61">◆ Even if you opt out of notifications, your play data will still be saved to the course's history.</span><!-- textbox_id-61 150624: Message reworded a bit - TM -->
+                </p>
+              </dd>
+            </dl>
+            <dl>
+              <dt><span data-msgid="textbox_id-50">Notifications about<br />My Courses</span><!-- textbox_id-50 150603: Updated to reflect in-game text - TM -->
+              </dt>
+              <dd><span data-msgid="textbox_id-51">A notification will be displayed every time another user is playing a course you created. You can turn off this notification in Settings. Otherwise, when other users play courses you created, pop-ups will appear to let you know when the following things happen:</span><!-- textbox_id-51 150611: Added text per NOA Legal - TM
+150527: Edited per retranslation - TM -->
+                <ul class="indent-list">
+                  <li><span data-msgid="textbox_id-52">● When someone plays one of your courses</span>
+                  </li>
+                  <li><span data-msgid="textbox_id-53">● When someone stars one of your courses</span>
+                  </li>
+                  <li><span data-msgid="textbox_id-54">● When someone leaves a comment for you</span>
+                  </li>
+                </ul>
+                <p class="indent"><span data-msgid="textbox_id-62">◆ Even if you choose not to display notifications in real time, you can always check them later from the main menu.</span>
+                </p>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </section>
+    </section><!-- section_comment-section:chapter:chapter-2 150603: Updated to reflect in-game text - TM -->
+    <div class="mashiko-imgR">
+      <img class="mashiko-07" src="img/img_mashiko_07.gif" alt="" />
+    </div>
+  </div>
+</section>
+<div class="footer page-04">
+  <div class="toppage-link"><span data-msgid="textbox_id-60"><a href="page_00.xhtml" class="btn-toplink" ontouchend='Cmn.onUpBtn(this, "btn-toplink")' ontouchstart='Cmn.onDownBtn(this, "btn-toplink-select")' ontouchcancel='Cmn.onUpBtn(this, "btn-toplink")'>Back to Main Page</a></span>
+  </div>
+</div>
+
+
+<!-- textbox_id_counter-78 --></body>
+</html>

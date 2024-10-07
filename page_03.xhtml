@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en-US" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <title>Controlling Mario</title>
+  <link rel="stylesheet" href="css/default.css" />
+  <link rel="stylesheet" href="css/Body_style.css" />
+  <link rel="stylesheet" href="css/BodyColor_style.css" />
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/lib/zepto.min.js"></script>
+  <script type="text/javascript" src="js/lanswitch.js"></script>
+  <script type="text/javascript" src="js/epubinfo.js"></script>
+  <script type="text/javascript" src="js/page_03.js"></script>
+  <script type="text/javascript" src="js/use_scroll_icon.js"></script>
+</head>
+<body class="bg03" onload="Cmn.notifyPlayReport(7);" onunload="/*キャッシュクリアのためにunloadイベントに空の関数をフック*/">
+<section epub:type="part" aria-label="Controlling Mario" id="part-1">
+  <div class="header">
+    <a href="page_00.xhtml">
+      <img class="logo" src="img/img_logo.svg" alt="" />
+    </a>
+    <div class="header-icon">
+      <a href="page_01.xhtml" class="page-01">
+        <img class="top-img" src="img/ico_page_01_edit.png" alt="" />
+      </a>
+      <a href="page_02.xhtml" class="page-02">
+        <img class="top-img" src="img/ico_page_02_eraser.png" alt="" />
+      </a>
+      <p class="pickup">
+        <img class="top-img here" src="img/ico_page_03_controlbtn.png" alt="" />
+      </p>
+      <a href="page_04.xhtml" class="page-04">
+        <img class="top-img" src="img/ico_page_04_menu.png" alt="" />
+      </a>
+      <a href="page_05.xhtml" class="page-05">
+        <img class="top-img" src="img/img_step_03_1.png" alt="" />
+      </a>
+      <a href="page_06.xhtml" class="page-06">
+        <img class="top-img" src="img/ico_page_06_play.svg" alt="" />
+      </a>
+      <a href="page_07.xhtml" class="page-07">
+        <img class="top-img" src="img/ico_page_07_user.svg" alt="" />
+      </a>
+      <a href="page_08.xhtml" class="page-08">
+        <img class="top-img" src="img/ico_page_09_question.png" alt="" />
+      </a>
+      <a href="page_09.xhtml" class="page-09">
+        <img class="top-img" src="img/ico_page_09_star.png" alt="" />
+      </a>
+    </div>
+  </div>
+  <div class="page-top page-03">
+    <table class="top-box">
+      <tr>
+        <td><img class="top-img" src="img/ico_page_03_controlbtn.png" alt="" /></td>
+        <td><h2><span data-msgid="textbox_id-1">Controlling Mario</span>
+          </h2>
+          <p class="text-sub"><span data-msgid="textbox_id-2">From 8-bit to the modern era!</span>
+          </p></td>
+      </tr>
+    </table>
+  </div>
+  <div class="bg03">
+    <div class="comment-box">
+      <div class="comment">
+        <p><span data-msgid="textbox_id-3">Mario's controls differ slightly depending on the current <a class="link-txt" href="page_01.xhtml#open01">  <span style="white-space: nowrap">game style</span></a>. A truly skillful maker knows that the button layout can be adjusted by selecting the <a class="link-txt" href="page_04.xhtml#chapter-2">  <span style="white-space: nowrap">Settings</span></a> icon from the main menu.</span><!-- textbox_id-3 Mary O. text
+150609: HTML updated - TM -->
+        </p>
+        <p><span data-msgid="textbox_id-4">But I'm sure you're almost as skilled as my feathered friend! I bet you'll have no problem mastering the controls for every type of Mario.</span><!-- textbox_id-4 Mary O. text -->
+        </p>
+        <p class="indent"><span data-msgid="textbox_id-317">◆ The <span style="white-space: nowrap">Wii U</span> Pro Controller and Classic Controller Pro use the same controls as the <span style="white-space: nowrap">Wii U</span> GamePad.</span></p>
+      </div>
+      <div class="mashiko">
+        <img src="img/img_mashiko.png" ontouchstart="Cmn.notifyMashikoTouchReport(); Cmn.changeImgOnTouch(this,'img/img_mashiko_action01.png','img/img_mashiko.png', 60 , 0);" alt="" />
+      </div>
+    </div>
+    <div class="control"><!--操作の範囲-->
+      <ul id="tab-up-soft" class="btn-space-soft">
+        <li>
+          <div tabindex="0" class="btn-soft">
+            <img src="img/ico_page_03_soft1.jpg" alt="" />
+          </div>
+        </li>
+        <li>
+          <div tabindex="0" class="btn-soft">
+            <img src="img/ico_page_03_soft2.jpg" alt="" />
+          </div>
+        </li>
+        <li>
+          <div tabindex="0" class="btn-soft">
+            <img src="img/ico_page_03_soft3.jpg" alt="" />
+          </div>
+        </li>
+        <li>
+          <div tabindex="0" class="btn-soft">
+            <img src="img/ico_page_03_soft4.jpg" alt="" />
+          </div>
+        </li>
+      </ul>
+      <div class="ctrllist">
+        <div id="ctrllist-space01" class="ctrllist-space01">
+          <ul id="tab-up-ctrl" class="btn-space-ctrl">
+            <li>
+              <div tabindex="0" class="btn-control01">
+              </div>
+            </li>
+            <li>
+              <div tabindex="0" class="btn-control02">
+
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--////【スーパーマリオブラザーズ】/////////////////////////////////////////////////////////////-->
+        <div id="page-up-soft-smb" class="balloon-action arrow-01"><!--吹き出し-->
+          <div class="ctrllist-space">
+            <img class="soft-mario" src="img/ico_soft01_mario.png" alt="" />
+          </div>
+          <div id="controller01-smb-up"><!--GamePad-->
+            
+            <div class="action-contents">
+              <ul class="action-pad">
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-5">Move</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-6"></span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-7">Dash</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-8">Move while holding </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-9">Jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-10"></span>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-11">Jump higher</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-12">Hold </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-13">Jump higher and farther</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-14">Jump while dashing</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-15">Super jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-16">Jump as you land on an enemy</span><!-- textbox_id-16 150604: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-17">Crouch</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-18"> (when not Small Mario)</span><!-- textbox_id-18 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-19">Fireball</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-20"> (as Fire Mario)</span><!-- textbox_id-20 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-21">Enter pipe</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-22"> toward the pipe</span>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-23">Swim</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-24"> underwater</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-25">Climb</span><!-- textbox_id-25 150604: No change - TM -->
+                    </dt>
+                    <dd><span data-msgid="textbox_id-26">/ on a vine</span><!-- textbox_id-26 150604: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-27">Enter door</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-28"> in front of a door</span><!-- textbox_id-28 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="controller02-smb-up"><!--Wiiリモコン-->
+            <div class="action-contents">
+              <ul class="action-remote">
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-29">Move</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-30"></span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-31">Dash</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-32">Move while holding </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-33">Jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-34"></span>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-35">Jump higher</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-36">Hold </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-37">Jump higher and farther</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-38">Jump while dashing</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-39">Super jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-40">Jump as you land on an enemy</span><!-- textbox_id-40 150604: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-41">Crouch</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-42"> (when not Small Mario)</span><!-- textbox_id-42 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-43">Fireball</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-44"> (as Fire Mario)</span><!-- textbox_id-44 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-45">Enter pipe</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-46"> toward the pipe</span>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-47">Swim</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-48"> underwater</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-49">Climb</span><!-- textbox_id-49 150604: No change - TM -->
+                    </dt>
+                    <dd><span data-msgid="textbox_id-50">/ on a vine</span><!-- textbox_id-50 150604: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-51">Enter door</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-52"> in front of a door</span><!-- textbox_id-52 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!--<div class="hide">非表示中-->
+        <!--////【スーパーマリオブラザーズ3】///////////////////////////////////////////////////////////-->
+        <div id="page-up-soft-smb3" class="balloon-action arrow-02">
+          <div class="ctrllist-space">
+            <img class="soft-mario" src="img/ico_soft02_mario.png" alt="" />
+          </div>
+          <div id="controller01-smb3-up"><!--GamePad-->
+            <div class="action-contents">
+              <ul class="action-pad">
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-53">Move</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-54"></span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-55">Dash</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-56">Move while holding </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-57">Jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-58"></span>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-59">Jump higher</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-60">Hold </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-61">Jump higher and farther</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-62">Jump while dashing</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-63">Super jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-64">Jump as you land on an enemy</span><!-- textbox_id-64 150604: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-65">Crouch</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-66"> (when not Small Mario)</span><!-- textbox_id-66 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-67">Fireball</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-68"> (as Fire Mario)</span><!-- textbox_id-68 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-69">Enter pipe</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-70"> toward the pipe</span>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-71">Swim</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-72"> underwater</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-73">Climb</span><!-- textbox_id-73 150604: No change - TM -->
+                    </dt>
+                    <dd><span data-msgid="textbox_id-74">/ on a vine</span><!-- textbox_id-74 150604: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-75">Enter door</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-76"> in front of a door</span><!-- textbox_id-76 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+              <div class="list-line dot03"></div>
+              <ul class="action-pad">
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-77">Pick up object / Throw / Put down</span><!-- textbox_id-77 150604: No change - TM -->
+                    </dt>
+                    <dd><span data-msgid="textbox_id-78">Touch object while holding  / Release  / Hold  and release </span><!-- textbox_id-78 150604: No change - TM
+150615: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="controller02-smb3-up"><!--Wiiリモコン-->
+            <div class="action-contents">
+              <ul class="action-remote">
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-79">Move</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-80"></span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-81">Dash</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-82">Move while holding </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-83">Jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-84"></span>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-85">Jump higher</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-86">Hold </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-87">Jump higher and farther</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-88">Jump while dashing</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-89">Super jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-90">Jump as you land on an enemy</span><!-- textbox_id-90 150604: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-91">Crouch</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-92"> (when not Small Mario)</span><!-- textbox_id-92 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-93">Fireball</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-94"> (as Fire Mario)</span><!-- textbox_id-94 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-95">Enter pipe</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-96"> toward the pipe</span>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-97">Swim</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-98"> underwater</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-99">Climb</span><!-- textbox_id-99 150604: No change - TM -->
+                    </dt>
+                    <dd><span data-msgid="textbox_id-100">/ on a vine</span><!-- textbox_id-100 150604: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-101">Enter door</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-102"> in front of a door</span><!-- textbox_id-102 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+              <div class="list-line dot03"></div>
+              <ul class="action-remote">
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-103">Pick up object / Throw / Put down</span><!-- textbox_id-103 150604: No change - TM -->
+                    </dt>
+                    <dd><span data-msgid="textbox_id-104">Touch object while holding  / Release  / Hold  and release </span><!-- textbox_id-104 150604: No change - TM
+150615: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!--////【スーパーマリオワールド】///////////////////////////////////////////////////////////////-->
+        <div id="page-up-soft-smw" class="balloon-action arrow-03">
+          <div class="ctrllist-space">
+            <img class="soft-mario" src="img/ico_soft03_mario.png" alt="" />
+          </div>
+          <div id="controller01-smw-up"><!--GamePad-->
+            <div class="action-contents">
+              <ul class="action-pad">
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-105">Move</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-106"></span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-107">Dash</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-108">Move while holding </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-109">Jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-110"></span>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-111">Jump higher</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-112">Hold </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-113">Jump higher and farther</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-114">Jump while dashing</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-115">Super jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-116">Jump as you land on an enemy</span><!-- textbox_id-116 150604: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-117">Crouch</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-118"></span><!-- textbox_id-118 Small Mario can crouch in Super Mario World and New Super Mario Bros. Wii U
+150622: Removed bit about Small Mario - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-119">Fireball</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-120"> (as Fire Mario)</span><!-- textbox_id-120 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-121">Enter pipe</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-122"> toward the pipe</span>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-123">Swim</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-124"> underwater</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-125">Climb</span><!-- textbox_id-125 150604: No change - TM -->
+                    </dt>
+                    <dd><span data-msgid="textbox_id-126">/ on a vine</span><!-- textbox_id-126 150604: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-127">Enter door</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-128"> in front of a door</span><!-- textbox_id-128 150622: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+              <div class="list-line dot03"></div>
+              <ul class="action-pad">
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-129">Pick up object / Throw / Put down</span><!-- textbox_id-129 150604: No change - TM -->
+                    </dt>
+                    <dd><span data-msgid="textbox_id-130">Touch object while holding  / Release  /<br />Hold  and release </span><!-- textbox_id-130 150604: No change - TM
+150615: No change - TM
+150622: Line break added - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-131">Spin jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-132">///</span><!-- textbox_id-132 150604: No change - TM
+150622: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-133">Throw object up</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-134">Hold  and release </span>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+              <div class="list-line dot03"></div>
+              <img class="soft-mario" src="img/img_page_03_SMWYoshi.png" alt="" />
+              <ul class="action-pad">
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-135">Dismount</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-136">///</span><!-- textbox_id-136 150604: No change - TM
+150622: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-137">Eat</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-138"></span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-139">Spit out</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-140"> after eating a shelled enemy</span><!-- textbox_id-140 150624: Message reworded - TM -->
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="controller02-smw-up"><!--Wiiリモコン-->
+            <div class="action-contents">
+              <ul class="action-remote">
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-141">Move</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-142"></span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-143">Dash</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-144">Move while holding </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-145">Jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-146"></span>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-147">Jump higher</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-148">Hold </span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-149">Jump higher and farther</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-150">Jump while dashing</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-151">Super jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-152">Jump as you land on an enemy</span><!-- textbox_id-152 150604: No change - TM -->
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-153">Crouch</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-154"></span><!-- textbox_id-154 Small Mario can crouch in Super Mario World and New Super Mario Bros. Wii U
+150622: Removed bit about Small Mario - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-155">Fireball</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-156"> (as Fire Mario)</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-157">Enter pipe</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-158"> toward the pipe</span>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-159">Swim</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-160"> underwater</span>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-161">Climb</span><!-- textbox_id-161 150604: No change - TM -->
+                    </dt>
+                    <dd><span data-msgid="textbox_id-162">/ on a vine</span><!-- textbox_id-162 150604: No change - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-163">Enter door</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-164"> in front of a door</span>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+              <div class="list-line dot03"></div>
+              <ul class="action-remote">
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-165">Pick up object / Throw / Put down</span><!-- textbox_id-165 150604: No change - TM -->
+                    </dt>
+                    <dd><span data-msgid="textbox_id-166">Touch object while holding  / Release  /<br />Hold  and release </span><!-- textbox_id-166 150604: No change - TM
+150615: No change - TM
+150622: Line break added - TM -->
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-167">Spin jump</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-168">Shake </span>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><span data-msgid="textbox_id-169">Throw object up</span>
+                    </dt>
+                    <dd><span data-msgid="textbox_id-170">Hold  and release </span>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            <div class="list-line dot03"></div>
+            <img class="soft-mario" src="img/img_page_03_SMWYoshi.png" alt="" />
+            <ul class="action-remote">
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-171">Dismount</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-172">Shake </span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-173">Eat</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-174"></span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-175">Spit out</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-176"> after eating a shelled enemy</span><!-- textbox_id-176 150624: Message updated - TM -->
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!--////【NEWスーパーマリオブラザーズU】///////////////////////////////////////////////////////////-->
+        <div id="page-up-soft-smbU" class="balloon-action arrow-04">
+          <div class="ctrllist-space">
+            <img class="soft-mario" src="img/ico_soft04_mario.png" alt="" />
+          </div>
+          <div id="controller01-smbU-up"><!--GamePad-->
+            <ul class="action-pad">
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-177">Move</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-178"></span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-179">Dash</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-180">Move while holding </span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-181">Jump</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-182"></span>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-183">Jump higher</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-184">Hold </span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-185">Jump higher and farther</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-186">Jump while dashing</span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-187">Super jump</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-188">Jump as you land on an enemy</span><!-- textbox_id-188 150604: No change - TM -->
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-189">Crouch</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-190"></span><!-- textbox_id-190 Small Mario can crouch in Super Mario World and New Super Mario Bros. Wii U
+150622: Small Mario bit removed - TM -->
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-191">Fireball</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-192"> (as Fire Mario)</span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-193">Enter pipe</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-194"> toward the pipe</span>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-195">Swim</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-196"> underwater</span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-197">Climb</span><!-- textbox_id-197 150604: No change - TM -->
+                  </dt>
+                  <dd><span data-msgid="textbox_id-198">/ on a vine</span><!-- textbox_id-198 150604: No change - TM -->
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-199">Enter door</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-200"> in front of a door</span><!-- textbox_id-200 150622: No change - TM -->
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+            <div class="list-line dot03"></div>
+            <ul class="action-pad">
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-201">Pick up object / Throw / Put down</span><!-- textbox_id-201 150604: No change - TM -->
+                  </dt>
+                  <dd><span data-msgid="textbox_id-202">Touch object while holding  / Release  /<br />Hold  and release </span><!-- textbox_id-202 150604: No change - TM
+150615: No change - TM
+150622: Line break added - TM -->
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-203">Spin jump</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-204">///</span><!-- textbox_id-204 150604: No change - TM
+150622: No change - TM -->
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-205">Triple jump</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-206">Jump while dashing →<br /> when landing twice</span><!-- textbox_id-206 150622: Line break added - TM -->
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-207">Ground-pound</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-208"> in midair</span>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-209">Wall jump</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-210"> against a wall midjump</span>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <!--GamePad-->
+          <div id="controller02-smbU-up"><!--Wiiリモコン-->
+            <ul class="action-remote">
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-211">Move</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-212"></span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-213">Dash</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-214">Move while holding </span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-215">Jump</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-216"></span>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-217">Jump higher</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-218">Hold </span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-219">Jump higher and farther</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-220">Jump while dashing</span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-221">Super jump</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-222">Jump as you land on an enemy</span><!-- textbox_id-222 150604: No change - TM -->
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-223">Crouch</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-224"></span><!-- textbox_id-224 Small Mario can crouch in Super Mario World and New Super Mario Bros. Wii U
+150622: Removed bit about Small Mario - TM -->
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-225">Fireball</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-226"> (as Fire Mario)</span><!-- textbox_id-226 150622: No change - TM -->
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-227">Enter pipe</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-228"> toward the pipe</span>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-229">Swim</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-230"> underwater</span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-231">Climb</span><!-- textbox_id-231 150604: No change - TM -->
+                  </dt>
+                  <dd><span data-msgid="textbox_id-232">/ on a vine</span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-233">Enter door</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-234"> in front of a door</span><!-- textbox_id-234 150622: No change - TM -->
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+            <div class="list-line dot03"></div>
+            <ul class="action-remote">
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-235">Pick up object / Throw / Put down</span><!-- textbox_id-235 150604: No change - TM -->
+                  </dt>
+                  <dd><span data-msgid="textbox_id-236">Touch object while holding  / Release  /<br />Hold  and release </span><!-- textbox_id-236 150604: No change - TM
+150615: No change - TM
+150622: Line break added - TM -->
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-237">Spin jump</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-238">Shake </span>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-239">Triple jump</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-240">Jump while dashing →<br /> when landing twice</span><!-- textbox_id-240 150622: Line break added - TM -->
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-241">Ground-pound</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-242"> in midair</span>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-243">Wall jump</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-244"> against a wall midjump</span>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <!--Wiiリモコン-->
+          
+          <!--ヨッシーの操作-->
+          <div class="list-line dot03"></div>
+          <img class="soft-mario" src="img/img_page_03_SMW3DYoshi.png" alt="" />
+          <div id="controller01-smbU-yoshi-up"><!--GamePad ヨッシーの操作-->
+            
+            <ul class="action-pad">
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-245">Dismount</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-246">///</span><!-- textbox_id-246 150604: No change - TM
+150622: No change - TM -->
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-247">Eat</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-248"></span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-249">Spit out</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-250"> after eating a shelled enemy</span><!-- textbox_id-250 150624: Message reworded - TM -->
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div id="controller02-smbU-yoshi-up"><!--Wiiリモコン　ヨッシーの操作-->
+            <ul class="action-remote">
+              <li>
+                <dl>
+                  <dt><span data-msgid="textbox_id-251">Dismount</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-252">Shake </span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-253">Eat</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-254"></span>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><span data-msgid="textbox_id-255">Spit out</span>
+                  </dt>
+                  <dd><span data-msgid="textbox_id-256"> after eating a shelled enemy</span><!-- textbox_id-256 150624: Message reworded - TM -->
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--吹き出し-->
+      </div>
+    </div>
+    <!--操作の範囲-->
+    
+    <section epub:type="chapter" aria-label="Controlling Mario's Transformations" id="chapter-1">
+      <div class="title-margin" id="djb-6">
+        <h5 class="title-small page-03"><span data-msgid="textbox_id-257">Controlling Mario's Transformations</span>
+        </h5>
+        <ul id="tab-down-soft" class="btn-space-soft">
+          <li>
+            <div tabindex="0" class="btn-soft">
+              <img src="img/ico_page_03_soft1.jpg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div tabindex="0" class="btn-soft">
+              <img src="img/ico_page_03_soft2.jpg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div tabindex="0" class="btn-soft">
+              <img src="img/ico_page_03_soft3.jpg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div tabindex="0" class="btn-soft">
+              <img src="img/ico_page_03_soft4.jpg" alt="" />
+            </div>
+          </li>
+        </ul>
+        <div class="ctrllist">
+          <div id="ctrllist-space02" class="ctrllist-space02">
+            <ul id="tab-down-ctrl" class="btn-space-ctrl">
+              <li>
+                <div tabindex="0" class="btn-control01">
+                </div>
+              </li>
+              <li>
+                <div tabindex="0" class="btn-control02">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--////【スーパーマリオブラザーズ】////////////////////////////////////////////////////////////-->
+          
+          <div id="page-down-soft-smb" class="balloon-action arrow-01">
+            <div class="action-box">
+              <div class="frame size-M">
+                <img class="img-contents video-height-page3" src="img/pic_page_03_charaM.jpg" alt="" />
+              </div>
+              <div class="chara-box">
+                <img class="chara-img" src="img/img_page_03_mario01.png" alt="" />
+                <div class="chara-name">
+                  <p><span data-msgid="textbox_id-258">Costume Mario</span><!-- textbox_id-258 150709: Updated to "Costume Mario" to match proper term - TM
+
+150603: Changed to "Mystery Mario" to reflect "Mystery Suit," but may change based on NCL's response to the term - TM
+ -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="dot-line01 dot03"></div>
+            <div class="chara-txt">
+              <img class="soft-mario" src="img/ico_soft01_item.png" alt="" />
+              <p><span data-msgid="textbox_id-259">The <a class="link-txt" href="page_02.xhtml#chapter-6"><span style="white-space: nowrap">Mystery Mushroom</span></a> will turn Mario into Costume Mario, dressing him up as various characters or items. When wearing a costume, Mario is controlled in the same way as a non-powered-up Mario.<br /></span><!-- textbox_id-259 150604: Text updated - TM
+150609: Text updated to fit new "Costume Mario" naming convention - TM -->
+              </p>
+            </div>
+          </div>
+          <!--////【スーパーマリオブラザーズ3】///////////////////////////////////////////////////////////-->
+          <!--<div class="hide">非表示中-->
+          <div id="page-down-soft-smb3" class="balloon-action arrow-02">
+            <div class="action-box">
+              <div class="online-block frame size-M">
+                <div id="03-01-video-frame">
+                  <div class="reserved-video-pos"></div>
+                  <div id="03-01-img" onclick="playVideo( imgElem2VideoId( this ) );">
+                    <img class="videoimg-contents video-height-page3" alt="" />
+                    <img class="ico-play" src="img/overlay_play.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="offline-block frame size-M">
+                <img class="img-contents video-height-page3" src="img/thumb/action_01.jpg" alt="" />
+              </div>
+              <div class="chara-box">
+                <img class="chara-img" src="img/img_page_03_mario02.png" alt="" />
+                <div class="chara-name">
+                  <p><span data-msgid="textbox_id-260">Raccoon Mario</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="dot-line02 dot03">
+              <div class="offline-block"><!--オフライン時の動画の補足-->
+                <div tabindex="0" class="btn-movie" ontouchend='Cmn.onUpBtn(this, "btn-movie")' ontouchstart='Cmn.onDownBtn(this, "btn-movie-select")' ontouchcancel='Cmn.onUpBtn(this, "btn-movie")' onclick="blur(); Cmn.onClickMoreButton(this)" onkeyup="if(event.keyCode==13){ Cmn.onClickMoreButton(this); }"><span data-msgid="textbox_id-261">How to Watch Videos</span>
+                </div>
+                <div class="tips-hide02"><!--非表示中-->
+                  <div class="movie-info">
+                    <p><span data-msgid="textbox_id-262">How to Watch Videos</span>
+                    </p>
+                    <p><span data-msgid="textbox_id-263">Connect to the Internet to watch the videos.</span>
+                    </p>
+                  </div>
+                </div>
+                <!--非表示中-->
+              </div>
+              <!--オフライン時の動画の補足-->
+            </div>
+            <div id="page-down-ctrl-smb3">
+              <div class="ctrllist-space">
+                <img class="soft-mario" src="img/ico_soft02_item.png" />
+              </div>
+              <div id="controller01-smb3-down">
+                <ul class="action-pad">
+                  <li>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-264">Spin tail</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-265"></span>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-266">Fly</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-267">Dash until Mario holds his arms out → Tap  repeatedly</span><!-- textbox_id-267 150604: Text updated - TM -->
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-268">Fall slowly</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-269">Tap  repeatedly in midair or while falling</span><!-- textbox_id-269 150624: Text added - TM -->
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+              
+              <!--Wiiリモコン-->
+              <div id="controller02-smb3-down">
+                <ul class="action-remote">
+                  <li>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-270">Spin tail</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-271"></span>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-272">Fly</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-273">Dash until Mario holds his arms out → Tap  repeatedly</span><!-- textbox_id-273 150604: Text updated - TM -->
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-274">Fall slowly</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-275">Tap  repeatedly in midair or while falling</span><!-- textbox_id-275 150624: Text added - TM -->
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!---////【スーパーマリオワールド】///////////////////////////////////////////////////////////////-->
+          <div id="page-down-soft-smw" class="balloon-action arrow-03">
+            <div class="action-box">
+              <div class="online-block frame size-M">
+                <div id="03-02-video-frame">
+                  <div class="reserved-video-pos"></div>
+                  <div id="03-02-img" onclick="playVideo( imgElem2VideoId( this ) );">
+                    <img class="videoimg-contents video-height-page3" alt="" />
+                    <img class="ico-play" src="img/overlay_play.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="offline-block frame size-M">
+                <img class="img-contents video-height-page3" src="img/thumb/action_02.jpg" alt="" />
+              </div>
+              <div class="chara-box">
+                <img class="chara-img" src="img/img_page_03_mario03.png" alt="" />
+                <div class="chara-name">
+                  <p><span data-msgid="textbox_id-276">Cape Mario</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="dot-line02 dot03">
+              <div class="offline-block"><!--オフライン時の動画の補足-->
+                <div tabindex="0" class="btn-movie" ontouchend='Cmn.onUpBtn(this, "btn-movie")' ontouchstart='Cmn.onDownBtn(this, "btn-movie-select")' ontouchcancel='Cmn.onUpBtn(this, "btn-movie")' onclick="blur(); Cmn.onClickMoreButton(this)" onkeyup="if(event.keyCode==13){ Cmn.onClickMoreButton(this); }"><span data-msgid="textbox_id-277">How to Watch Videos</span>
+                </div>
+                <div class="tips-hide02"><!--非表示中-->
+                  <div class="movie-info">
+                    <p><span data-msgid="textbox_id-278">How to Watch Videos</span>
+                    </p>
+                    <p><span data-msgid="textbox_id-279">Connect to the Internet to watch the videos.</span>
+                    </p>
+                  </div>
+                </div>
+                <!--非表示中-->
+              </div>
+              <!--オフライン時の動画の補足-->
+            </div>
+            <div id="page-down-ctrl-smw">
+              <div class="ctrllist-space">
+                <img class="soft-mario" src="img/ico_soft03_item.png" alt="" />
+              </div>
+              <div id="controller01-smw-down">
+                <ul class="action-pad">
+                  <li>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-280">Open cape</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-281">Dash until Mario holds his arms out →<br />Press and hold  while still holding  →<br />Release  as Mario rises</span><!-- textbox_id-281 150604: No change - TM
+150622: Line breaks added - TM -->
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-282">Descend/Ascend</span><!-- textbox_id-282 150604: No change - TM -->
+                      </dt>
+                      <dd><span data-msgid="textbox_id-283"> in the direction of flight /  against the direction of flight</span><!-- textbox_id-283 150604: No change - TM -->
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-284">Attack with cape</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-285"></span>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-286">Body press</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-287">Press  in the direction you're moving while jumping to descend onto an enemy</span><!-- textbox_id-287 150604: Text updated - TM
+150622: Line break added - TM -->
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-288">Fall / Descend slowly</span><!-- textbox_id-288 150604: Text updated - TM -->
+                      </dt>
+                      <dd><span data-msgid="textbox_id-289">Release  while gliding /<br />Release  while gliding and press <br />or press  when falling</span><!-- textbox_id-289 Text updated
+150604: No change - TM
+150622: Line break added - TM
+150624: Text added at end - TM -->
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-290">Fast dive</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-291">Hold  in the direction of flight</span><!-- textbox_id-291 150622: No change - TM -->
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+              <!--Wiiリモコン-->
+              <div id="controller02-smw-down">
+                <ul class="action-remote">
+                  <li>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-292">Open cape</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-293">Dash until Mario holds his arms out →<br />Press and hold  while still holding  →<br />Release  as Mario rises</span><!-- textbox_id-293 150604: No change - TM
+150622: Line breaks added - TM -->
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-294">Descend/Ascend</span><!-- textbox_id-294 150604: No change - TM -->
+                      </dt>
+                      <dd><span data-msgid="textbox_id-295"> in the direction of flight /  against the direction of flight</span><!-- textbox_id-295 150604: No change - TM -->
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-296">Cape attack</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-297"></span>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-298">Body press</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-299">Press  in the direction you're moving while jumping<br />to descend onto an enemy</span><!-- textbox_id-299 150604: Text updated - TM
+150622: Line break added - TM -->
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-300">Fall / Descend slowly</span><!-- textbox_id-300 150604: Text updated - TM -->
+                      </dt>
+                      <dd><span data-msgid="textbox_id-301">Release  while gliding /<br />Release  while gliding and press <br />or press  when falling</span><!-- textbox_id-301 Text updated
+150604: No change - TM
+150622: Line break added - TM
+150624: Text added at end - TM -->
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-302">Fast dive</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-303">Hold  in the direction Mario is flying</span><!-- textbox_id-303 150622: No change - TM -->
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!--////【NEWスーパーマリオブラザーズU】///////////////////////////////////////////////////////////-->
+          <div id="page-down-soft-smbU" class="balloon-action arrow-04">
+            <div class="action-box">
+              <div class="online-block frame size-M">
+                <div id="03-03-video-frame">
+                  <div class="reserved-video-pos"></div>
+                  <div id="03-03-img" onclick="playVideo( imgElem2VideoId( this ) );">
+                    <img class="videoimg-contents video-height-page3" alt="" />
+                    <img class="ico-play" src="img/overlay_play.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="offline-block frame size-M">
+                <img class="img-contents video-height-page3" src="img/thumb/action_03.jpg" alt="" />
+              </div>
+              <div class="chara-box">
+                <img class="chara-img" src="img/img_page_03_mario04.png" alt="" />
+                <div class="chara-name">
+                  <p><span data-msgid="textbox_id-304">Propeller Mario</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="dot-line02 dot03">
+              <div class="offline-block"><!--オフライン時の動画の補足-->
+                <div tabindex="0" class="btn-movie" ontouchend='Cmn.onUpBtn(this, "btn-movie")' ontouchstart='Cmn.onDownBtn(this, "btn-movie-select")' ontouchcancel='Cmn.onUpBtn(this, "btn-movie")' onclick="blur(); Cmn.onClickMoreButton(this)" onkeyup="if(event.keyCode==13){ Cmn.onClickMoreButton(this); }"><span data-msgid="textbox_id-305">How to Watch Videos</span>
+                </div>
+                <div class="tips-hide02"><!--非表示中-->
+                  <div class="movie-info">
+                    <p><span data-msgid="textbox_id-306">How to Watch Videos</span>
+                    </p>
+                    <p><span data-msgid="textbox_id-307">If you connect to the Internet, you can watch videos.</span>
+                    </p>
+                  </div>
+                </div>
+                <!--非表示中-->
+              </div>
+              <!--オフライン時の動画の補足-->
+            </div>
+            <div id="page-down-ctrl-smbU">
+              <div class="ctrllist-space">
+                <img class="soft-mario" src="img/ico_soft04_item.png" alt="" />
+              </div>
+              <div id="controller01-smbU-down"><!--非表示中-->
+                <ul class="action-pad">
+                  <li>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-308">Fly</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-309">///</span><!-- textbox_id-309 150604: No change - TM
+150622: No change - TM -->
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-310">Propeller fall</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-311"> during flight</span><!-- textbox_id-311 150622: No change - TM -->
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+              <!--Wiiリモコン-->
+              <div id="controller02-smbU-down"><!--非表示中-->
+                <ul class="action-remote">
+                  <li>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-312">Fly</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-313">Shake </span>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><span data-msgid="textbox_id-314">Propeller fall</span>
+                      </dt>
+                      <dd><span data-msgid="textbox_id-315"> during flight</span><!-- textbox_id-315 150622: No change - TM -->
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mashiko-imgR">
+          <img class="mashiko-02" src="img/img_mashiko_02.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--part-->
+    
+  </div>
+  <!--bg03-->
+  
+</section>
+<!--part-->
+
+<div class="footer page-03">
+  <div class="toppage-link"><span data-msgid="textbox_id-316"><a href="page_00.xhtml" class="btn-toplink" ontouchend='Cmn.onUpBtn(this, "btn-toplink")' ontouchstart='Cmn.onDownBtn(this, "btn-toplink-select")' ontouchcancel='Cmn.onUpBtn(this, "btn-toplink")'>Back to Main Menu</a></span>
+  </div>
+</div>
+
+
+<!-- textbox_id_counter-317 --></body>
+</html>
