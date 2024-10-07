@@ -1,0 +1,952 @@
+﻿@charset "utf-8";
+
+
+body {
+	background-color: #ffd300;
+	overflow: hidden;
+	position: relative;
+}
+/*ワープゾーンでは背景を黒に*/
+body.warp {
+	background-color: #000;
+}
+.center {
+	text-align: center;
+}
+/* ///////　構造(シーン)　/////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+.scene01 {/* ファーストビュー */
+	height: 480px;
+}
+.scene02 {/* 暗証番号入力画面 */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 854px;
+	height: 480px;
+}
+.scene03 {/*隠しページ*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 854px;
+	display: none;
+	padding-bottom: 60px;
+}
+.scene04 {/*ワープ*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 854px;
+	height: 480px;
+	display: none;
+}
+.scene01.shown, .scene02.shown, .scene03.shown, .scene04.shown {
+	display: block;
+}
+.scene01.hidden, .scene02.hidden, .scene03.hidden, scene04.hidden, .fade.hidden-end {
+	display: none;
+}
+/* ///////　遷移アニメ　//////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+@-webkit-keyframes fadeIn {
+ 0% {opacity:0;
+     display:none;}
+ 1% {opacity:0;
+     display:block;}
+ 100% {opacity:1;
+     display:block;}
+}
+ @-webkit-keyframes fadeOut {
+ 0% {opacity:1;
+     display:block;}
+ 100% {opacity:0;
+       display:none;}
+}
+.fade {/* 場面切り替え用フェード */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+.fade.shown {
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: both;
+}
+.fade.hidden {
+	-webkit-animation-name: fadeOut;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: both;
+}
+/* ///////　scene01　//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.main {/* メイン */
+	position: relative;
+	margin-top: 5px;
+}
+/* 両脇のイラスト */
+.subL {
+	position: absolute;
+	left: 30px;
+	bottom: 0;
+	width: 70px;
+	height: 154px;
+}
+.subL_btn {
+	position: absolute;
+	left: 13px;
+	bottom: 150px;
+	width: 120px;
+	height: 134px;
+	background: url(../img/img_page_00_balloon.png);
+	background-size: 120px 134px;
+}
+.subL_btn.select {
+	position: absolute;
+	left: 13px;
+	bottom: 152px;
+	width: 120px;
+	height: 134px;
+	background: url(../img/img_page_00_balloon_s.png);
+	background-size: 120px 134px;
+}
+.subL_btn + p {
+	position: absolute;
+	display: table;
+	left: 22px;
+	bottom: 203px;
+	width: 105px;
+	height: 60px;
+	vertical-align: middle;
+	text-align: center;
+}
+.balloon-btn {
+	display: table-cell;
+	font-size: .6rem;
+	line-height: 1.1;
+	height: 60px;
+	vertical-align: middle;
+	color: #666;
+}
+.subR-flag {
+	position: absolute;
+	right: 121px;
+	bottom: 232px;
+	width: 45px;
+	height: 100px;
+}
+.subR {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 132px;
+	height: 350px;
+}
+div.balloon-cursor {
+	position: absolute;
+	width: 120px;
+	height: 136px;
+	left: 13px;
+	bottom: 150px;
+}
+/* ボタンの範囲 */
+.center-area {
+	width: 600px;
+	height: 345px;
+	margin: 0 auto;
+	padding: 2px 0 10px;
+}
+.mainebtn-space {/* メインボタンの場所 */
+	width: 580px;
+	margin: 10px auto 0;
+}
+.mainebtn-space02 {/* メインボタンの場所 */
+	width: 580px;
+	margin: 5px auto 0;
+}
+.first-footer {/* 鍵 */
+	position: relative;
+	height: 70px;
+	background: #ffd100 url(../img/img_page_00_block.gif) repeat top;
+	background-size: 35px 35px;
+}
+/* ///////　テンプレートページへのリンクボタン　////////////////
+-------------------------------------------------------*/
+.temp-space {
+	float: right;
+	font-size: 0;
+}
+.temp-space a {
+	display: inline-block;
+	padding: 0 18px;
+	border-left: 2px solid #ddd;
+}
+.font_minibtn {/* その他6つのボタンの文字  */
+	display: inline-block;
+	font-size: 14px;
+	color: #666;
+	margin-top: 10px;
+}
+span.font_minibtn img {
+	height: 1.2em;
+	vertical-align: middle;
+}
+/* アニメ */
+.minibtn {
+	height: 44px;
+}
+.minibtn-select {
+	background: #ddd;
+	height: 44px;
+}
+/* ///////　メインページへのリンクボタン　////////////////
+-------------------------------------------------------*/
+.button_space {
+	text-align: center;
+	width: 100%;
+	border-spacing: 8px 8px;
+}
+.button_space li {
+	display: table-cell;
+	width: 30%;
+	vertical-align: middle;/*消すと押す位置がずれる*/
+}
+.button_space li a {
+	display: table;
+	width: 178px;
+	padding: 3px 2px 5px;
+	border-spacing: 2px 0px;
+}
+/* 通常時 */
+.btn-01, .btn-05, .btn-06{
+	padding: 2px 0 2px;
+	box-shadow: rgba(0,0,0,0.2) 0 8px 0 0, rgba(0,0,0,0.1) 0 -4px 0 0 inset;
+	border-radius: 28px;
+}
+.btn-01 {background: #FF5154;}
+.btn-05 {background: #4EB91A;}
+.btn-06 {background: #0096DC;}
+.btn-01 .anim-icon, .btn-05 .anim-icon, .btn-06 .anim-icon {
+	width: 170px;
+	height: 65px;
+}
+.btn-01 .anim-icon {
+	background: url(../img/ico_index_make01.png) no-repeat;
+	background-position: 30px 5px;
+}
+.btn-05 .anim-icon {
+	background: url(../img/ico_index_robot01.png) no-repeat;
+	background-position: 30px 5px;
+}
+.btn-06 .anim-icon {
+	background: url(../img/ico_index_play01.png) no-repeat;
+	background-position: 30px 5px;
+}
+.btn {
+	background: #F5F5F5;
+	box-shadow: rgba(0,0,0,0.2) 0 8px 0 0, rgba(0,0,0,0.15) 0 -4px 0 0 inset;
+	border-radius: 10px;
+	padding: 0 2px;
+}
+/* 選択時 */
+
+.btn-01-select, .btn-05-select, .btn-06-select{
+	border-radius: 28px;
+	padding: 3px 0 1px;
+}
+.btn-01-select {
+	background: #F13C3F;
+	box-shadow: #C32729 0 4px 0 0 inset, #F13C3F 0 4px 0 0;
+}
+.btn-05-select {
+	background: #2CAA22;
+	box-shadow: #1E9241 0 4px 0 0 inset, #2CAA22 0 4px 0 0;
+}
+.btn-06-select {
+	background: #3A91BB;
+	box-shadow: #0385A6 0 4px 0 0 inset, #3A91BB 0 4px 0 0;
+}
+.btn-01-select .anim-icon, .btn-05-select .anim-icon, .btn-06-select .anim-icon {
+	width: 170px;
+	height: 65px;
+}
+.btn-01-select .anim-icon {
+	background: url(../img/ico_index_make02.png) no-repeat;
+	background-position: 30px 5px;
+}
+.btn-05-select .anim-icon {
+	background: url(../img/ico_index_robot02.png) no-repeat;
+	background-position: 30px 5px;
+}
+.btn-06-select .anim-icon {
+	background: url(../img/ico_index_play02.png) no-repeat;
+	background-position: 30px 5px;
+}
+.btn-select {
+	background: #FFFADB;
+	box-shadow: #EBD67E 0 2px 0 0 inset;
+	border-radius: 10px;
+	padding: 0 2px;
+}
+/* (6)アイコンの囲み */
+.btn .btn-icon {
+	display: table-cell;
+	width: 40px;
+	vertical-align: middle;
+	padding: 2px 0 2px;
+}
+.btn-select .btn-icon {
+	display: table-cell;
+	width: 40px;
+	vertical-align: middle;
+	padding: 4px 0 0px;
+}
+/* （6）アイコン  */
+
+.page-icon {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.page-icon img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 28px;
+	height: 28px;
+}
+/* フォント */
+/* （3）フォント中心揃え  */
+.font-txt {
+	width: 170px;
+	height: 55px;
+	overflow: hidden;
+}
+.font_btn {
+	display: table-cell;
+	width: 170px;
+	height: 55px;
+	vertical-align: middle;
+	line-height: 1.1;
+	font-size: .9rem;
+	color: #fff;
+	text-shadow: 0 -2px rgba(9, 77, 128, 0.2);
+}
+/* （6）フォント中心揃え  */
+.btn .font_btn_w {
+	display: table-cell;
+	height: 45px;
+	line-height: 1.2;
+	vertical-align: middle;
+	font-size: .65rem;
+	color: #555;
+	padding: 2px 0 2px;
+	padding-left: 5px;
+	text-align: left;
+	overflow: hidden;
+}
+.btn-select .font_btn_w {
+	display: table-cell;
+	height: 45px;
+	line-height: 1.2;
+	vertical-align: middle;
+	font-size: .65rem;
+	color: #EFAA00;
+	padding: 4px 0 0px;
+	padding-left: 5px;
+	text-align: left;
+	overflow: hidden;
+}
+/* ///////　鍵ボタン　////////////////////////////////////////////
+-------------------------------------------------------------*/
+.btn-info {
+	margin-top: 20px;
+	text-align: center;
+	font-size: .55rem;
+	color: #9A6400;
+}
+.form-info {
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: .55rem;
+	color: #fff;
+}
+/* ボタンベース  */
+.btn-key, .btn-key.active, .btn-key.select {
+	position: absolute;
+	right: 300px;
+	width: 250px;
+	height: 52px;
+	margin: 0 auto;
+	border-radius: 10px;
+	vertical-align: middle;
+	text-align: center;
+}
+.btn-key, .btn-key.active {
+	top: 8px;
+	background: #ccc;
+	box-shadow: rgba(0,0,0,0.1) 0 10px 0 0, rgba(0,0,0,0.2) 0 -4px 0 0 inset;
+}
+.btn-key.select {
+	top: 10px;
+	background: #eee;
+	box-shadow: rgba(0,0,0,0.1) 0 4px 0 0, rgba(0,0,0,0.2) 0 -4px 0 0 inset;
+}
+/* 窓  */
+.btn-key .icon-window, .btn-key.select .icon-window {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 4px 0;
+	border-radius: 3px;
+	vertical-align: middle;
+	background: #444;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .1)), color-stop(.5, transparent), to(transparent));
+	background-size: 5px 5px;
+}
+/* 鍵  */
+.btn-key .icon-key, .btn-key.select .icon-key, .btn-key.active .icon-key {
+	display: inline-block;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	margin: 3px 0;
+	vertical-align: middle;
+}
+.btn-key .icon-key, .btn-key.active .icon-key {
+	background: #FF9E00 url(../img/ico_key.png) center no-repeat;
+	background-size: 28px 28px;
+}
+.btn-key.select .icon-key {
+	background: #FFC600 url(../img/ico_key.png) center no-repeat;
+	background-size: 28px 28px;
+}
+/* ///////　scene02　//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.form-scene {/* 暗号入力の場所 */
+	font-size: 10px;
+	width: 420px;
+	margin: 80px auto;
+	padding: 10px 20px 20px 20px;
+	background: #747474;
+	border: 6px solid #ddd;
+	border-radius: 16px;
+	position: relative;
+}
+.corner{
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: #ddd;
+	border-radius: 50%;
+	box-shadow: #555 1px 2px 2px 0, #aaa 0px -1px 1px inset;
+}
+.UL{
+	top: 8px;
+	left: 8px;
+}
+.UR{
+	top: 8px;
+	right: 8px;
+}
+.BL{
+	bottom: 8px;
+	left: 8px;
+}
+/* ///////　暗証番号入力場所の鍵　////////////////////////////
+-------------------------------------------------------------*/
+.key-img {/* ←入力部分 */
+	width: 50px;
+	height: 50px;
+	margin: 3px 10px 3px 0;
+	display: inline-block;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	background: #C0C0C0 url(../img/ico_key.png) center no-repeat;
+	background-size: 45px 45px;
+	vertical-align: middle;
+}
+.key-img.error {
+	background: #555 url(../img/ico_error.png) center no-repeat;
+	border: 3px solid #ddd;
+}
+.key-img.win {/* ←入力部分#FFC600.win */
+	box-shadow: rgba(255,243,76,0.5) 0 0 4px 4px;
+	-webkit-animation: successKeyImgFlashAnim 1.0s infinite;
+}
+/* ///////　フッター（暗号用ボタン）　////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+.output-window {
+	width: 95%;
+	height: 78px;
+	margin: 0 auto 10px;
+	background: #ccc;
+	border: 1px solid #ddd;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	text-align: center;
+}
+.output-window.win {
+	width: 95%;
+	height: 78px;
+	margin: 0 auto 10px;
+	background: #FFAE00;
+	border: 1px solid #FFA600;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	text-align: center;
+}
+.output-window li, .output-window.error li, .output-window.win li {/* 黒窓*/
+	width: 65px;
+	height: 65px;
+	margin: 5px 2px;
+	display: inline-block;
+	background: #aaa;
+	vertical-align: middle;
+	border-radius: 6px;
+}
+.output-window li {/* 【通常時】黒窓*/
+	background: #444;
+	border: 2px solid #ddd;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .1)), color-stop(.5, transparent), to(transparent));
+	background-size: auto 5px;
+}
+.output-window.error li {/* 【はずれ】黒窓*/
+	background: #700000;
+	border: 2px solid #ddd;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .1)), color-stop(.5, transparent), to(transparent));
+	background-image: linear-gradient(rgba(255, 255, 255, .1) 50%, transparent 50%, transparent);
+	-webkit-animation: errorWindowFlashAnim 0.5s infinite;
+	background-size: auto 5px;
+}
+.output-window.win li {/* 【あたり】黒窓*/
+	background: #2D2D2D;
+	border: 2px solid rgba(255,243,76,1);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .1)), color-stop(.5, transparent), to(transparent));
+	box-shadow: rgba(255,243,76,0.7) 0 0 4px 2px;
+	-webkit-animation: successWindowFlashAnim 1.0s infinite;
+	background-size: auto 5px;
+}
+.output-window li>img {
+	margin-top: 20px;
+}
+.output-window.win img.number {/* 【あたり】数字*/
+	-webkit-animation-name: successNumberWave;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-delay: 1.0s; /* MEMO: ウェーブを表現するためにプログラムでDelayを書き換えている*/
+	-webkit-animation-iteration-count: infinity;
+	-webkit-animation-fill-mode: both;
+}
+
+
+/* ///////　暗号入力　失敗時アニメ  ////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+@-webkit-keyframes errorWindowFlashAnim {
+ 0% {background-color: #2D2D2D;}
+ 50% {background-color: #2D2D2D;}
+ 51% {background-color: #700000;}
+ 100% {background-color: #700000;}
+}
+/* ///////　暗号入力　成功時アニメ  ////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+@-webkit-keyframes successKeyImgFlashAnim {
+ 0% {
+background-color: #C0C0C0;
+box-shadow: rgba(255,243,76,0) 0 0 4px 4px;
+}
+ 100% {
+background-color: #FFC600;
+box-shadow: rgba(255,243,76,0.5) 0 0 4px 4px;
+}
+}
+ @-webkit-keyframes successWindowFlashAnim {
+ 0% {box-shadow: rgba(255,243,76,0) 0 0 4px 4px;}
+ 50% {box-shadow: rgba(255,243,76,0.5) 0 0 4px 4px;}
+ 100% {box-shadow: rgba(255,243,76,0) 0 0 4px 4px}
+}
+ @-webkit-keyframes successNumberWave {
+ 0% {-webkit-transform: translateY(0px);}
+ 50% {-webkit-transform: translateY(-32px);}
+ 100% {-webkit-transform: translateY(0px);}
+}
+/* ///////　暗号入力  ////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+.number-btn {/* 暗号用ボタンベース*/
+	display: table;
+	width: 100%;
+	border-collapse: separate;  /* ←ココで余白 */
+	border-spacing: 10px 10px;  /* ←ココで余白 */
+	font-size: 0; /* リスト横並び隙間ハック */
+	text-align: center;
+	border-radius: 6px;
+}
+.number-btn li {/* 1列*/
+	display: table-row;
+	font-size: 0;
+}
+.number-btn div {/* 1ボタン*/
+	display: table-cell;
+	width: 40px;
+}
+.N-btn {
+	padding: 10px 10px;
+	border-radius: 10px;
+}
+.number_font {
+	font-size: 24px;
+}
+/*///暗号用ボタン（通常時）///*/
+.N-default {
+	background: #eee;
+	color: #0856a4;
+	background: #fff;
+	box-shadow: rgba(0,0,0,0.15) 0 6px 0 0, rgba(0,0,0,0.15) 0 -4px 0 0 inset;
+}
+/*///暗号用ボタン（押した時）///*/
+.N-push {
+	background: #7CD4FF;
+	color: #fff;
+}
+/*///暗号用ボタン クリア（通常時）///*/
+.N-clear-default {
+	background: #515151;
+	box-shadow: rgba(0,0,0,0.15) 0 6px 0 0, rgba(0,0,0,0.3) 0 -4px 0 0 inset;
+	color: #fff;
+}
+/*///暗号用ボタン クリア（押した時）///*/
+.N-clear-push {
+	background: #8F8F8F;
+	color: #fff;
+}
+/* ///////　scene03　//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ///////　動画・静止画　//////////
+-----------------------------------*/
+div.frame {/*動画の縁のデザイン*/
+	margin: 15px auto 5px;
+	border-radius: 16px;
+	background: #fff;
+	padding: 8px;
+	width: 65%;
+	position: relative;
+}
+.frame video,.img-contents{/*動画と静止画のサイズ*/
+	width: 100%;
+	vertical-align: bottom;
+}
+.offline.img-contents {/*動画と静止画のサイズ*/
+	border-radius: 10px;
+}
+.page0-video-height {
+	height: 311px;
+}
+#specialVideoImg img.ico-play {/*再生アイコン*/
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 10%;
+}
+/* ///////　テキスト　//////////
+-------------------------------*/
+.movie-text {
+	margin: 18px 160px 20px;
+	color: #412C00;
+	font-size: .8rem;
+}
+.movie-text img {
+	margin-right: 5px;
+	height: 1rem;
+	vertical-align: sub;
+}
+
+/* /////　動画をみるには　/////
+-----------------------------------*/
+.movie-info {
+	display: table;
+	width: 67%;
+	margin: 0px auto 10px;
+	padding: 3px;
+	background: #fff;
+	border-radius: 12px;
+}
+.tips-box .movie-info {
+	margin: 15px auto 10px;
+}
+.movie-info p:first-child {
+	display: table-cell;
+	width: 25%;
+	height: 40px;
+	margin: 1px;
+	padding: 2px;
+	background: #FF8E00;
+	border-radius: 10px;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	font-size: .65rem;
+	line-height: 1.0;
+}
+.movie-info p:last-child {
+	display: table-cell;
+	height: 40px;
+	padding: 2px 0 2px 10px;
+	background: #fff;
+	vertical-align: middle;
+	color: #555;
+	font-size: .65rem;
+	line-height: 1.0;
+}
+/* ///////　閉じるボタン　//////////
+-----------------------------------*/
+.close-btn {
+	position: absolute;
+	padding: 5px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 1.2;
+	font-size: 16px;
+	color: #fff;
+	right: -65px;
+}
+.close-btn>p, .close-btn02>p, .close-btn-warp>p {
+	margin-top: 30px;
+}
+.close-default {/*（通常時）*/
+	bottom: -27px;
+	background: #036EB8;
+	box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 -3px 2px rgba(0, 0, 0, 0.5) inset;
+	text-shadow: -1px -1px 0 #333;
+}
+.close-push {/*（押した時）*/
+	bottom: -28px;
+	background: #42529B;
+}
+
+/* ///////　scene04　//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ///////　閉じるボタン　//////////
+-----------------------------------*/
+.warp-contents>.close-btn {right: 82px;}
+/*///アニメ///*/
+.warp-contents>.close-default {top: -45px;}
+.warp-contents>.close-push {top: -44px;}
+
+/* ///////　動画・静止画　//////////
+-----------------------------------*/
+div.warp-frameR {/*動画の縁のデザイン 右寄せ*/
+	margin: 5px 0 15px 10px;
+	width: 360px;
+	float: right;
+	background: #444;
+	padding: 1px;
+	border-radius: 10px
+}
+div.warp-frameL {/*動画の縁のデザイン 左寄せ*/
+	margin: 10px 15px 15px 0px;
+	width: 340px;
+	float: left;
+	background: #444;
+	padding: 1px;
+	border-radius: 10px
+}
+div.warp-frameless{/*縁なしのデザイン*/
+	margin: 10px;
+	margin-left: 20px;
+	width: 340px;
+	float: right;
+}
+.img-warpcontents {
+	width: 100%;
+	vertical-align: bottom;
+	border-radius: 10px
+}
+
+/* ///////　ワープ　//////////
+-----------------------------------*/
+.warp-back-block {
+	background: #ffd100 url(../img/img_page_00_warp_block2.png ) repeat top;
+	background-size: 32px 32px;
+}
+.warp-back-black {
+	text-align: center;
+	background-color: #000;
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.warp-top-header {
+	position: relative;
+	text-align: center;
+	padding: 98px 0px 92px;
+}
+.warp-top-arrow {
+	text-align: center;
+	padding-bottom: 9px;
+}
+.warp-top-area {
+	text-align: center;
+}
+.warp-top-dokan {
+	position: absolute;
+	left: -2px;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	display: inline;
+}
+.warp-bottom-dokan {
+	position: absolute;
+	left: -2px;
+	right: 0;
+	top: 960px;
+	text-align: center;
+	display: inline;
+}
+.warp-top-mario {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 170px;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+}
+.mario {
+	width: 40px;
+	height: 40px;
+}
+.warp-top-mario.inDokan {
+	-webkit-animation-name: inDokan;
+	-webkit-animation-duration: 1.0s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinity;
+	-webkit-animation-fill-mode: both;
+}
+ @-webkit-keyframes inDokan {
+ 0% {-webkit-transform: translateY(0px);}
+ 100% {-webkit-transform: translateY(90px);}
+}
+
+.warp-bottom-mario {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 1025px;
+	margin: 0 auto;
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
+.warp-bottom-mario.fall {
+	-webkit-animation-name: fall;
+	-webkit-animation-duration: 1.0s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinity;
+	-webkit-animation-fill-mode: both;
+}
+ @-webkit-keyframes fall {
+ 0% {-webkit-transform: translateY(0px);}
+ 100% {-webkit-transform: translateY(90px);}
+}
+.warp-blank {
+	text-align: center;
+	height: 141px;
+}
+.warp-block {
+	position: relative;
+	clear: both;
+	height: 64px;
+	background: #ffd100 url(../img/img_page_00_warp_block.png ) repeat top;
+	background-size: 32px 32px;
+	background-position: 10px 0px;
+	text-align: center;
+}
+/* /////　テキスト　/////
+-----------------------------------*/
+.warp-middle-area {display: block;}
+.warp-middle-area.hidden {display: none;}
+.warp-bottom-area {
+	display: block;
+	background-color: #000;
+}
+.warp-bottom-area.hidden {display: none;}
+
+/* /////　テキスト　/////
+-----------------------------------*/
+.warp-contents {
+	position: relative;
+	min-height: 272px;
+	padding: 140px 80px 10px;
+}
+.warp-text {
+	display: inline;
+	color: #fff;
+	font-size: .7rem;
+}
+h5 {
+	display: inline;
+	margin: 30px 0 5px;
+}
+h2 {
+	margin: 15px 0 30px;
+	text-align: center;
+	font-size: 1.2rem;
+	text-shadow: rgba(44,97,105,.7) 3px 3px 0;
+}
+h2 ~ p, h5 ~ p {
+	margin-bottom: 15px;
+	line-height: 1.6;
+	color: #E7E7E7;
+}
+/* /////　プログラマーの話　/////*/
+.A-txt{color: #FFACAD;}
+.A-txt+p{color: #FFC6C7;}
+.B-txt{color: #A4D0FF;}
+.B-txt+p{color: #C9E8FF;}
+
+/* /////　閉じるボタン  ワープ　/////
+-----------------------------------*/
+.close-default.btn-warp {
+	right: 65px;
+	bottom: 15px;
+}
+.close-push.btn-warp {
+	right: 65px;
+	bottom: 14px;
+}
+/* /////　矢印ボタン （アンカー）/////
+-----------------------------------*/
+.warp-anchor-btn {
+	margin: 10px auto 30px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	background: #036EB8 url(../img/warp/img_anchorbtn.png) center no-repeat;
+	background-position: 15px 12px;
+	box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 -3px 2px rgba(0, 0, 0, 0.5) inset;
+}
+.warp-anchor-btn.select {
+	margin: 11px auto 29px;
+	background: #42529B url(../img/warp/img_anchorbtn.png) center no-repeat;
+	background-position: 15px 12px;
+}
+.offline.page0-video-height{
+	height: auto;
+}

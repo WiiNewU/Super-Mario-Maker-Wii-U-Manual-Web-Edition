@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="3.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier id="BookId">urn:uuid:1b3c50ac-cb95-41af-964a-7faf9e5f8c62</dc:identifier>
+    <dc:title>SUPER MARIO MAKER</dc:title>
+    <dc:language>en-US</dc:language>
+    <dc:date>2015-07-10T00:00:00Z</dc:date>
+    <meta property="dcterms:modified">2015-07-10T00:00:00Z</meta>
+  </metadata>
+  <manifest>
+    <item id="nav_xhtml" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav" />
+    <item id="page_00_xhtml" href="page_00.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_01_xhtml" href="page_01.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_02_xhtml" href="page_02.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_03_xhtml" href="page_03.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_04_xhtml" href="page_04.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_05_xhtml" href="page_05.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_06_xhtml" href="page_06.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_07_xhtml" href="page_07.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_08_xhtml" href="page_08.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_09_xhtml" href="page_09.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_10_xhtml" href="page_10.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_11_xhtml" href="page_11.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_12_xhtml" href="page_12.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_13_xhtml" href="page_13.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_14_xhtml" href="page_14.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_15_xhtml" href="page_15.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_16_xhtml" href="page_16.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_17_xhtml" href="page_17.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="page_18_xhtml" href="page_18.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+    <item id="BodyColor_style_css" href="css/BodyColor_style.css" media-type="text/css" />
+    <item id="BodyTop_style_css" href="css/BodyTop_style.css" media-type="text/css" />
+    <item id="Body_style_css" href="css/Body_style.css" media-type="text/css" />
+    <item id="default_css" href="css/default.css" media-type="text/css" />
+    <item id="staffcredit_style_css" href="css/staffcredit_style.css" media-type="text/css" />
+    <item id="template_region_css" href="css/template_region.css" media-type="text/css" />
+    <item id="Template_style_css" href="css/Template_style.css" media-type="text/css" />
+    <item id="bg_character_png" href="img/bg_character.png" media-type="image/png" />
+    <item id="bg_courseNSM3D_jpg" href="img/bg_courseNSM3D.jpg" media-type="image/jpeg" />
+    <item id="bg_courseSM3_gif" href="img/bg_courseSM3.gif" media-type="image/gif" />
+    <item id="bg_courseSM3_cloud_png" href="img/bg_courseSM3_cloud.png" media-type="image/png" />
+    <item id="bg_courseSM3_cloud02_png" href="img/bg_courseSM3_cloud02.png" media-type="image/png" />
+    <item id="bg_courseSMU_cloud_png" href="img/bg_courseSMU_cloud.png" media-type="image/png" />
+    <item id="bg_courseSMW_gif" href="img/bg_courseSMW.gif" media-type="image/gif" />
+    <item id="bg_courseSMW_cloud_png" href="img/bg_courseSMW_cloud.png" media-type="image/png" />
+    <item id="bg_courseSMW_cloud02_png" href="img/bg_courseSMW_cloud02.png" media-type="image/png" />
+    <item id="bg_paper_D_png" href="img/bg_paper_D.png" media-type="image/png" />
+    <item id="bg_paper_L_png" href="img/bg_paper_L.png" media-type="image/png" />
+    <item id="bg_paper_R_png" href="img/bg_paper_R.png" media-type="image/png" />
+    <item id="bg_paper_U_png" href="img/bg_paper_U.png" media-type="image/png" />
+    <item id="bg_patternD_png" href="img/bg_patternD.png" media-type="image/png" />
+    <item id="bg_patternU_png" href="img/bg_patternU.png" media-type="image/png" />
+    <item id="bnr_page_01_course_gif" href="img/bnr_page_01_course.gif" media-type="image/gif" />
+    <item id="bnr_page_02_course_gif" href="img/bnr_page_02_course.gif" media-type="image/gif" />
+    <item id="bnr_page_03_course_gif" href="img/bnr_page_03_course.gif" media-type="image/gif" />
+    <item id="bnr_page_04_course_gif" href="img/bnr_page_04_course.gif" media-type="image/gif" />
+    <item id="bnr_page_05_course_gif" href="img/bnr_page_05_course.gif" media-type="image/gif" />
+    <item id="bnr_page_06_course_gif" href="img/bnr_page_06_course.gif" media-type="image/gif" />
+    <item id="bnr_page_07_course_gif" href="img/bnr_page_07_course.gif" media-type="image/gif" />
+    <item id="bnr_page_08_course_gif" href="img/bnr_page_08_course.gif" media-type="image/gif" />
+    <item id="bnr_page_16_nlogo_png" href="img/bnr_page_16_nlogo.png" media-type="image/png" />
+    <item id="icon_close_png" href="img/icon_close.png" media-type="image/png" />
+    <item id="icon_flag_1_png" href="img/icon_flag_1.png" media-type="image/png" />
+    <item id="icon_flag_2_png" href="img/icon_flag_2.png" media-type="image/png" />
+    <item id="icon_flag_3_png" href="img/icon_flag_3.png" media-type="image/png" />
+    <item id="icon_key_png" href="img/icon_key.png" media-type="image/png" />
+    <item id="icon_linkbtn_png" href="img/icon_linkbtn.png" media-type="image/png" />
+    <item id="icon_sound01_png" href="img/icon_sound01.png" media-type="image/png" />
+    <item id="icon_sound02_png" href="img/icon_sound02.png" media-type="image/png" />
+    <item id="ico_10mario_png" href="img/ico_10mario.png" media-type="image/png" />
+    <item id="ico_arrow_right_png" href="img/ico_arrow_right.png" media-type="image/png" />
+    <item id="ico_arrow_under_png" href="img/ico_arrow_under.png" media-type="image/png" />
+    <item id="ico_dialog_door_png" href="img/ico_dialog_door.png" media-type="image/png" />
+    <item id="ico_dialog_reset_png" href="img/ico_dialog_reset.png" media-type="image/png" />
+    <item id="ico_error_png" href="img/ico_error.png" media-type="image/png" />
+    <item id="ico_index_make01_png" href="img/ico_index_make01.png" media-type="image/png" />
+    <item id="ico_index_make02_png" href="img/ico_index_make02.png" media-type="image/png" />
+    <item id="ico_index_play01_png" href="img/ico_index_play01.png" media-type="image/png" />
+    <item id="ico_index_play02_png" href="img/ico_index_play02.png" media-type="image/png" />
+    <item id="ico_index_robot01_png" href="img/ico_index_robot01.png" media-type="image/png" />
+    <item id="ico_index_robot02_png" href="img/ico_index_robot02.png" media-type="image/png" />
+    <item id="ico_key_png" href="img/ico_key.png" media-type="image/png" />
+    <item id="ico_loading_png" href="img/ico_loading.png" media-type="image/png" />
+    <item id="ico_make01_png" href="img/ico_make01.png" media-type="image/png" />
+    <item id="ico_mario_jump_png" href="img/ico_mario_jump.png" media-type="image/png" />
+    <item id="ico_miiverse_png" href="img/ico_miiverse.png" media-type="image/png" />
+    <item id="ico_page_00_link01_png" href="img/ico_page_00_link01.png" media-type="image/png" />
+    <item id="ico_page_01_area_png" href="img/ico_page_01_area.png" media-type="image/png" />
+    <item id="ico_page_01_edit_png" href="img/ico_page_01_edit.png" media-type="image/png" />
+    <item id="ico_page_01_gameskin_png" href="img/ico_page_01_gameskin.png" media-type="image/png" />
+    <item id="ico_page_01_gameskin_all_png" href="img/ico_page_01_gameskin_all.png" media-type="image/png" />
+    <item id="ico_page_01_inco_png" href="img/ico_page_01_inco.png" media-type="image/png" />
+    <item id="ico_page_01_mike_png" href="img/ico_page_01_mike.png" media-type="image/png" />
+    <item id="ico_page_01_pallet_png" href="img/ico_page_01_pallet.png" media-type="image/png" />
+    <item id="ico_page_01_parts_pallet_png" href="img/ico_page_01_parts_pallet.png" media-type="image/png" />
+    <item id="ico_page_01_sceneskin_png" href="img/ico_page_01_sceneskin.png" media-type="image/png" />
+    <item id="ico_page_01_sceneskin_all_png" href="img/ico_page_01_sceneskin_all.png" media-type="image/png" />
+    <item id="ico_page_01_sound_pallet_png" href="img/ico_page_01_sound_pallet.png" media-type="image/png" />
+    <item id="ico_page_01_startgoal_png" href="img/ico_page_01_startgoal.png" media-type="image/png" />
+    <item id="ico_page_01_timer_png" href="img/ico_page_01_timer.png" media-type="image/png" />
+    <item id="ico_page_01_trackingBtn_png" href="img/ico_page_01_trackingBtn.png" media-type="image/png" />
+    <item id="ico_page_01_trackingBtn2_png" href="img/ico_page_01_trackingBtn2.png" media-type="image/png" />
+    <item id="ico_page_01_worldplay_png" href="img/ico_page_01_worldplay.png" media-type="image/png" />
+    <item id="ico_page_02_eraser_png" href="img/ico_page_02_eraser.png" media-type="image/png" />
+    <item id="ico_page_03_controlbtn_png" href="img/ico_page_03_controlbtn.png" media-type="image/png" />
+    <item id="ico_page_03_controller01_png" href="img/ico_page_03_controller01.png" media-type="image/png" />
+    <item id="ico_page_03_controller01_2_png" href="img/ico_page_03_controller01_2.png" media-type="image/png" />
+    <item id="ico_page_03_controller02_png" href="img/ico_page_03_controller02.png" media-type="image/png" />
+    <item id="ico_page_03_controller02_2_png" href="img/ico_page_03_controller02_2.png" media-type="image/png" />
+    <item id="ico_page_03_ID_png" href="img/ico_page_03_ID.png" media-type="image/png" />
+    <item id="ico_page_03_mario_png" href="img/ico_page_03_mario.png" media-type="image/png" />
+    <item id="ico_page_03_soft1_jpg" href="img/ico_page_03_soft1.jpg" media-type="image/jpeg" />
+    <item id="ico_page_03_soft2_jpg" href="img/ico_page_03_soft2.jpg" media-type="image/jpeg" />
+    <item id="ico_page_03_soft3_jpg" href="img/ico_page_03_soft3.jpg" media-type="image/jpeg" />
+    <item id="ico_page_03_soft4_jpg" href="img/ico_page_03_soft4.jpg" media-type="image/jpeg" />
+    <item id="ico_page_04_course_png" href="img/ico_page_04_course.png" media-type="image/png" />
+    <item id="ico_page_04_download_png" href="img/ico_page_04_download.png" media-type="image/png" />
+    <item id="ico_page_04_manual_png" href="img/ico_page_04_manual.png" media-type="image/png" />
+    <item id="ico_page_04_menu_png" href="img/ico_page_04_menu.png" media-type="image/png" />
+    <item id="ico_page_04_news_png" href="img/ico_page_04_news.png" media-type="image/png" />
+    <item id="ico_page_04_setting_png" href="img/ico_page_04_setting.png" media-type="image/png" />
+    <item id="ico_page_04_upload_png" href="img/ico_page_04_upload.png" media-type="image/png" />
+    <item id="ico_page_06_clear_png" href="img/ico_page_06_clear.png" media-type="image/png" />
+    <item id="ico_page_06_footprint_png" href="img/ico_page_06_footprint.png" media-type="image/png" />
+    <item id="ico_page_06_play_svg" href="img/ico_page_06_play.svg" media-type="image/svg+xml" />
+    <item id="ico_page_06_search_png" href="img/ico_page_06_search.png" media-type="image/png" />
+    <item id="ico_page_06_yeah_png" href="img/ico_page_06_yeah.png" media-type="image/png" />
+    <item id="ico_page_07_clear_png" href="img/ico_page_07_clear.png" media-type="image/png" />
+    <item id="ico_page_07_follow02_png" href="img/ico_page_07_follow02.png" media-type="image/png" />
+    <item id="ico_page_07_user_png" href="img/ico_page_07_user.png" media-type="image/png" />
+    <item id="ico_page_07_user_svg" href="img/ico_page_07_user.svg" media-type="image/svg+xml" />
+    <item id="ico_page_07_yeah_png" href="img/ico_page_07_yeah.png" media-type="image/png" />
+    <item id="ico_page_09_question_png" href="img/ico_page_09_question.png" media-type="image/png" />
+    <item id="ico_page_09_star_png" href="img/ico_page_09_star.png" media-type="image/png" />
+    <item id="ico_page_10_safe_png" href="img/ico_page_10_safe.png" media-type="image/png" />
+    <item id="ico_page_10_safe_i_png" href="img/ico_page_10_safe_i.png" media-type="image/png" />
+    <item id="ico_page_11_clacon_svg" href="img/ico_page_11_clacon.svg" media-type="image/svg+xml" />
+    <item id="ico_page_11_gamepad_svg" href="img/ico_page_11_gamepad.svg" media-type="image/svg+xml" />
+    <item id="ico_page_11_procon_svg" href="img/ico_page_11_procon.svg" media-type="image/svg+xml" />
+    <item id="ico_page_11_remocon_svg" href="img/ico_page_11_remocon.svg" media-type="image/svg+xml" />
+    <item id="ico_page_11_settings_i_png" href="img/ico_page_11_settings_i.png" media-type="image/png" />
+    <item id="ico_page_14_parecontrol_i_png" href="img/ico_page_14_parecontrol_i.png" media-type="image/png" />
+    <item id="ico_page_16_browser_png" href="img/ico_page_16_browser.png" media-type="image/png" />
+    <item id="ico_page_16_browser_svg" href="img/ico_page_16_browser.svg" media-type="image/svg+xml" />
+    <item id="ico_page_16_navi_png" href="img/ico_page_16_navi.png" media-type="image/png" />
+    <item id="ico_play_png" href="img/ico_play.png" media-type="image/png" />
+    <item id="ico_soft01_item_png" href="img/ico_soft01_item.png" media-type="image/png" />
+    <item id="ico_soft01_mario_png" href="img/ico_soft01_mario.png" media-type="image/png" />
+    <item id="ico_soft02_item_png" href="img/ico_soft02_item.png" media-type="image/png" />
+    <item id="ico_soft02_mario_png" href="img/ico_soft02_mario.png" media-type="image/png" />
+    <item id="ico_soft03_item_png" href="img/ico_soft03_item.png" media-type="image/png" />
+    <item id="ico_soft03_mario_png" href="img/ico_soft03_mario.png" media-type="image/png" />
+    <item id="ico_soft04_item_png" href="img/ico_soft04_item.png" media-type="image/png" />
+    <item id="ico_soft04_mario_png" href="img/ico_soft04_mario.png" media-type="image/png" />
+    <item id="ico_start_goal_length_png" href="img/ico_start_goal_length.png" media-type="image/png" />
+    <item id="ico_start_goal_side_png" href="img/ico_start_goal_side.png" media-type="image/png" />
+    <item id="ico_temple_amiibo_svg" href="img/ico_temple_amiibo.svg" media-type="image/svg+xml" />
+    <item id="ico_temple_contact_svg" href="img/ico_temple_contact.svg" media-type="image/svg+xml" />
+    <item id="ico_temple_controller_svg" href="img/ico_temple_controller.svg" media-type="image/svg+xml" />
+    <item id="ico_temple_internet_svg" href="img/ico_temple_internet.svg" media-type="image/svg+xml" />
+    <item id="ico_temple_parents_svg" href="img/ico_temple_parents.svg" media-type="image/svg+xml" />
+    <item id="ico_temple_rightnotation_svg" href="img/ico_temple_rightnotation.svg" media-type="image/svg+xml" />
+    <item id="ico_touch_png" href="img/ico_touch.png" media-type="image/png" />
+    <item id="ico_video_control_fullscreen_png" href="img/ico_video_control_fullscreen.png" media-type="image/png" />
+    <item id="ico_video_control_play_png" href="img/ico_video_control_play.png" media-type="image/png" />
+    <item id="ico_video_control_pose_png" href="img/ico_video_control_pose.png" media-type="image/png" />
+    <item id="img_amiibologo_png" href="img/img_amiibologo.png" media-type="image/png" />
+    <item id="img_blockM1_png" href="img/img_blockM1.png" media-type="image/png" />
+    <item id="img_blockM1_castle_png" href="img/img_blockM1_castle.png" media-type="image/png" />
+    <item id="img_bowser_png" href="img/img_bowser.png" media-type="image/png" />
+    <item id="img_dog_png" href="img/img_dog.png" media-type="image/png" />
+    <item id="img_dokan_NSM_U_png" href="img/img_dokan_NSM_U.png" media-type="image/png" />
+    <item id="img_dokan_SM3_png" href="img/img_dokan_SM3.png" media-type="image/png" />
+    <item id="img_dokan_SMW_png" href="img/img_dokan_SMW.png" media-type="image/png" />
+    <item id="img_gesso_png" href="img/img_gesso.png" media-type="image/png" />
+    <item id="img_keybtn_png" href="img/img_keybtn.png" media-type="image/png" />
+    <item id="img_img_logo_svg" href="img/img_logo.svg" media-type="image/svg+xml" />
+    <item id="img_logo_L_svg" href="img/img_logo_L.svg" media-type="image/svg+xml" />
+    <item id="img_mario_bg_png" href="img/img_mario_bg.png" media-type="image/png" />
+    <item id="img_mario_markbg_png" href="img/img_mario_markbg.png" media-type="image/png" />
+    <item id="img_mashiko_png" href="img/img_mashiko.png" media-type="image/png" />
+    <item id="img_mashiko_01_png" href="img/img_mashiko_01.png" media-type="image/png" />
+    <item id="img_mashiko_02_png" href="img/img_mashiko_02.png" media-type="image/png" />
+    <item id="img_mashiko_03_png" href="img/img_mashiko_03.png" media-type="image/png" />
+    <item id="img_mashiko_04_png" href="img/img_mashiko_04.png" media-type="image/png" />
+    <item id="img_mashiko_05_gif" href="img/img_mashiko_05.gif" media-type="image/gif" />
+    <item id="img_mashiko_06_gif" href="img/img_mashiko_06.gif" media-type="image/gif" />
+    <item id="img_mashiko_07_gif" href="img/img_mashiko_07.gif" media-type="image/gif" />
+    <item id="img_mashiko_action01_png" href="img/img_mashiko_action01.png" media-type="image/png" />
+    <item id="img_mashiko_action02_png" href="img/img_mashiko_action02.png" media-type="image/png" />
+    <item id="img_mashiko_action03_png" href="img/img_mashiko_action03.png" media-type="image/png" />
+    <item id="img_mashiko_flag_gif" href="img/img_mashiko_flag.gif" media-type="image/gif" />
+    <item id="img_mashiko_robot_png" href="img/img_mashiko_robot.png" media-type="image/png" />
+    <item id="img_mashiko_sad_png" href="img/img_mashiko_sad.png" media-type="image/png" />
+    <item id="img_mushroom_png" href="img/img_mushroom.png" media-type="image/png" />
+    <item id="img_nokonoko_png" href="img/img_nokonoko.png" media-type="image/png" />
+    <item id="img_page_00_balloon_png" href="img/img_page_00_balloon.png" media-type="image/png" />
+    <item id="img_page_00_balloon_s_png" href="img/img_page_00_balloon_s.png" media-type="image/png" />
+    <item id="img_page_00_block_gif" href="img/img_page_00_block.gif" media-type="image/gif" />
+    <item id="img_page_00_warp_block_png" href="img/img_page_00_warp_block.png" media-type="image/png" />
+    <item id="img_page_00_warp_block2_png" href="img/img_page_00_warp_block2.png" media-type="image/png" />
+    <item id="img_page_00_warp_text_png" href="img/img_page_00_warp_text.png" media-type="image/png" />
+    <item id="img_page_01_amiibo_svg" href="img/img_page_01_amiibo.svg" media-type="image/svg+xml" />
+    <item id="img_page_01_block_png" href="img/img_page_01_block.png" media-type="image/png" />
+    <item id="img_page_02_block_png" href="img/img_page_02_block.png" media-type="image/png" />
+    <item id="img_page_03_mario01_png" href="img/img_page_03_mario01.png" media-type="image/png" />
+    <item id="img_page_03_mario02_png" href="img/img_page_03_mario02.png" media-type="image/png" />
+    <item id="img_page_03_mario03_png" href="img/img_page_03_mario03.png" media-type="image/png" />
+    <item id="img_page_03_mario04_png" href="img/img_page_03_mario04.png" media-type="image/png" />
+    <item id="img_page_03_SMW3DYoshi_png" href="img/img_page_03_SMW3DYoshi.png" media-type="image/png" />
+    <item id="img_page_03_SMWYoshi_png" href="img/img_page_03_SMWYoshi.png" media-type="image/png" />
+    <item id="img_page_04_block_png" href="img/img_page_04_block.png" media-type="image/png" />
+    <item id="img_page_05_badge_png" href="img/img_page_05_badge.png" media-type="image/png" />
+    <item id="img_page_05_clear_svg" href="img/img_page_05_clear.svg" media-type="image/svg+xml" />
+    <item id="img_page_05_delete_svg" href="img/img_page_05_delete.svg" media-type="image/svg+xml" />
+    <item id="img_page_07_block_png" href="img/img_page_07_block.png" media-type="image/png" />
+    <item id="img_page_08_block_png" href="img/img_page_08_block.png" media-type="image/png" />
+    <item id="img_page_09_block_jpg" href="img/img_page_09_block.jpg" media-type="image/jpeg" />
+    <item id="img_page_12_amibologo_png" href="img/img_page_12_amibologo.png" media-type="image/png" />
+    <item id="img_page_12_amibologo2_png" href="img/img_page_12_amibologo2.png" media-type="image/png" />
+    <item id="img_page_12_amiibologo_png" href="img/img_page_12_amiibologo.png" media-type="image/png" />
+    <item id="img_page_12_amiibologo2_png" href="img/img_page_12_amiibologo2.png" media-type="image/png" />
+    <item id="img_scroll_arrow_png" href="img/img_scroll_arrow.png" media-type="image/png" />
+    <item id="img_scroll_line_png" href="img/img_scroll_line.png" media-type="image/png" />
+    <item id="img_scroll_pen_png" href="img/img_scroll_pen.png" media-type="image/png" />
+    <item id="img_step_01_1_png" href="img/img_step_01_1.png" media-type="image/png" />
+    <item id="img_step_01_2_png" href="img/img_step_01_2.png" media-type="image/png" />
+    <item id="img_step_02_1_png" href="img/img_step_02_1.png" media-type="image/png" />
+    <item id="img_step_02_2_png" href="img/img_step_02_2.png" media-type="image/png" />
+    <item id="img_step_03_1_png" href="img/img_step_03_1.png" media-type="image/png" />
+    <item id="img_step_03_2_png" href="img/img_step_03_2.png" media-type="image/png" />
+    <item id="img_yamamuraL_png" href="img/img_yamamuraL.png" media-type="image/png" />
+    <item id="overlay_play_png" href="img/overlay_play.png" media-type="image/png" />
+    <item id="pic_choose_jpg" href="img/pic_choose.jpg" media-type="image/jpeg" />
+    <item id="pic_column_01_png" href="img/pic_column_01.png" media-type="image/png" />
+    <item id="pic_column_02_png" href="img/pic_column_02.png" media-type="image/png" />
+    <item id="pic_column_03_png" href="img/pic_column_03.png" media-type="image/png" />
+    <item id="pic_copy_jpg" href="img/pic_copy.jpg" media-type="image/jpeg" />
+    <item id="pic_delete_jpg" href="img/pic_delete.jpg" media-type="image/jpeg" />
+    <item id="pic_mushroom_jpg" href="img/pic_mushroom.jpg" media-type="image/jpeg" />
+    <item id="pic_page_01_edit_jpg" href="img/pic_page_01_edit.jpg" media-type="image/jpeg" />
+    <item id="pic_page_03_charaM_jpg" href="img/pic_page_03_charaM.jpg" media-type="image/jpeg" />
+    <item id="pic_page_04_menu_jpg" href="img/pic_page_04_menu.jpg" media-type="image/jpeg" />
+    <item id="pic_page_06_100mario_jpg" href="img/pic_page_06_100mario.jpg" media-type="image/jpeg" />
+    <item id="pic_page_06_10mario_jpg" href="img/pic_page_06_10mario.jpg" media-type="image/jpeg" />
+    <item id="pic_page_06_course_jpg" href="img/pic_page_06_course.jpg" media-type="image/jpeg" />
+    <item id="pic_page_06_user_jpg" href="img/pic_page_06_user.jpg" media-type="image/jpeg" />
+    <item id="pic_page_07_userInfo_jpg" href="img/pic_page_07_userInfo.jpg" media-type="image/jpeg" />
+    <item id="pic_page_07_userInfo02_jpg" href="img/pic_page_07_userInfo02.jpg" media-type="image/jpeg" />
+    <item id="pic_start_goal_jpg" href="img/pic_start_goal.jpg" media-type="image/jpeg" />
+    <item id="pic_temple_amiibo_png" href="img/pic_temple_amiibo.png" media-type="image/png" />
+    <item id="pic_temple_controlsetting_jpg" href="img/pic_temple_controlsetting.jpg" media-type="image/jpeg" />
+    <item id="img_column_01_png" href="img/column/img_column_01.png" media-type="image/png" />
+    <item id="img_column_02_png" href="img/column/img_column_02.png" media-type="image/png" />
+    <item id="img_column_03_png" href="img/column/img_column_03.png" media-type="image/png" />
+    <item id="img_column_04_png" href="img/column/img_column_04.png" media-type="image/png" />
+    <item id="img_column_05_png" href="img/column/img_column_05.png" media-type="image/png" />
+    <item id="img_column_06_png" href="img/column/img_column_06.png" media-type="image/png" />
+    <item id="img_column_07_png" href="img/column/img_column_07.png" media-type="image/png" />
+    <item id="img_column_08_png" href="img/column/img_column_08.png" media-type="image/png" />
+    <item id="img_column_09_png" href="img/column/img_column_09.png" media-type="image/png" />
+    <item id="img_column_10_png" href="img/column/img_column_10.png" media-type="image/png" />
+    <item id="img_number_0_png" href="img/number/img_number_0.png" media-type="image/png" />
+    <item id="img_number_1_png" href="img/number/img_number_1.png" media-type="image/png" />
+    <item id="img_number_2_png" href="img/number/img_number_2.png" media-type="image/png" />
+    <item id="img_number_3_png" href="img/number/img_number_3.png" media-type="image/png" />
+    <item id="img_number_4_png" href="img/number/img_number_4.png" media-type="image/png" />
+    <item id="img_number_5_png" href="img/number/img_number_5.png" media-type="image/png" />
+    <item id="img_number_6_png" href="img/number/img_number_6.png" media-type="image/png" />
+    <item id="img_number_7_png" href="img/number/img_number_7.png" media-type="image/png" />
+    <item id="img_number_8_png" href="img/number/img_number_8.png" media-type="image/png" />
+    <item id="img_number_9_png" href="img/number/img_number_9.png" media-type="image/png" />
+    <item id="img_number_hyphen_png" href="img/number/img_number_hyphen.png" media-type="image/png" />
+    <item id="img_number_none_png" href="img/number/img_number_none.png" media-type="image/png" />
+    <item id="bg_ground_png" href="img/staffroll/bg_ground.png" media-type="image/png" />
+    <item id="img_staffroll_img_logo_svg" href="img/staffroll/img_logo.svg" media-type="image/svg+xml" />
+    <item id="img_page_10_mario_png" href="img/staffroll/img_page_10_mario.png" media-type="image/png" />
+    <item id="obj_castle_png" href="img/staffroll/obj_castle.png" media-type="image/png" />
+    <item id="obj_castle_flag_png" href="img/staffroll/obj_castle_flag.png" media-type="image/png" />
+    <item id="obj_cloud_01_png" href="img/staffroll/obj_cloud_01.png" media-type="image/png" />
+    <item id="obj_cloud_02_png" href="img/staffroll/obj_cloud_02.png" media-type="image/png" />
+    <item id="obj_grass_png" href="img/staffroll/obj_grass.png" media-type="image/png" />
+    <item id="obj_wood_png" href="img/staffroll/obj_wood.png" media-type="image/png" />
+    <item id="staff_coin_num_gif" href="img/staffroll/staff_coin_num.gif" media-type="image/gif" />
+    <item id="staff_fireworks_gif" href="img/staffroll/staff_fireworks.gif" media-type="image/gif" />
+    <item id="staff_fireworks2_gif" href="img/staffroll/staff_fireworks2.gif" media-type="image/gif" />
+    <item id="staff_fireworks3_gif" href="img/staffroll/staff_fireworks3.gif" media-type="image/gif" />
+    <item id="staff_mask_svg" href="img/staffroll/staff_mask.svg" media-type="image/svg+xml" />
+    <item id="staff_thankyou_gif" href="img/staffroll/staff_thankyou.gif" media-type="image/gif" />
+    <item id="staff_time_2_gif" href="img/staffroll/staff_time_2.gif" media-type="image/gif" />
+    <item id="staff_time_num0_gif" href="img/staffroll/staff_time_num0.gif" media-type="image/gif" />
+    <item id="staff_time_num1_gif" href="img/staffroll/staff_time_num1.gif" media-type="image/gif" />
+    <item id="staff_time_num2_gif" href="img/staffroll/staff_time_num2.gif" media-type="image/gif" />
+    <item id="staff_time_num3_gif" href="img/staffroll/staff_time_num3.gif" media-type="image/gif" />
+    <item id="staff_time_num4_gif" href="img/staffroll/staff_time_num4.gif" media-type="image/gif" />
+    <item id="staff_time_num5_gif" href="img/staffroll/staff_time_num5.gif" media-type="image/gif" />
+    <item id="staff_time_num6_gif" href="img/staffroll/staff_time_num6.gif" media-type="image/gif" />
+    <item id="staff_time_num7_gif" href="img/staffroll/staff_time_num7.gif" media-type="image/gif" />
+    <item id="staff_time_num8_gif" href="img/staffroll/staff_time_num8.gif" media-type="image/gif" />
+    <item id="staff_time_num9_gif" href="img/staffroll/staff_time_num9.gif" media-type="image/gif" />
+    <item id="staff_yama_01_gif" href="img/staffroll/staff_yama_01.gif" media-type="image/gif" />
+    <item id="_0087_jpg" href="img/thumb/0087.jpg" media-type="image/jpeg" />
+    <item id="_01_1_jpg" href="img/thumb/01_1.jpg" media-type="image/jpeg" />
+    <item id="_01_2_jpg" href="img/thumb/01_2.jpg" media-type="image/jpeg" />
+    <item id="_0334_jpg" href="img/thumb/0334.jpg" media-type="image/jpeg" />
+    <item id="_0658_jpg" href="img/thumb/0658.jpg" media-type="image/jpeg" />
+    <item id="_0913_jpg" href="img/thumb/0913.jpg" media-type="image/jpeg" />
+    <item id="_1044_jpg" href="img/thumb/1044.jpg" media-type="image/jpeg" />
+    <item id="_10_1_jpg" href="img/thumb/10_1.jpg" media-type="image/jpeg" />
+    <item id="_10_2_jpg" href="img/thumb/10_2.jpg" media-type="image/jpeg" />
+    <item id="_10_3_jpg" href="img/thumb/10_3.jpg" media-type="image/jpeg" />
+    <item id="_1289_jpg" href="img/thumb/1289.jpg" media-type="image/jpeg" />
+    <item id="_1309_jpg" href="img/thumb/1309.jpg" media-type="image/jpeg" />
+    <item id="_1521_jpg" href="img/thumb/1521.jpg" media-type="image/jpeg" />
+    <item id="_1567_jpg" href="img/thumb/1567.jpg" media-type="image/jpeg" />
+    <item id="_1928_jpg" href="img/thumb/1928.jpg" media-type="image/jpeg" />
+    <item id="_2091_jpg" href="img/thumb/2091.jpg" media-type="image/jpeg" />
+    <item id="_2116_jpg" href="img/thumb/2116.jpg" media-type="image/jpeg" />
+    <item id="_21_1_jpg" href="img/thumb/21_1.jpg" media-type="image/jpeg" />
+    <item id="_21_2_jpg" href="img/thumb/21_2.jpg" media-type="image/jpeg" />
+    <item id="_2374_jpg" href="img/thumb/2374.jpg" media-type="image/jpeg" />
+    <item id="_23_1_jpg" href="img/thumb/23_1.jpg" media-type="image/jpeg" />
+    <item id="_23_2_jpg" href="img/thumb/23_2.jpg" media-type="image/jpeg" />
+    <item id="_2453_jpg" href="img/thumb/2453.jpg" media-type="image/jpeg" />
+    <item id="_2763_jpg" href="img/thumb/2763.jpg" media-type="image/jpeg" />
+    <item id="_29_1_jpg" href="img/thumb/29_1.jpg" media-type="image/jpeg" />
+    <item id="_29_2_jpg" href="img/thumb/29_2.jpg" media-type="image/jpeg" />
+    <item id="_30_0_jpg" href="img/thumb/30_0.jpg" media-type="image/jpeg" />
+    <item id="_30_1_jpg" href="img/thumb/30_1.jpg" media-type="image/jpeg" />
+    <item id="_3452_jpg" href="img/thumb/3452.jpg" media-type="image/jpeg" />
+    <item id="_3578_jpg" href="img/thumb/3578.jpg" media-type="image/jpeg" />
+    <item id="_3754_jpg" href="img/thumb/3754.jpg" media-type="image/jpeg" />
+    <item id="_3891_jpg" href="img/thumb/3891.jpg" media-type="image/jpeg" />
+    <item id="_3928_jpg" href="img/thumb/3928.jpg" media-type="image/jpeg" />
+    <item id="_4008_jpg" href="img/thumb/4008.jpg" media-type="image/jpeg" />
+    <item id="_4102_jpg" href="img/thumb/4102.jpg" media-type="image/jpeg" />
+    <item id="_4486_jpg" href="img/thumb/4486.jpg" media-type="image/jpeg" />
+    <item id="_4568_jpg" href="img/thumb/4568.jpg" media-type="image/jpeg" />
+    <item id="_4766_jpg" href="img/thumb/4766.jpg" media-type="image/jpeg" />
+    <item id="_5011_jpg" href="img/thumb/5011.jpg" media-type="image/jpeg" />
+    <item id="_5421_jpg" href="img/thumb/5421.jpg" media-type="image/jpeg" />
+    <item id="_5623_jpg" href="img/thumb/5623.jpg" media-type="image/jpeg" />
+    <item id="_5783_jpg" href="img/thumb/5783.jpg" media-type="image/jpeg" />
+    <item id="_6012_jpg" href="img/thumb/6012.jpg" media-type="image/jpeg" />
+    <item id="_6074_jpg" href="img/thumb/6074.jpg" media-type="image/jpeg" />
+    <item id="_6134_jpg" href="img/thumb/6134.jpg" media-type="image/jpeg" />
+    <item id="_6391_jpg" href="img/thumb/6391.jpg" media-type="image/jpeg" />
+    <item id="_6498_jpg" href="img/thumb/6498.jpg" media-type="image/jpeg" />
+    <item id="_6695_jpg" href="img/thumb/6695.jpg" media-type="image/jpeg" />
+    <item id="_7065_jpg" href="img/thumb/7065.jpg" media-type="image/jpeg" />
+    <item id="_7147_jpg" href="img/thumb/7147.jpg" media-type="image/jpeg" />
+    <item id="_7842_jpg" href="img/thumb/7842.jpg" media-type="image/jpeg" />
+    <item id="_7962_jpg" href="img/thumb/7962.jpg" media-type="image/jpeg" />
+    <item id="_8129_jpg" href="img/thumb/8129.jpg" media-type="image/jpeg" />
+    <item id="_8237_jpg" href="img/thumb/8237.jpg" media-type="image/jpeg" />
+    <item id="_8641_jpg" href="img/thumb/8641.jpg" media-type="image/jpeg" />
+    <item id="_8743_jpg" href="img/thumb/8743.jpg" media-type="image/jpeg" />
+    <item id="_8889_jpg" href="img/thumb/8889.jpg" media-type="image/jpeg" />
+    <item id="_9189_jpg" href="img/thumb/9189.jpg" media-type="image/jpeg" />
+    <item id="_9373_jpg" href="img/thumb/9373.jpg" media-type="image/jpeg" />
+    <item id="_9435_jpg" href="img/thumb/9435.jpg" media-type="image/jpeg" />
+    <item id="_9481_jpg" href="img/thumb/9481.jpg" media-type="image/jpeg" />
+    <item id="action_01_jpg" href="img/thumb/action_01.jpg" media-type="image/jpeg" />
+    <item id="action_02_jpg" href="img/thumb/action_02.jpg" media-type="image/jpeg" />
+    <item id="action_03_jpg" href="img/thumb/action_03.jpg" media-type="image/jpeg" />
+    <item id="tips_01_jpg" href="img/thumb/tips_01.jpg" media-type="image/jpeg" />
+    <item id="tips_02_jpg" href="img/thumb/tips_02.jpg" media-type="image/jpeg" />
+    <item id="tips_03_jpg" href="img/thumb/tips_03.jpg" media-type="image/jpeg" />
+    <item id="tips_04_jpg" href="img/thumb/tips_04.jpg" media-type="image/jpeg" />
+    <item id="tips_05_jpg" href="img/thumb/tips_05.jpg" media-type="image/jpeg" />
+    <item id="bg_warpzone_middle01_gif" href="img/warp/bg_warpzone_middle01.gif" media-type="image/gif" />
+    <item id="bg_warpzone_middle02_gif" href="img/warp/bg_warpzone_middle02.gif" media-type="image/gif" />
+    <item id="bg_warpzone_middle03_gif" href="img/warp/bg_warpzone_middle03.gif" media-type="image/gif" />
+    <item id="bg_warpzone_middle04_gif" href="img/warp/bg_warpzone_middle04.gif" media-type="image/gif" />
+    <item id="bg_warpzone_middle05_gif" href="img/warp/bg_warpzone_middle05.gif" media-type="image/gif" />
+    <item id="img_anchorbtn_png" href="img/warp/img_anchorbtn.png" media-type="image/png" />
+    <item id="img_attention_png" href="img/warp/img_attention.png" media-type="image/png" />
+    <item id="img_dokan_D_gif" href="img/warp/img_dokan_D.gif" media-type="image/gif" />
+    <item id="img_dokan_U_gif" href="img/warp/img_dokan_U.gif" media-type="image/gif" />
+    <item id="pic_0261_jpg" href="img/warp/pic_0261.jpg" media-type="image/jpeg" />
+    <item id="pic_0261_2_jpg" href="img/warp/pic_0261_2.jpg" media-type="image/jpeg" />
+    <item id="pic_1406_jpg" href="img/warp/pic_1406.jpg" media-type="image/jpeg" />
+    <item id="pic_1406_2_jpg" href="img/warp/pic_1406_2.jpg" media-type="image/jpeg" />
+    <item id="pic_2234_jpg" href="img/warp/pic_2234.jpg" media-type="image/jpeg" />
+    <item id="pic_2958_jpg" href="img/warp/pic_2958.jpg" media-type="image/jpeg" />
+    <item id="pic_8010_png" href="img/warp/pic_8010.png" media-type="image/png" />
+    <item id="common_js" href="js/common.js" media-type="text/javascript" />
+    <item id="epubinfo_js" href="js/epubinfo.js" media-type="text/javascript" />
+    <item id="lanswitch_js" href="js/lanswitch.js" media-type="text/javascript" />
+    <item id="page_00_js" href="js/page_00.js" media-type="text/javascript" />
+    <item id="page_01_js" href="js/page_01.js" media-type="text/javascript" />
+    <item id="page_02_js" href="js/page_02.js" media-type="text/javascript" />
+    <item id="page_03_js" href="js/page_03.js" media-type="text/javascript" />
+    <item id="page_04_js" href="js/page_04.js" media-type="text/javascript" />
+    <item id="page_06_js" href="js/page_06.js" media-type="text/javascript" />
+    <item id="page_07_js" href="js/page_07.js" media-type="text/javascript" />
+    <item id="page_10_js" href="js/page_10.js" media-type="text/javascript" />
+    <item id="specialcontents_js" href="js/specialcontents.js" media-type="text/javascript" />
+    <item id="use_scroll_icon_js" href="js/use_scroll_icon.js" media-type="text/javascript" />
+    <item id="zepto_js" href="js/lib/zepto.min.js" media-type="text/javascript" />
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="page_00_xhtml" />
+    <itemref idref="page_01_xhtml" />
+    <itemref idref="page_02_xhtml" />
+    <itemref idref="page_03_xhtml" />
+    <itemref idref="page_04_xhtml" />
+    <itemref idref="page_05_xhtml" />
+    <itemref idref="page_06_xhtml" />
+    <itemref idref="page_07_xhtml" />
+    <itemref idref="page_08_xhtml" />
+    <itemref idref="page_09_xhtml" />
+    <itemref idref="page_10_xhtml" />
+    <itemref idref="page_11_xhtml" />
+    <itemref idref="page_12_xhtml" />
+    <itemref idref="page_13_xhtml" />
+    <itemref idref="page_14_xhtml" />
+    <itemref idref="page_15_xhtml" />
+    <itemref idref="page_16_xhtml" />
+    <itemref idref="page_17_xhtml" />
+    <itemref idref="page_18_xhtml" />
+  </spine>
+</package>

@@ -1,0 +1,397 @@
+@charset "utf-8";
+/* ///////　テンプレート用CSS　//////////////////////////////////////////////////////////////*/
+
+p {
+	font-size: .85rem;
+	color: #555;
+}
+.tmp-top-bg {
+	padding: 0 60px 15px;
+}
+.tmp-bg {
+	padding: 0 60px 50px;
+}
+/* ///////　見出し　//////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+h2 {
+	margin: 0 0 20px 0;
+	padding: 5px 10px;
+	background: #98adb4;
+	border: 0 solid #000;
+	color: #fff;
+	font-size: 1.8em;
+	text-align: center;
+}
+h3 {
+	margin: 0 0 20px;
+	padding: 5px 10px;
+	background: #98adb4;
+	border: 0 solid #000;
+	border-radius: 6px;
+	color: #fff;
+	font-size: 1.3rem;
+	text-align: center;
+}
+h4 {
+	margin: 0 0 8px 0;
+	font-size: 1.2rem;
+}
+h5 {
+	margin: 20px 0 10px;
+	padding: 5px 10px;
+	background: #98adb4;
+	border: 0 solid #000;
+	color: #fff;
+	font-size: 1rem;
+	border-radius: 6px;
+}
+.tmp-frame {
+	margin: 0 0 20px;
+	padding: 25px 25px;
+	background: #fff;
+	border-radius: 6px;
+}
+.tmp-box {
+	margin: 0 0 20px;
+	padding: 25px 25px;
+	background: #98adb4;
+	border-radius: 6px;
+	color: #fff;
+}
+.tmp-box p {
+	color: #fff;
+}
+.text-box {
+	margin: 0 10px 10px;
+}
+.indent {/* ※ など ぶら下がり */
+	text-indent: -1.4em;
+	margin: 1em 1.5em;
+	clear: both;
+	color: #888;
+	font-size: 0.85rem;
+}
+.text-box img {/* text内の画像 */
+	max-width: 96px;
+	max-height: 34px;
+	vertical-align: middle;
+}
+/* ///////　リンクボタン　//////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+.btn-link {
+	display: table;
+	margin: 32px auto 32px;
+	padding: 7px 24px 11px;
+	background: #f0f0f0;
+	border-radius: 8px;
+	box-shadow: rgba(0,0,0,.06) 0 6px 0 0, rgba(0,0,0,.08) 0 -4px 0 0 inset;
+}
+.btn-link-down {
+	display: table;
+	margin: 33px auto 31px;
+	padding: 9px 24px 9px;
+	background: #c8c8c8;
+	border-radius: 8px;
+	box-shadow: rgba(0,0,0,.06) 0 0 0 0, rgba(0,0,0,.08) 0 4px 0 0 inset;
+}
+.btn-link p, .btn-link-down p, .btn-link-up p {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #323232;
+}
+.btn-link img, .btn-link-down img, .btn-link-up img {
+	position: relative;
+	width: 1.4em;
+	vertical-align: text-top;
+	margin: 0 16px 0 0;
+}
+
+/* /////////////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+/* ------------
+  補足文章
+-------------*/
+.info {/* 補足文　文字が小さい */
+	margin-top: 0.2em;
+	color: #555555;
+}
+.emphasis {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+}
+p.underbar {/* オレンジ色の協調色 */
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #eee;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+}
+/* ///////　見出し　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+.templates h3 {/*黒字に白*/
+	margin: 20px auto 15px;
+	padding: 10px 10px;
+	background: #696969;
+	border: solid;
+	border-radius: 14px;
+	text-align: center;
+	line-height: 1.4;
+	color: #fff;
+}
+.templates h4 {
+	margin: 10px auto;
+	color: #292929;
+}
+.templates p {
+	line-height: 1.7;
+}
+/* ///////　囲み　//////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+.temple-contena {
+	width: 85%;
+	margin: 24px auto;
+}
+.temple-contena ul {
+	text-align: center;
+}
+.template-box {
+	padding: 20px 25px;
+	border-radius: 6px;
+	background-color: #98adb4;
+}
+.template-box h3 {
+	padding: 0;
+	background: none;
+	border: none;
+	text-align: left;
+}
+.template-box p {
+	color: #fff;
+	display: block;
+}
+.tmp-controller {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	margin:6px 0;
+	border-collapse: separate;  /* margin */
+	border-spacing: 8px 0;  /* margin */
+}
+.tmp-controller li {
+	display: table-cell;
+	margin:6px;
+	text-align: center;
+	width:270px;
+	border-radius: 6px;
+	background-color: #eee;
+}
+.tmp-controller p {
+	min-height: 64px;
+	margin: 0px 16px 6px 16px;
+	vertical-align: middle;
+}
+.tmp-controller img {
+	display: inline-block;
+	vertical-align: middle;
+	height: 50px;
+	margin: 16px 24px;
+}
+.tmp-contena-content {
+	min-height: 150px;
+}
+.internet-indent:before {
+	content: "・";
+	color: #fff;
+	margin: 0 8px 0 0;
+}
+.amiibo-top {
+	text-align: center;
+	margin: 8px auto 24px;
+	;
+}
+/* ///////　問い合わせ　////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+.support {
+	width: 90%;
+	margin: 0 auto;
+}
+h3.support-title {/* 黒帯部分 */
+	margin: 0 auto;
+	padding: 15px 10px;
+	background-color: #333333;
+	border: 0;
+	border-radius: 14px 14px 0 0;
+	text-align: center;
+}
+/* -----------------------
+  灰色囲み
+-----------------------*/
+.support .support-contents {
+	margin: 0 auto 30px;
+	padding: 10px 25px 20px;
+	background-color: #E1E1E1;
+	border-radius: 0 0 14px 14px;
+}
+.tel {
+	margin: 15px 0;
+}
+.tel img {
+	display: inline-block;
+	width: 100px;
+	height: auto;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.tel p {
+	display: inline-block;
+	margin: 0;
+	width: 70%;
+	font-size: 2em;
+	vertical-align: middle;
+}
+.note {
+	margin: 0 auto;
+	line-height: 1.2;
+}
+.point_color {
+	color: #FF7600;
+}
+.support .left_side, .support .right_side {
+	display: inline-block;
+	margin: 20px 0 0;
+	vertical-align: top;
+	line-height: 1.5;
+}
+.left_side {
+	padding-right: 5px;
+}
+/* ///////　その他　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+.company {/* 会社名 */
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 0.6rem;
+}
+.right_notation p {/* 権利表記 */
+	margin-top: 30px;
+	font-size: 0.9rem;
+}
+/* ///////　フロート　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+img.float-pict {/*float用*/
+	float: right;
+	width: 40%;
+	height: auto;
+	margin: 0 0 0 20px;
+	border-radius: 3px;
+}
+/* ///////　テンプレートTopページ　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+
+.template {
+	margin: 0 auto;
+}
+.template-contents {
+	text-align: center;
+	font-size: 0;
+}
+.template-contents li {
+	display: inline-block;
+	margin: 4px 8px;
+}
+.tmp-btn {
+	display: inline-block;
+	width: 128px;
+	height: 80px;
+	background: #fff;
+	border-radius: 24px;
+	padding: 0 2px 2px 2px;
+	margin: 0 0 2px 0;
+	box-shadow: rgba(0,0,0,.15) 0 6px 0 0, rgba(0,0,0,0.08) 0 -4px 0 0 inset;
+}
+.tmp-btn-select {
+	display: inline-block;
+	width: 128px;
+	height: 80px;
+	background: #d2d2d2;
+	border-radius: 24px;
+	padding: 2px 2px 0 2px;
+	margin: 0 0 2px 0;
+	box-shadow: rgba(0,0,0,.00) 0 0 0 0, rgba(0,0,0,0.08) 0 4px 0 0 inset;
+}
+.template-contents span {
+	display: table-cell;
+	vertical-align: middle;
+	width: 200px;
+	height: 60px;
+	font-size: 16px;
+	line-height: 22px;
+	color: #424242;
+}
+.template-contents a {
+	display: inline-block;
+	width: 132px;
+	height: 84px;
+}
+/* ///////　お問い合わせ　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+.navidial {
+	margin: 8px 0;
+}
+.navidial p {
+	font-size: 36px
+}
+.navidial img {
+	width: 95px;
+	height: 65px;
+}
+.navidial th {
+	margin: 4px;
+}
+.navidialmidle {
+	display: inline-block;
+	vertical-align: middle;
+}
+.navidialtop {
+	display: inline-block;
+	vertical-align: top;
+}
+.orange {
+	color: #ff8b03;
+}
+/* ///////　トップへ　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+
+.toppage-link-top {
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+.btn-toplink {
+	text-align: center;
+	display: inline-block;
+	margin: 8px auto 1px;
+	padding: 8px 24px;
+	border-radius: 8px;
+	box-shadow: rgba(0,0,0,.15) 0 6px 0 0, rgba(0,0,0,0.08) 0 -4px 0 0 inset;
+	font-size: .8rem;
+	color: #fff;
+	background: #98adb4;
+}
+.btn-toplink-select {
+	text-align: center;
+	display: inline-block;
+	margin: 9px auto 0;
+	padding: 8px 24px;
+	border-radius: 8px;
+	box-shadow: rgba(0,0,0,.00) 0 0 0 0, rgba(0,0,0,0.08) 0 4px 0 0 inset;
+	font-size: .8rem;
+	color: #fff;
+	background: #58747d;
+}

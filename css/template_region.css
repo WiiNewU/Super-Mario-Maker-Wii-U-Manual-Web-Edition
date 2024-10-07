@@ -1,0 +1,430 @@
+@charset "utf-8";
+
+
+/* ///////　日本お問い合わせ出し別け　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+
+.tmp-support-inf-jp,.tmp-support-inf-us,.tmp-support-inf-eu{
+	display:none;
+}
+
+.tmp-support-inf-jp:lang(ja-JP){/* お問い合わせ */
+	display: block;
+}
+/* ///////　北米お問い合わせ出し別け　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+
+.tmp-support-inf-us:lang(en-US){/* お問い合わせ */
+	display: block;
+	text-align: center;
+
+}
+.tmp-support-inf-us:lang(fr-CA){/* お問い合わせ */
+	display: block;
+	text-align: center;
+
+}
+.tmp-support-inf-us:lang(es-US){/* お問い合わせ */
+	display: block;
+	text-align: center;
+
+}
+.tmp-support-inf-us:lang(pt-BR){/* お問い合わせ */
+	display: block;
+	text-align: center;
+
+}
+/* ///////　欧州お問い合わせ出し別け　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+
+.tmp-support-inf-eu:lang(en-GB){/* お問い合わせ */
+	display: block;
+}
+
+.tmp-support-inf-eu:lang(fr-FR){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(de-DE){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(es-ES){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(it-IT){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(nl-NL){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(pt-PT){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(ru-RU){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(en-AU){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(da-DK){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(fi-FI){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(el-GR){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(sv-SE){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(no-NO){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(tr-TR){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(pl-PL){/* お問い合わせ */
+	display: block;
+}
+.tmp-support-inf-eu:lang(cs-CZ)){/* お問い合わせ */
+	display: block;
+}
+
+
+/* ///////　日本製品コード出し別け　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+
+
+.productcode-jp,.productcode-us,.productcode-eu{
+	display:none;
+	position:absolute;
+}
+
+.productcode-jp:lang(ja-JP){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+
+/* ///////　北米製品コード出し別け　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+
+.productcode-us:lang(en-US){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+
+.productcode-us:lang(fr-CA){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-us:lang(es-US){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-us:lang(pt-BR){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+
+/* ///////　欧州製品コード出し別け　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+
+.productcode-eu:lang(en-GB){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(fr-FR){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(de-DE){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(es-ES){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(it-IT){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(nl-NL){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(pt-PT){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(ru-RU){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(en-AU){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(da-DK){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(fi-FI){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(el-GR){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(sv-SE){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(no-NO){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(tr-TR){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(pl-PL){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+.productcode-eu:lang(cs-CZ){/* 製品コード */
+	display:block;
+	position:absolute;
+	right:24px;
+	bottom:0;
+	text-align: right;
+	color:#ccc;
+	font-size:.6rem;
+}
+
+/* ///////　日本ご使用になる前出し別け　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+
+.beforeusing-jp,.beforeusing-us,.beforeusing-eu{
+	display:none;
+}
+
+.beforeusing-jp:lang(ja-JP){
+	display: block;
+}
+
+
+/* ///////　北米ご使用になる前出し別け　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+
+.beforeusing-us:lang(en-US){
+	display: block;
+}
+.beforeusing-us:lang(fr-CA){
+	display: block;
+}
+.beforeusing-us:lang(es-US){
+	display: block;
+}
+.beforeusing-us:lang(pt-BR){
+	display: block;
+}
+
+/* ///////　欧州ご使用になる前出し別け　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+.beforeusing-eu:lang(en-GB){
+	display: block;
+}
+.beforeusing-eu:lang(fr-FR){
+	display: block;
+}
+.beforeusing-eu:lang(de-DE){
+	display: block;
+}
+.beforeusing-eu:lang(es-ES){
+	display: block;
+}
+.beforeusing-eu:lang(it-IT){
+	display: block;
+}
+.beforeusing-eu:lang(nl-NL){
+	display: block;
+}
+.beforeusing-eu:lang(pt-PT){
+	display: block;
+}
+.beforeusing-eu:lang(ru-RU){
+	display: block;
+}
+.beforeusing-eu:lang(en-AU){
+	display: block;
+}
+.beforeusing-eu:lang(da-DK){
+	display: block;
+}
+.beforeusing-eu:lang(fi-FI){
+	display: block;
+}
+.beforeusing-eu:lang(el-GR){
+	display: block;
+}
+.beforeusing-eu:lang(sv-SE){
+	display: block;
+}
+.beforeusing-eu:lang(no-NO){
+	display: block;
+}
+.beforeusing-eu:lang(tr-TR){
+	display: block;
+}
+.beforeusing-eu:lang(pl-PL){
+	display: block;
+}
+.beforeusing-eu:lang(cs-CZ){
+	display: block;
+}
+
+
+
+/* ///////　北米/欧州の英語の時のみ表示　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+.languageselect-en-us,.languageselect-en-eu{
+	display:block;
+}
+
+.languageselect-en-us:lang(en-US){
+	display: none;
+}
+
+.languageselect-en-eu:lang(en-GB){
+	display: none;
+}
+.languageselect-en-eu:lang(en-AU){
+	display: none;
+}
+
+
+/* ///////　北米保護者の方へ　////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+
+.access-us{
+	display: none;
+}
+.access-us:lang(en-US){
+	display:block;
+}
+.access-us:lang(fr-CA){
+	display:block;
+}
+.access-us:lang(es-US){
+	display:block;
+}
+.access-us:lang(pt-BR){
+	display:block;
+}

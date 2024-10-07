@@ -1,0 +1,182 @@
+﻿@charset "utf-8";
+
+.logo~span{
+	margin-left: 20px;
+	font-size: 16px;
+	vertical-align: middle;
+}
+/* ---------------------------------------------------------------------------------------------------------
+    背景
+--------------------------------------------------------------------------------------------------------- */
+div.bg02, div.bg03, div.bg04, div.bg07, div.bg08, div.bg09 {
+	position: relative;
+	margin: 0;
+	padding: 0 80px;
+}
+div.bg01, div.bg05, div.bg06 {
+	position: relative;
+	margin: 0;
+	padding: 0 80px 50px;
+}
+.bg01 {background: #FFaea8;}/*#F5BBC1　FFBABB FFa29f*/
+.bg02 {background: #F8DF91;}
+.bg03 {background: #F8E995;}/*#F8E995*/
+.bg04 {background: #70E9A7;}
+.bg05 {background: #C6FF8C;}
+.bg06 {background: #ADD2EB;}
+.bg07 {background: #9FC2FF;}
+.bg08 {background: #ACA3FB;}
+.bg09 {background: #866400 url(../img/bg_character.png) repeat;}
+.bg10 {
+	position: relative;
+	background: #7d9be6;}
+.bg_under01 {
+	position: relative;
+	background: #98ffe4 url(../img/bg_courseSMW.gif) repeat-x bottom;
+}
+.bg_under02 {
+	position: relative;
+	background: #9be1d7 url(../img/bg_courseSM3.gif) repeat-x bottom;
+}
+.bg_under03 {
+	position: relative;
+	background: #1ca7de url(../img/bg_courseNSM3D.jpg) repeat-x bottom;
+}/*1ca7de 0da0de*/
+.top-margin {
+	margin-top: 100px;
+}
+/* ---------------------------------------------------------------------------------------------------------
+    ヘッダーデザイン
+--------------------------------------------------------------------------------------------------------- */
+.header {
+	height: 46px;
+	padding-top: 2px;
+	padding-left: 90px;
+	background: #EEEEEF;
+}
+.header img.logo {
+	width: 234px;
+	height: 18px;
+	vertical-align: middle;
+}
+.header-icon {
+	float: right;
+	margin-right: 20px;
+	margin-top: 2px;
+}
+.header-icon a, .pickup {
+	position: relative;
+	display: inline-block;
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	vertical-align: middle;
+}
+.header .top-img {
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	width: 24px;
+	height: 24px;
+}
+.header .top-img.here {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 36px;
+	height: 36px;
+}
+/* ---------------------------------------------------------------------------------------------------------
+    ページタイトル
+--------------------------------------------------------------------------------------------------------- */
+.page-01, .box_list01 dt {background: #FF5154;}
+.page-02 {background: #f68900;}
+.page-03 {background: #FAB500;}
+a.page-03,.page-icon.page-03 {background: #FFCE00;}
+.page-04, .box_list04 dt {background: #2fa068;}
+.page-05 {background: #4EB91A;}
+.page-06 {background: #0096DC;}
+.page-07 {background: #2C63D3;}
+.page-08 {background: #654CE3;}
+.page-09 {background: #C38500;}
+
+.page {background: #888;}
+.page-top.page-03 {background: #facd00 url(../img/bnr_page_01_course.gif) repeat-x bottom;}
+.page-top.page-02 {background: #f68900 url(../img/bnr_page_02_course.gif) repeat-x bottom;}
+.page-top.page-01 {background: #ef5e6c url(../img/bnr_page_03_course.gif) repeat-x bottom;}
+.page-top.page-04 {background: #19A668 url(../img/bnr_page_04_course.gif) repeat-x bottom;}
+.page-top.page-05 {background: #4EB91A url(../img/bnr_page_05_course.gif) repeat-x bottom;}
+.page-top.page-06 {background: #0096DC url(../img/bnr_page_06_course.gif) repeat-x bottom;}
+.page-top.page-07 {background: #2C63D3 url(../img/bnr_page_07_course.gif) repeat-x bottom;}
+.page-top.page-08 {background: #654CE3 url(../img/bnr_page_08_course.gif) repeat-x bottom;}
+/* ---------------------------------------------------------------------------------------------------------
+    フッターデザイン
+--------------------------------------------------------------------------------------------------------- */
+.footer {
+	width: 100%;
+	height: 80px;
+}
+.footer.page-03 {
+	background: url(../img/img_page_01_block.png) repeat bottom;
+	background-size: 40px 40px;
+}
+.footer.page-02 {
+	background: url(../img/img_page_02_block.png) repeat bottom;
+	background-size: 40px 40px;
+}
+.footer.page-04 {
+	background: url(../img/img_page_04_block.png) repeat bottom;
+	background-size: 40px 40px;
+}
+.footer.page-07 {
+	background: url(../img/img_page_07_block.png) repeat bottom;
+	background-size: 40px 40px;
+}
+.footer.page-08 {
+	background: url(../img/img_page_08_block.png) repeat bottom;
+	background-size: 40px 40px;
+}
+.footer.page-09 {
+	background: url(../img/img_page_09_block.jpg) repeat bottom;
+	background-size: 40px 40px;
+}
+.footer.page-10 {
+	background: url(../img/img_blockM1.png) repeat bottom;
+	background-size: 40px 40px;
+}
+.footer.page-under02 {
+	background: url(../img/img_blockM1_castle.png) repeat bottom;
+	background-size: 40px 40px;
+}
+/* ---------------------------------------------------------------------------------------------------------
+    文字色
+--------------------------------------------------------------------------------------------------------- */
+.color_02 {color: #FF7000;}
+.color_01 {color: #FF4935;}
+.color_04 {color: #167000;}
+.color_05 {color: #007C25;}
+.color_06 {color: #0096DC;}	/*#001A98*/
+.color_07 {color: #1C3886;}
+/* ---------------------------------------------------------------------------------------------------------
+   ドット線
+--------------------------------------------------------------------------------------------------------- */
+.dot02, .dot03, .dot04, .dot05, .dot06 {
+	clear: both;
+}
+.dot02 {border-top: 2px dotted #FFB448;}
+.dot03 {border-bottom: 2px dotted #facd00;}
+.dot04 {border-top: 2px dotted #00B574;}
+.dot05 {border-top: 2px dotted #69D000;}
+.dot06 {
+	margin: 30px 0;
+	padding-top: 30px;
+	border-top: 2px dotted #ADD2EB;
+	text-align: center;
+}
+.topic-box.dot04, .topic-box.dot05 {/* 丸アイコン付き */
+	padding: 40px 10px 15px;
+}
+.topic-box.dotless {/* 丸アイコン付き */
+	padding: 40px 10px 15px;
+	margin-top: 40px;
+}

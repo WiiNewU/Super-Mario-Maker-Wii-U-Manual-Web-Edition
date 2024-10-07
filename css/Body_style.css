@@ -1,0 +1,1943 @@
+﻿@charset "utf-8";
+/* ///////　共通　////////////////////////////////////////////////////////////////
+--------------------------------------------------------------------------------*/
+h1 {
+	font-size: 2rem;
+	line-height: 1.3;
+}
+h2 {/* ページタイトル */
+	font-size: 1.8rem;
+	line-height: 1.3;
+	color: #fff;
+}
+h3 {/* 大見出し */
+	font-size: 1.6rem;
+	color: #fff;
+}
+h4 {/* 中見出し */
+	font-size: 1.4rem;
+	line-height: 1.3;
+	margin-bottom: 10px;
+}
+h5 {/* 小見出し */
+	font-size: 1.2rem;
+}
+p { /* 本文サイズ */
+	font-size: .85rem;
+	color: #444;
+}
+.center {/* 中央ぞろえ */
+	margin: 0 auto;
+	text-align: center;
+}
+
+sup {/* フランス語対応 */
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    _vertical-align: bottom;
+    position: relative;
+    bottom: 1ex;
+}
+/* ///////　文章内レイアウト　/////////////////
+-------------------------------------------*/
+.indent {
+	padding-top: 10px;
+	padding-left: 1.5em;
+	text-indent: -1.3em;
+	font-size: .75em;
+	color: #777;
+}
+/* テキストリンク */
+a.link-txt {
+	text-decoration: underline;
+	color: #2D5FFF;
+}
+a.link-txt-d {/* ダイアログ内 */
+	text-decoration: underline;
+	color: #00ABFF;
+}
+/* text内の画像 */
+p img, dd img, dt img {
+	height: 1.2em;
+	vertical-align: text-bottom;
+}
+/* ///////　ページタイトル　/////////////////
+-------------------------------------------*/
+.page-top {/* 色替えします */
+	margin-bottom: 25px;
+	padding: 20px 30px 0 85px;
+	position: relative;
+	height: 145px;
+}
+.top-box td:first-child {
+	padding-right: 15px;
+	width: 5%;
+}
+.top-img {
+	width: 86px;
+	height: 86px;
+}
+.top-box h2 {
+	text-shadow: 0 -2px rgba(9, 77, 128, 0.2);
+	margin-bottom: 5px;
+}
+.text-sub {/* サブテキスト */
+	color: rgba(255,255,255,0.95);
+	font-size: .78rem;
+	text-shadow: 0 -2px rgba(9, 77, 128, 0.1);
+	line-height: 1.2;
+}
+/* ///////　バストアップましこ　//////////////
+-------------------------------------------*/
+.comment-box, .comment-box-sad {
+	position: relative;
+	margin: 30px 10px 20px;
+	min-height: 165px;
+	border-radius: 30px;
+}
+.comment-box {
+	background: #fff;
+}
+.comment-box-sad {
+	background: #777;
+}
+.comment {/* ましこが喋っている内容 */
+	padding: 20px 0 20px 40px;
+	width: 72%;
+}
+.comment-sad {/* 悲しみましこ */
+	color: #fff;
+	font-size: .75rem
+}
+.mashiko img {
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	width: 160px;
+	height: 160px;
+}
+.comment-sad.indent {
+	color: #ddd;
+	line-height: 1.4;
+	font-size: .65rem;
+}
+/* ///////　フッターましこ　/////////////////////////
+-------------------------------------------*/
+.mashiko-imgR {/* ましこを右側に置く */
+	text-align: right;
+}
+img.mashiko-01 {
+	width: 130px;
+	height: 215px;
+}
+img.mashiko-02 {
+	width: 266px;
+	height: 220px;
+}
+img.mashiko-04 {
+	margin: 30px 0 0;
+	width: 270px;
+	height: 190px;
+}
+img.mashiko-03 {
+	margin-top: 100px;
+	width: 340px;
+	height: 108px;
+}
+img.mashiko-05 {
+	width: 294px;
+	height: 235px;
+}
+img.mashiko-07 {
+	width: 350px;
+	height: 278px;
+}
+img.dog {
+	width: 77px;
+	height: 62px;
+	vertical-align: bottom;
+}
+/* ///////　動画・静止画　///////////////////
+-------------------------------------------*/
+.frame {/*動画・画面の装飾*/
+	background: #fff;
+	padding: 8px;
+	border-radius: 16px;
+}
+.video-contents, .videoimg-contents, .img-contents {/*動画・画像のサイズ*/
+	width: 100%;
+	vertical-align: bottom;
+}
+.video-contents, .videoimg-contents {border-radius: 10px 10px 0 0;}
+.img-contents {border-radius: 8px;}
+
+.size-half {/*動画・画像の右寄せfloat*/
+	width: 332px;
+	float: right;
+	margin: 0 0 13px 20px;
+}
+.size-M {/*動画・画像の右寄せfloat*/
+	width: 400px;
+	float: right;
+	margin: 0 0 13px 20px;
+} 
+.online-block {
+	display: none;
+	position: relative;
+}
+.video-contents { display: none;}
+.video-height-page2 { height: 186px;}
+.video-height-page3 { height: 224px;}
+.ico-play {/*再生アイコン*/
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 15%;
+}
+/* ///////　フレーム　01.06/////////////////
+-------------------------------------------*/
+.frame-box {
+	position: relative;
+	padding: 10px 20px;
+	margin: 30px 0 40px;
+	border-radius: 16px;
+	background: rgba(255,255,255,0.95);
+}
+.icon-flag {
+	position: absolute;
+	top: 0;
+	left: 30px;
+	width: 80px;
+	height: 80px;
+	background-position: 10px 10px;
+	box-shadow: rgba(0,0,0,0.1) 0 2px 2px 0;
+	border-radius: 0 0 10px 10px;
+}
+.txt-box {/* 文章 */
+	margin: 15px 30px;	
+}
+.txt-contents {
+	margin: 20px 10px;
+	text-align: left;
+}
+/* /////　見出し/////
+---------------------------*/
+.title-large {/* 遊ぶ各項目のタイトル */
+	margin-left: 115px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	font-size: 1.4rem;
+}
+.title-middle {/*02の見出し*/
+	margin-bottom: 25px;
+	line-height: 1.2;
+}
+.title-small {/* 世界のコースのタイトル */
+	margin: 0px auto 10px;
+	text-align: center;
+	width: 85%;
+	padding: 10px 30px;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 1.1rem;
+	line-height: 1.2;
+}
+.title-margin{
+	margin-top: 20px; 
+	padding-top: 20px;
+}
+/* ///////　まるアイコン見出し　////////////
+-------------------------------------------*/
+.topic-box {/* 丸アイコン付き */
+	display: table;
+}
+.topic-img {
+	display: table-cell;
+	width: 20%;
+	vertical-align: top;
+}
+.topic-txt {
+	display: table-cell;
+	width: 80%;
+	padding: 0 15px 25px 25px;
+}
+.circle-icon {
+	position: relative;
+	border-radius: 50%;
+	height: 110px;
+	width: 110px;
+	background: #fff;
+	border: 18px solid #ccc;
+}
+.circle-icon img {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 100px;
+	height: 100px;
+}
+.margin-space {
+	margin-top: 80px;
+}
+/* ///////　ボタン類　//////////////////////
+-------------------------------------------*/
+/* ///////トップへ戻る　/////////
+-------------------------------------------*/
+.btn-toplink {
+	text-align: center;
+	display: inline-block;
+	margin: 17px auto 2px;
+	padding: 6px 24px 10px 55px;
+	border-radius: 10px;
+	background: #fff url(../img/ico_mario_jump.png) no-repeat;
+	background-position: 12px 7px;
+	background-size: 30px 30px;
+	box-shadow: rgba(0,0,0,0.45) 0 12px 0 0, rgba(0,0,0,0.2) 0 -4px 0 0 inset;
+	font-size: 0.85rem;
+	color: #666;
+}
+.btn-toplink-select {
+	text-align: center;
+	display: inline-block;
+	margin: 18px auto 1px;
+	padding: 6px 24px 10px 55px;
+	background: #ABABAB url(../img/ico_mario_jump.png) no-repeat;
+	background-position: 12px 7px;
+	background-size: 30px 30px;
+	border-radius: 10px;
+	box-shadow: rgba(0,0,0,0.08) 0 4px 0 0 inset;
+	font-size: 0.85rem;
+	color: #fff;
+	text-shadow: 0 -2px #aaa;
+}
+
+/* /////　動画について　/////
+---------------------------*/
+.btn-movie {
+	display: inline-block;
+	clear: both;
+	float: right;
+	margin: 5px 0 18px;
+	padding: 2px 40px;
+	border-radius: 10px;
+	background: #FF8600;
+	box-shadow: rgba(0,0,0,0.05) 0 8px 0 0, rgba(0,0,0,0.15) 0 -4px 0 0 inset;
+	text-align: center;
+	font-size: .85rem;
+	color: #fff;
+}
+.btn-movie-select {
+	display: inline-block;
+	clear: both;
+	float: right;
+	margin: 6px 0 16px;
+	padding: 2px 40px;
+	border-radius: 10px;
+	background: #AD5C00;
+	text-align: center;
+	font-size: .85rem;
+	color: #fff;
+}
+/* 文章 */
+.movie-info {
+	display: table;
+	clear: right;
+	width: 98%;
+	margin: 0px auto 10px;
+	padding: 3px;
+	background: #fff;
+	border-radius: 12px;
+}
+.tips-box .movie-info {
+	margin: 15px auto 10px;
+}
+.movie-info p:first-child {
+	display: table-cell;
+	width: 25%;
+	height: 40px;
+	margin: 1px;
+	padding: 2px;
+	background: #FF8E00;
+	border-radius: 10px;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	font-size: .65rem;
+	line-height: 1.0;
+}
+.movie-info p:last-child {
+	display: table-cell;
+	height: 40px;
+	padding: 2px 0 2px 10px;
+	background: #fff;
+	vertical-align: middle;
+	color: #555;
+	font-size: .65rem;
+	line-height: 1.0;
+}
+/* ////　リンクに　//////////
+---------------------------*/
+.btn-link img, .btn-link-select img {
+	height: 1em;
+	vertical-align: text-bottom;
+}
+.btn-link img:first-child, .btn-link-select img:first-child { margin-right: 8px;}
+.btn-link {
+	display: inline-block;
+	margin: 20px auto 2px;
+	padding: 2px 20px 7px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: .8rem;
+	background: #eee;
+	box-shadow: rgba(0,0,0,0.15) 0 8px 0 0, rgba(0,0,0,0.2) 0 -4px 0 0 inset;
+	color: #888;
+}
+.btn-link-select {
+	display: inline-block;
+	margin: 21px 0 1px;
+	padding: 2px 20px 7px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: .8rem;
+	background: #ccc;
+	color: #666;
+}
+/* ---------------------------------------------------------------------------------------------------------
+    P1
+--------------------------------------------------------------------------------------------------------- */
+/* ///////　ステップのサイクル　/////////////
+-------------------------------------------*/
+.cycle-space {
+	margin: 0 auto 50px;
+}
+.cycle-image {
+	display: table;
+	width: 100%;
+	text-align: center;
+}
+.cycle-image li {/* 横一列 */
+	display: table-row;
+}
+.cycle-image dl:nth-child(odd) {/* 一項目 */
+	display: table-cell;
+	width: 30%;
+	color: #333;
+	font-size: .85rem;
+	text-align: -webkit-center;
+}
+.cycle-image dl:nth-child(even) {/* 一項目 */
+	display: table-cell;
+	width: 5%;
+	font-size: .85rem;
+	vertical-align: middle;
+}
+.cycle-image dd {
+	padding: 5px 0;
+	height: 34px;
+}
+.circle-link {
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+	background: #eee;
+	border: 15px solid #ccc;
+	box-shadow: rgba(0,0,0,0.2) 0 6px 0 0;
+}
+.circle-link.select {
+	background: #fff;
+	border: 15px solid #FF5B5E;
+	box-shadow: rgba(0,0,0,0.2) 0 0 0 0;
+}
+.circle-link .step-img01, .circle-link .step-img02, .circle-link .step-img03 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 120px;
+	width: 120px;
+}
+.circle-link .step-img01 {
+	background: url(../img/img_step_01_1.png) no-repeat;
+	background-size: 120px 120px;
+}
+.circle-link .step-img02 {
+	background: url(../img/img_step_02_1.png) no-repeat;
+	background-size: 120px 120px;
+}
+.circle-link .step-img03 {
+	background: url(../img/img_step_03_1.png) no-repeat;
+	background-size: 105px 105px;
+	background-position: 8px 8px;
+}
+.circle-link.select .step-img01 {
+	background: url(../img/img_step_01_2.png) no-repeat;
+	background-size: 120px 120px;
+}
+.circle-link.select .step-img02 {
+	background: url(../img/img_step_02_2.png) no-repeat;
+	background-size: 120px 120px;
+}
+.circle-link.select .step-img03 {
+	background: url(../img/img_step_03_2.png) no-repeat;
+	background-size: 120px 120px;
+}
+p.point {
+	display: table-cell;
+	height: 25px;
+	width: 25px;
+}
+p.point>span {
+	display: inline-block;
+	margin-right: 8px;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	background: -webkit-gradient(linear, center bottom, center top, from(#f7373b), to(#FF5154));
+	color: #fff;
+	text-align: center;
+	font-size: 0.7rem;
+	vertical-align: baseline;
+	line-height: 1.5;
+}
+p.point+span {
+	line-height:1;
+	display:table-cell;
+	vertical-align: middle;
+	text-align: left;
+	font-size: 18px;
+}
+/* /////　ステップのフラッグ　//////
+----------------------------------*/
+.make-icon01 { background: #FF5154 url(../img/icon_flag_1.png) no-repeat;}
+.make-icon02 { background: #FF5154 url(../img/icon_flag_2.png) no-repeat;}
+.make-icon03 { background: #FF5154 url(../img/icon_flag_3.png) no-repeat;}
+/* ---------------------------------------------------------------------------------------------------------
+    P2
+--------------------------------------------------------------------------------------------------------- */
+/* ///////　２カラム　/////////
+-------------------------------*/
+.tips-box {/* 枠 */
+	margin: 0 10px;
+	padding: 35px 5px 40px;
+	overflow: hidden;
+}
+.tips-hide02 {/* ボタン系の非表示 */
+	display: none;
+}
+/* ---------------------------------------------------------------------------------------------------------
+    P3
+--------------------------------------------------------------------------------------------------------- */
+/* ///////　ソフトボタン　４つ　/////////////
+-------------------------------------------*/
+.btn-space-soft {
+	display: table;
+	width: 100%;
+	margin: 30px auto;
+	border-spacing: 10px 0;  /* ←ココで余白 */
+}
+.btn-space-soft li {
+	display: table-cell;
+	width: 22%;
+	text-align: left;
+}
+.btn-soft {
+	background: #fff;
+	box-shadow: rgba(0,0,0,0.05) 0 8px 0 0, rgba(0,0,0,0.25) 0 -4px 0 0 inset;
+	padding: 8px 7px 11px;
+	border-radius: 10px;
+}
+.btn-soft-select {
+	background: #30A3E3;
+	padding: 10px 10px 10px;
+	border-radius: 12px;
+}
+.btn-soft-active {
+	background: #63DFFF;
+	padding: 12px 13px 13px;
+	border-radius: 12px;
+	box-shadow: rgba(0,120,250,0.4) 0 0 6px 2px inset;
+}
+.btn-soft img {
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.3) 0 -1px 0 0;
+}
+.btn-soft-select img,.btn-soft-active img {
+	width: 100%;
+	border-radius: 3px;
+	box-shadow: rgba(0,120,250,0.4) 0 0 5px 2px;
+}
+/* ///////　吹き出し　//////////////////////
+-------------------------------------------*/
+.balloon-action {
+	position: relative;
+	height: auto;
+	background: rgba(255,255,255,0.5);
+	border-radius: 16px;
+	padding: 15px 5px 0;
+	margin-bottom: 50px;
+}
+.balloon-action:after {
+	content: "";
+	position: absolute;
+	margin-left: -20px;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 20px 20px 20px;
+	border-color: transparent transparent rgba(255,255,255,0.5) transparent;
+}
+/* 矢印4通り */
+.arrow-01:after {
+	top: -20px;
+	left: 13%;
+}
+.arrow-02:after {
+	top: -20px;
+	left: 38%;
+}
+.arrow-03:after {
+	top: -20px;
+	left: 62%;
+}
+.arrow-04:after {
+	top: -20px;
+	left: 87%;
+}
+/* ///////　コントロールボタン　P3　/////////
+-------------------------------------------*/
+.ctrllist {
+	position: relative;
+}
+.ctrllist-space01 {
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	z-index: 5;
+}
+.ctrllist-space02 {
+	position: absolute;
+	top: 342px;
+	right: 15px;
+	z-index: 5;
+}
+.ctrllist-space {/* マリオとコントローラーのスペース */
+	margin-top: 10px;
+}
+.btn-space-ctrl {
+	float: right;
+	padding: 7px 0;
+	background: rgba(128,128,128,0.15);
+	border-spacing: 10px 0;  /* ←ココで余白 */
+	border-radius: 60px;
+}
+.btn-space-ctrl li {
+	display: table-cell;
+	width: 60px;
+	height: 60px;
+}
+.btn-control01 {
+	background: #FCFCFC url(../img/ico_page_03_controller01_2.png) no-repeat;
+	box-shadow: rgba(0,0,0,0.1) 0 6px 4px 0, rgba(150,150,150,.7) 0 -4px 0 0 inset;
+	border-radius: 50%;
+	width: 60px;
+    height: 60px;
+}
+.btn-control01-select {
+	background: #0093FF url(../img/ico_page_03_controller01.png) no-repeat;
+	border-radius: 50%;
+	width: 60px;
+    height: 60px;
+}
+.btn-control01-active {
+	background: #0096c8 url(../img/ico_page_03_controller01.png) no-repeat;
+	border-radius: 50%;
+	box-shadow: rgba(0,0,0,.1) 0 2px 0 0 inset;
+	width: 60px;
+    height: 60px;
+}
+.btn-control02 {
+	background: #FCFCFC url(../img/ico_page_03_controller02_2.png) no-repeat;
+	box-shadow: rgba(0,0,0,0.1) 0 6px 4px 0, rgba(150,150,150,.7) 0 -4px 0 0 inset;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+.btn-control02-select {
+	background: #FF3385 url(../img/ico_page_03_controller02.png) no-repeat;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+.btn-control02-active {
+	background: #FF485F url(../img/ico_page_03_controller02.png) no-repeat;
+	border-radius: 50%;
+	box-shadow: rgba(0,0,0,.1) 0 2px 0 0 inset;
+	width: 60px;
+	height: 60px;
+}
+/* ///////　操作ページの表　////////////////////////////////
+-----------------------------------------------------------*/
+.soft-mario {/* ←マリオの画像 */
+	height: 66px;
+	margin-left: 20px;
+}
+.action-pad, .action-remote {
+	display: table;
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 8px 20px;
+	text-align: center;
+	font-size: 0;
+}
+.action-pad li, .action-remote li {/* 横一列 */
+	display: table-row;
+}
+.action-pad dl, .action-remote dl {/* 一項目 */
+	display: table-cell;
+	width: 30%;
+	background: rgba(255,255,255,0.9);
+	color: #5BFF5F;
+	border-radius: 10px;
+}
+.action-pad dt {/* GamePad　操作タイトル */
+	background: #0096c8;
+	color: #fff;
+	font-size: .8rem;
+	padding-bottom: 10px;
+	text-align: left;
+	padding: 8px 5px;
+	border-radius: 10px 10px 0 0;
+	line-height: 1.2;
+}
+.action-remote dt {/* Wiiリモコン　操作タイトル */
+	background: #FF485F;/* 34beed */
+	color: #fff;
+	font-size: .8rem;
+	text-align: left;
+	padding: 8px 5px;
+	border-radius: 10px 10px 0 0;
+	line-height: 1.2;
+}
+.action-pad dd, .action-remote dd {/* 操作方法 */
+	font-size: 0.75rem;
+	padding: 2px 4px;
+	color: #555;
+	border-radius: 8px;
+	text-align: center;
+	padding: 5px;
+}
+.list-line {/* ドット枠 */
+	margin: 15px;
+}
+/* ///////　吹き出しの中身　///////////
+-------------------------------------*/
+.online-block.size-M {
+	margin-bottom: 28px;
+}
+.action-box {
+	margin: 0 10px;
+}
+.chara-box {
+	width: 34%;
+	text-align: center;
+	float: left;
+}
+.chara-img {/*character */
+	width: 190px;
+	display: block;
+	margin: 5px auto 0px;
+}
+.chara-name {/* 名前のスペース */
+	width: 218px;
+	height: 45px;
+	padding: 0 10px;
+	background-color: #FF474A;
+	border-radius: 40px;
+}
+.chara-name>p {/* 名前 */
+	clear: right;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	color: #fff;
+	font-size: .8rem;
+	text-shadow: -2px -2px 0 rgba(0,0,0,0.2);
+}
+.dot-line01 {/* ドット枠 */
+	margin: 0 15px;
+	padding-top: 10px;
+	clear: both;
+}
+.dot-line02 {/* ドット枠 */
+	clear: both;
+	overflow: hidden;
+	margin: 10px 10px 20px;
+	padding-bottom: 　10px;
+}
+/* マリオブラザーズのテキスト */
+.chara-txt {
+	padding: 25px 0 30px;
+	padding-right: 15px;
+	overflow: hidden;
+}
+.chara-txt p {
+	float: right;
+}
+.chara-txt p:nth-of-type(1) {
+	width: 80%;
+}
+/* ---------------------------------------------------------------------------------------------------------
+    P4 （P1）
+--------------------------------------------------------------------------------------------------------- */
+.box_list04, .box_list01 {
+	display: table;
+	border-spacing: 10px 10px;
+	text-align: center;
+}
+.box_list04 li, .box_list01 li {
+	display: table-row;
+}
+.box_list04 dl, .box_list01 dl {
+	display: table-cell;
+	width: 50%;
+	background: rgba(255,255,255,0.9);
+	border-radius: 10px;
+	vertical-align: top;
+}
+.box_list04 dt, .box_list01 dt {
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	font-size: .85rem;
+	height: 58px;
+	
+}
+.box_list04 dt>span, .box_list01 dt>span {
+	display: table-cell;
+	vertical-align: middle;
+	width: 312px;
+	line-height: 1;
+	height: 36px;
+}
+.box_list04 dd, .box_list01 dd {
+	padding: 10px 15px 15px;
+	font-size: 0.75rem;
+	text-align: left;
+	color: #666;
+}
+.box_list04 dd >.indent {
+	font-size: 0.65rem;
+}
+ul.indent-list {
+	width: 90%;
+	margin: 0 auto;
+}
+ul.indent-list li {
+	padding-left: 3.3em;
+	text-indent: -1.3em;
+}
+.title-small.page-04 + p {
+	color: #19A668;
+	font-size: 0.75rem;
+	margin-bottom: 10px;
+	text-align: center;
+}
+/* ---------------------------------------------------------------------------------------------------------
+    P6
+--------------------------------------------------------------------------------------------------------- */
+/* アイコン */
+.play-icon01 {
+	background: #0096DC url(../img/ico_10mario.png) no-repeat center;
+	background-size: 60px 60px;
+}
+.play-icon02 {
+	background: #0096DC url(../img/img_step_03_1.png) no-repeat center;
+	background-size: 60px 60px;
+}
+.play-icon03 {
+	background: #0096DC url(../img/ico_play.png) no-repeat center;
+	background-size: 60px 60px;
+}
+/* 文章と画像（ポップアップ用画面写真は別） */
+.play-float {
+	margin: 0 25% 15px;
+	padding: 6px;
+	width: 300px;
+	text-align: center;
+	background: #ddd;
+	border-radius: 16px;
+}
+.play-float img {
+	width: 300px;
+	border-radius: 10px;
+}
+/* 世界のコースの各見出しとコピー */
+.title-play01 { background: #9c444f;}
+.title-play02 { background: #0b906a;}
+.title-play03 { background: #573691;}
+.title-play01 + p {
+	color: #9c444f;
+	font-size: 0.75rem;
+}
+.title-play02 + p {
+	color: #0b906a;
+	font-size: 0.75rem;
+}
+.title-play03 + p {
+	color: #573691;
+	font-size: 0.75rem;
+}
+.page-07 + p {
+	color: #466BC0;
+	font-size: 0.75rem;
+	text-align: center;
+}
+/* ---------------------------------------------------------------------------------------------------------
+    P7
+--------------------------------------------------------------------------------------------------------- */
+.page-07 + p {
+	color: #466BC0;
+	font-size: 0.75rem;
+	text-align: center;
+}
+/* ---------------------------------------------------------------------------------------------------------
+    P8
+--------------------------------------------------------------------------------------------------------- */
+.q-a dt {
+	padding: 10px 15px;
+	background: #5524CC;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	font-size: 0.9em;
+	padding-left: 2.5em;
+	text-indent: -1.5em;
+}
+.q-a dd {
+	margin-bottom: 15px;
+	padding: 15px 22px 20px 25px;
+	background: #fff;
+	border-radius: 0 0 10px 10px;
+}
+.indent-a {
+	padding-left: 1.3em;
+	text-indent: -1.4em;
+	color: #555;
+}
+.link-space {
+	margin: 0 auto;
+	text-align: center;
+}
+/* ---------------------------------------------------------------------------------------------------------
+    P9
+--------------------------------------------------------------------------------------------------------- */
+/* ///////　紙の表現　////////////
+------------------------------*/
+.paper-U {
+	margin: 10px auto 0;
+	width: 732px;
+	height: 280px;
+	background: url(../img/img_mario_markbg.png) no-repeat, url(../img/bg_paper_U.png) no-repeat;
+	background-position: 460px 64px, 0 0;
+}
+.paper-D {
+	margin: 0 auto;
+	padding-top: 20px;
+	width: 732px;
+	height: 250px;
+	background: url(../img/bg_paper_D.png) no-repeat;
+}
+.paper-middle {
+	display: table;
+	margin: 0 auto;
+	width: 732px;
+}
+.paper-middle-L {
+	display: table-cell;
+	width: 24px;
+	background: url(../img/bg_paper_L.png) repeat-y;
+}
+.paper-middle-maine {
+	display: table-cell;
+	padding: 20px 40px 30px;
+	background: #fdedd2;
+}
+.paper-middle-R {
+	display: table-cell;
+	width: 24px;
+	background: url(../img/bg_paper_R.png) repeat-y;
+}
+/* ///////　タイトル　////////////
+------------------------------*/
+.title-underline {
+	margin: 0 50px;
+	padding-top: 95px;
+	border-bottom: 3px solid #40210f;
+	color: #40210f;
+	text-align: -webkit-center;
+}
+.title-underline h4{
+	height: 128px;
+	padding: 10px 0 5px;
+	line-height: 1;
+	vertical-align: middle;
+	display: table-cell;
+}
+.title-underline img{
+	width: 382px;
+}
+/* ///////　各コラム　////////////
+------------------------------*/
+.column-title01 {
+	margin: 5px 0 20px;
+	background: url(../img/img_mario_bg.png) no-repeat center;
+	text-align: center;
+}
+.column-title01 img {     /* 数字 */
+	margin: 10px auto;
+}
+.column-title01 h5 {/* 心得タイトル */
+	margin: 10px 0;
+	color: #804f21;
+}
+.column-title01 + p, .column-p>p {
+	margin-bottom: 25px;
+	font-size: .75rem;
+	color: #2d0f00;
+}
+/* ///////　コラム　///////////////////////////
+-------------------------------------------*/
+.column-02 {
+	margin: 50px 80px;
+	padding: 20px 50px;
+	background: #000;
+	border-radius: 16px;
+}
+/* タイトル */
+.column-02 h3 {
+	margin-top: 50px;
+	padding: 10px 0px;
+	width: 350px;
+	color: #eeeeef;
+	line-height: 1.2;
+}
+.block-line {
+	position: relative;
+	height: 40px;
+	background: url(../img/img_blockM1_castle.png) repeat-x;
+}
+.block-line img {
+	position: absolute;
+	bottom: 40px;
+	right: 10px
+}
+/* 各コラム */
+.column-title02 {
+	margin: 40px 0 15px;
+	text-align: center;
+}
+.column-02 h5 {
+	margin: 5px 0;
+	color: #eeeeef;
+	text-shadow: 2px 2px rgba(0,0,0,0.3);
+}
+.column-txt {
+	padding: 20px 0 30px;
+	color: #b4b4b5;
+	font-size: .75rem;
+}
+/* ///////　裏ページ　//////////
+------------------------------*/
+/*ギザギザ*/
+div.patternU {/*ギザギザのライン上*/
+	width: 100%;
+	height: 80px;
+	background: url(../img/bg_patternU.png) repeat-x bottom;
+}
+div.patternD {/*ギザギザのライン下*/
+	position: relative;
+	width: 100%;
+	height: 46px;
+	background: url(../img/bg_patternD.png) repeat-x top;
+}
+/*背景*/
+/*タイトルまわり*/
+.patternD>.under-img01 {/*どかん*/
+	position: absolute;
+	top: 0;
+	left: 71px;
+}
+.patternD>.under-img02 {/*くも*/
+	position: absolute;
+	top: 50px;
+	right: 150px;
+}
+.patternD>.under-img03 {/*くも*/
+	position: absolute;
+	top: 170px;
+	right: 0px;
+}
+.patternD>.under-img04 {/*くも*/
+	position: absolute;
+	top: 200px;
+	left: -65px;
+}
+.patternD>.under-img05 {/*くも*/
+	position: absolute;
+	top: 34px;
+	right: 0px;
+}
+.underside-column h3 {/*ウラ話*/
+	margin: 0 40px 45px 180px;
+	text-shadow: rgba(0,0,0,.1) 4px 4px 0;
+	line-height: 1.2;
+}
+span.large {/* ウラ話 */
+	font-size: 1.6em;
+}
+.underside-column.SM3 h3 {color: #32CFBE;}
+.underside-column.SMW h3 {color: #32CFBE;}
+.underside-column.SMU h3 {color: #0da0de;}
+.underside-column {/*カラム*/
+	margin: 30px 50px;
+	padding: 40px 20px;
+	background: rgba(255,255,255,0.8);
+	border-radius: 16px;
+}
+.underside-column.SM3 {border: double 10px #98ffe4;}
+.underside-column.SMW {border: double 10px #9be1d7;}
+.underside-column.SMU {border: double 10px #0da0de;}
+.bg_under01 .balloon-mini {color: #333;}
+.bg_under02 .balloon-mini {color: #333;}
+.bg_under03 .balloon-mini {color: #333;}
+.underside-box>p {/*文章*/
+	color: #555;
+	margin-bottom: 10px;
+	font-size: .7rem;
+	text-shadow: 1px 1px 0 rgba(255,255,255,.6);
+}
+/*画像の回転*/
+img.undersideR-img {
+	float: right;
+	width: 50%;
+	margin-left: 5px;
+}
+/*ふきだし*/
+.balloon-mini {
+	position: relative;
+	top: 118px;
+	left: 85px;
+	display: inline-block;
+	margin-top: 50px;
+	padding: 0 5px;
+	width: auto;
+	min-width: 140px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #FFC600;
+	border: 2px solid #333;
+	box-shadow: 4px 4px 0 rgba(0,0,0,.1);
+	border-radius: 30px;
+	z-index: 0;
+}
+.balloon-mini:after {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	margin-left: -10px;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+	border-color: transparent transparent #FFC600 transparent;
+	z-index: 5;
+}
+.balloon-mini:before {
+	content: "";
+	position: absolute;
+	top: -13px;
+	left: 49.5%;
+	margin-left: -10px;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 11px 11px 11px;
+	border-color: transparent transparent #333 transparent;
+	z-index: -1;
+}
+/* ---------------------------------------------------------------------------------------------------------
+    画面写真のポップアップ
+--------------------------------------------------------------------------------------------------------- */
+.touch {/* 外枠 */
+	position: relative;
+	padding: 8px;
+	margin: 80px auto 10px;
+	background: #e8e8e8;
+	border-radius: 10px;
+	text-align: center;
+}
+.touch-pict {/* 画面写真 */
+	width: 100%;
+	background-color: #ddd;
+}
+/* 画像ロード前の描画崩れ対策 */
+.touch-pict.page1 {height: 358px;}
+.touch-pict.page4 {height: 380px;}
+.touch-pict.page6 {height: 358px;}
+.touch-pict.page7 {height: 380px;}
+
+.touch-info {
+	margin: 8px auto 0;
+	width: 95%;
+	text-align: left;
+	font-size: .6rem;
+	line-height: 1.2;
+	color: #777;
+}
+/* ///////　知りたいところをタッチ //////////
+--------------------------------------------*/
+.touch-balloon {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+}
+.attention {
+	position: relative;
+	display: inline-block;
+	padding: 2px 30px;
+	background: #fff;
+	border: 2px solid #000;
+	border-radius: 30px;
+	color: #000;
+	z-index: 5;
+	font-size: 0.9rem;
+}
+.attention:after {
+	content: "";
+	position: absolute;
+	margin-left: -20px;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: #fff transparent transparent transparent;
+	bottom: -8px;
+	left: 51%;
+	z-index: 0;
+}
+.attention:before {
+	content: "";
+	position: absolute;
+	margin-left: -20px;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: #000 transparent transparent transparent;
+	bottom: -11px;
+	left: 51%;
+	z-index: -1;
+}
+span.small {/* 光っているところをタッチ */
+	font-size: 0.75em;
+}
+.attention.hidden {
+	display: none;
+}
+.attention {
+	-webkit-animation-name: attention;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes attention {
+ 0% {-webkit-transform:translate(0, 0);}
+ 50% {-webkit-transform:translate(0, -10px);}
+ 100% {-webkit-transform:translate(0, 0);}
+}
+/* ///////　ダイアログと内容　/////////////////
+-------------------------------------------*/
+#open01, #open02, #open03, #open04, #open05, #open06, #open07, #open08, #open09,
+#open10, #open11, #open12, #open13, #open14, #open15, #open16, #open17, #open18,
+#open20, #open21, #open22, #open23, #open24, #open25, #open26, #open27 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	margin-top: -65px;
+	padding-top: 65px;/* margin調整 */
+}
+.modal_window {/* ポップアップのウインドウ */
+	position: absolute;
+	width: 92%;
+	height: 72%;
+	top: 45%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: left;
+	color: #fff;
+	margin-top: 54px;/* margin調整 */
+	background: rgba(0,0,0,.75);
+	padding: 15px;
+}
+.dialog-title ~ p, .dialog-column p {/* タイトルとの余白、文章 */
+	color: #fff;
+	font-size: .75rem;
+	line-height: 1.4;
+}
+.dialog-title ~ .indent {/* タイトルとの余白、文章 */
+	color: #ccc;
+	font-size: .65rem;
+	line-height: 1.4;
+}
+.dialog-img {
+	display: block;
+	margin: 15px auto 10px;
+	width: 90%;
+}
+.btn-close {/* 閉じるボタン */
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/icon_close.png) #aaa;
+	background-position: -1.5px -2px;
+	border-radius: 5px;
+	box-shadow: 0 -2px 0 rgba(0,0,0,.4) inset;
+	vertical-align: top;
+}
+.btn-close.select {/* 閉じるボタン */
+	background: url(../img/icon_close.png) #888;
+	background-position: -1.5px 0px;
+	background-size: contain;
+	box-shadow: 0 2px 0 rgba(0,0,0,.4) inset;
+}
+.close_overlay {/* 黒いマスク */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: #aaa;
+	border: 0 solid #FFF;
+	opacity: 0.5;
+}
+.dialog-title {
+	margin-bottom: 20px;
+	padding-bottom: 8px;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	overflow: hidden;
+	line-height: 1.4;
+}
+.dialog-title>span {
+	display: inline-block;
+	width: 90%;
+	line-height: 1.2;
+}
+.dialog-title img {/* タイトル横の画像 */
+	height: 1.4em;
+	margin-right: 10px;
+	vertical-align: text-top;
+}
+.dialog-column {/* 無地の2カラム */
+	margin-top: 20px;
+	overflow: hidden;
+}
+.dialog-float {/*左寄せ*/
+	float: left;
+	margin: 0 15px 0 0;
+	width: 240px;
+	border: 6px solid rgba(255,255,255,0.4);
+	border-radius: 2px;
+	box-shadow: inset 1px 1px 0 #fff, 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+/* -----------------------
+  クリックの場所指定
+-----------------------*/
+#dialog, #dialog-02 {/* 親 */
+	position: relative;
+	width: 100%;
+}
+/* ////////page_01////////
+--------------------------*/
+.click01-01 {/* ゲームスキン */
+	top: 0;
+	left: 0;
+	width: 12%;
+	height: 8%;
+	border-radius: 6px;
+}
+.click01-02 {/* パレット */
+	top: 0;
+	left: 14%;
+	width: 77.2%;
+	height: 9.6%;
+	border-radius: 6px;
+}
+.click01-03 {/* メニュー */
+	top: 1%;
+	right: 1.3%;
+	width: 4.5%;
+	height: 7%;
+	border-radius: 6px;
+}
+.click01-04 {/* シーンスキン */
+	top: 12%;
+	left: 0;
+	width: 7%;
+	height: 9%;
+	border-radius: 6px;
+}
+.click01-05 {/* 音あそび */
+	top: 28%;
+	left: 0.92%;
+	width: 5.2%;
+	height: 9.3%;
+	border-radius: 50%;
+}
+.click01-06 {/* 制限時間／スクロールの速さ */
+	top: 12%;
+	right: 8.4%;
+	width: 8.5%;
+	height: 5.4%;
+	border-radius: 3px;
+}
+.click01-07 {/* きろくロボット */
+	top: 11.2%;
+	right: 0.7%;
+	width: 5.8%;
+	height: 9.7%;
+	border-radius: 8px;
+}
+.click01-08 {/* 消しゴム */
+	top: 28%;
+	right: 0.8%;
+	width: 5.2%;
+	height: 9.3%;
+	border-radius: 50%;
+}
+.click01-09 {/* スタートとゴールの位置 */
+	top: 80%;
+	left: 20.6%;
+	width: 5.2%;
+	height: 9.3%;
+	border-radius: 50%;
+}
+.click01-10 {/* お試しプレイ */
+	top: 81.5%;
+	left: 0.2%;
+	width: 11%;
+	height: 17%;
+	border-radius: 6px;
+}
+.click01-11 {/* マリオの通ったあと */
+	top: 94.4%;
+	left: 13.5%;
+	width: 2.8%;
+	height: 5%;
+	border-radius: 6px;
+}
+.click01-12 {/* メインエリア／サブエリア */
+	top: 94.5%;
+	left: 17.5%;
+	width: 4.2%;
+	height: 4.8%;
+	border-radius: 6px;
+}
+.click01-13 {/* コースの長さ／位置 */
+	top: 94%;
+	left: 26.5%;
+	width: 47%;
+	height: 5.1%;
+}
+.click01-14 {/* アンドゥ */
+	top: 89.4%;
+	right: 6.8%;
+	width: 5%;
+	height: 9%;
+	border-radius: 8px;
+}
+.click01-15 {/* リセット */
+	top: 89.4%;
+	right: 1%;
+	width: 5%;
+	height: 9%;
+	border-radius: 8px;
+}
+/* ////////page_04////////
+--------------------------*/
+.click04-01 {/* エディット */
+	top: 16%;
+	right: 3.4%;
+	width: 39.4%;
+	height: 13%;
+	border-radius: 6px;
+}
+.click04-02 {/* きろくロボット */
+	top: 79.5%;
+	right: 35.4%;
+	width: 7.2%;
+	height: 13%;
+	border-radius: 6px;
+}
+.click04-03 {/* 世界のコース */
+	top: 58.3%;
+	right: 3.4%;
+	width: 39.4%;
+	height: 13%;
+	border-radius: 6px;
+}
+.click04-05 {/* おしらせ */
+	top: 80.8%;
+	right: 23.1%;
+	width: 5.8%;
+	height: 10.5%;
+	border-radius: 6px;
+}
+.click04-06 {/* オプション */
+	top: 80.8%;
+	right: 14.1%;
+	width: 5.8%;
+	height: 10.5%;
+	border-radius: 6px;
+}
+.click04-07 {/* 説明書 */
+	top: 80.8%;
+	right: 5.1%;
+	width: 5.8%;
+	height: 10.5%;
+	border-radius: 6px;
+}
+.click04-08 {/* メニュー */
+	top: 1.5%;
+	right: 10%;
+	width: 26%;
+	height: 8%;
+}
+.click04-09 {/* 10人マリオチャレンジ */
+	top: 42%;
+	right: 3.4%;
+	width: 39.4%;
+	height: 13%;
+	border-radius: 6px;
+}
+.click04-10 {/* ドア */
+	top: 1.3%;
+	right: 40.3%;
+	width: 4.7%;
+	height: 8.4%;
+	border-radius: 8px;
+}
+/* ////////page_06////////
+--------------------------*/
+/* コースをさがす */
+.click06-01 {/* ユーザー情報 */
+	top: 0.7%;
+	left: 0.9%;
+	width: 4.4%;
+	height: 8.2%;
+	border-radius: 6px;
+}
+.click06-02 {/* ID 検索 */
+	top: 13%;
+	right: 3.2%;
+	width: 3.5%;
+	height: 5.9%;
+	border-radius: 6px;
+}
+.click06-03 {/* 全期間/ 週間 */
+	top: 46.5%;
+	left: 2.5%;
+	width: 6.7%;
+	height: 12%;
+}
+.click06-04 {/* 世界/ 国内 */
+	top: 32.5%;
+	left: 2.5%;
+	width: 6.7%;
+	height: 12%;
+	border-radius: 6px 6px 0 0;
+}
+.click06-05 {/* むずかしさの設定 */
+	top: 60.5%;
+	left: 2.5%;
+	width: 6.7%;
+	height: 12%;
+	border-radius: 0 0 6px 6px;
+}
+.click06-06 {/* コースの情報 */
+	top: 26.5%;
+	left: 26%;
+	width: 55.5%;
+	height: 14.8%;
+}
+.click06-07 {/* 職人のユーザー情報 */
+	top: 31%;
+	left: 83%;
+	width: 6%;
+	height: 10%;
+	border-radius: 6px;
+}
+.click06-08 {/* コースの評価 */
+	top: 44%;
+	left: 26.5%;
+	width: 12.5%;
+	height: 5.2%;
+	border-radius: 6px;
+}
+.click06-09 {/* クリア率 */
+	top: 82.5%;
+	left: 15.8%;
+	width: 9.2%;
+	height: 11.5%;
+	border-radius: 0 0 0 8px;
+}
+.click06-10 {/* くんしょう/国 */
+	top: 42.8%;
+	left: 71.8%;
+	width: 13%;
+	height: 4%;
+}
+.click06-11 {/* コースID */
+	top: 88%;
+	left: 26.6%;
+	width: 3%;
+	height: 5%;
+	border-radius: 6px;
+}
+.click06-12 {/* セーブ */
+	top: 53%;
+	left: 53.3%;
+	width: 16.2%;
+	height: 21%;
+	border-radius: 6px;
+}
+.click06-13 {/* あそぶ */
+	top: 53%;
+	left: 71.3%;
+	width: 16.2%;
+	height: 21%;
+	border-radius: 6px;
+}
+.click06-14 {/* Miiverseでコメントを見る */
+	top: 77.5%;
+	left: 53.5%;
+	width: 34%;
+	height: 6.5%;
+	border-radius: 6px;
+}
+.click06-15 {/* 通報する */
+	top: 87.4%;
+	left: 62.7%;
+	width: 15.8%;
+	height: 4.5%;
+	border-radius: 6px;
+}
+.click06-16 {/* まだあそんでいないコース */
+	top: 27.8%;
+	left: 16.5%;
+	width: 2%;
+	height: 3.5%;
+	border-radius: 50%;
+}
+.click06-17 {/* 注目のコース */
+	top: 12.5%;
+	left: 11.2%;
+	width: 25%;
+	height: 7%;
+	border-radius: 6px;
+}
+.click06-18 {/* いいね！ランキング */
+	top: 12.5%;
+	left: 37.2%;
+	width: 25%;
+	height: 7%;
+	border-radius: 6px;
+}
+.click06-20 {/* 新着 */
+	top: 12.5%;
+	left: 63.3%;
+	width: 25%;
+	height: 7%;
+	border-radius: 6px;
+}
+/* 職人をさがす */
+.click06-21 {/* ユーザー情報 */
+	top: 0.7%;
+	left: 0.9%;
+	width: 4.4%;
+	height: 8.2%;
+	border-radius: 6px;
+}
+.click06-23 {/* 全期間/ 週間 */
+	top: 55%;
+	left: 2.4%;
+	width: 6.7%;
+	height: 12%;
+	border-radius: 6px;
+}
+.click06-24 {/* 世界/ 国内 */
+	top: 38.5%;
+	left: 2.4%;
+	width: 6.7%;
+	height: 12%;
+	border-radius: 6px;
+}
+.click06-25 {/* 職人情報 */
+	top: 27.3%;
+	left: 18.1%;
+	width: 69.3%;
+	height: 71.8%;
+}
+.click06-26 {/* いいね！ランキング */
+	top: 12.5%;
+	left: 24%;
+	width: 25%;
+	height: 7%;
+	border-radius: 6px;
+}
+.click06-27 {/* おきにいり */
+	top: 12.5%;
+	left: 50%;
+	width: 25%;
+	height: 7%;
+	border-radius: 6px;
+}
+/* ////////page_07////////
+--------------------------*/
+.click07-01 {/* ユーザー情報 */
+	top: 1.3%;
+	left: 8.5%;
+	width: 5.2%;
+	height: 10%;
+	border-radius: 50%;
+}
+.click07-02 {/* 投稿したコース */
+	top: 13%;
+	left: 9.5%;
+	width: 19%;
+	height: 4.9%;
+	border-radius: 6px;
+}
+.click07-03 {/* いいね！したコース */
+	top: 13%;
+	left: 29.8%;
+	width: 19%;
+	height: 4.9%;
+	border-radius: 6px;
+}
+.click07-04 {/* あそんだコース */
+	top: 13%;
+	left: 50.2%;
+	width: 19%;
+	height: 4.9%;
+	border-radius: 6px;
+}
+.click07-05 {/* プレイ情報 */
+	top: 13%;
+	left: 70.6%;
+	width: 19%;
+	height: 4.9%;
+	border-radius: 6px;
+}
+.click07-11 {/* ユーザー情報 */
+	top: 1.3%;
+	left: 8.5%;
+	width: 5.2%;
+	height: 10%;
+	border-radius: 50%;
+}
+.click07-12 {/* とうこうしたコース */
+	top: 13%;
+	left: 19.7%;
+	width: 19%;
+	height: 4.9%;
+	border-radius: 6px;
+}
+.click07-13 {/* いいね！したコース */
+	top: 13%;
+	left: 40%;
+	width: 19%;
+	height: 4.9%;
+	border-radius: 6px;
+}
+.click07-14 {/* プレイリスト */
+	top: 13%;
+	left: 60.4%;
+	width: 19%;
+	height: 4.9%;
+	border-radius: 6px;
+}
+.click07-15 {/* おきにいり */
+	top: 2%;
+	right: 10.8%;
+	width: 4.5%;
+	height: 8%;
+	border-radius: 50%;
+}
+/* ///////　ポップアップ /////////////////
+------------------------------------------*/
+/* クリックする場所のの親 */
+
+/* -----------------------
+  点滅のアニメーション
+-----------------------*/
+span .touch-mark {
+	position: absolute;
+	background: rgba(255,255,255,0.7);
+	border: 3px solid rgba(255,255,255,0.5);
+	box-shadow: rgba(0,0,0,0.5) 0 2px 2px 0.5px;
+	-webkit-animation: switchtext 1.0s infinite alternate;
+}
+span .touch-mark-frame {
+	position: absolute;
+	border: 3px solid rgba(255,255,255,1);
+}
+.mark-hidden {
+	visibility: hidden;
+}
+ @-webkit-keyframes switchtext {
+ from {
+opacity: 0;
+}
+ to {
+opacity: 1;
+}
+}
+/* ダイアログのアニメ
+-------------------------- */
+@-webkit-keyframes modalFadeIn {
+ 0% {
+opacity:0;
+display:block;
+}
+ 100% {
+opacity:1;
+}
+}
+div#modal div:target {
+	-webkit-animation-name: modalFadeIn;
+	-webkit-animation-duration: 0.3s;
+	-webkit-animation-iteration-count: 1;
+	opacity: 1;
+	display: block;
+}
+
+/* ---------------------------------------------------------------------------------------------------------
+    スクロールアイコン
+--------------------------------------------------------------------------------------------------------- */
+/* InとOutを別々のエレメントに適用することで、切り替え最中を気にせずに実装出来る様にしている
+scroll-icon-base：時間経過で自動表示、scroll-icon：任意のタイミングで shown -> hidden 切替 */
+
+@-webkit-keyframes scrollIconFadeIn {
+ 0% {
+ opacity: 0;
+display: none;
+}
+ 1% {
+opacity: 0;
+display: block;
+}
+ 100% {
+opacity: 0.9;
+display: block;
+} /*半透明にする場合は、こちらのパラメータだけ変更する*/
+}
+@-webkit-keyframes scrollIconFadeOut {
+ 0% {
+opacity: 1;
+display: block;
+}
+ 100% {
+opacity: 0;
+display: none;
+}
+}
+@-webkit-keyframes scrollIconTouchpen {
+ 0% {-webkit-transform: translateY(-45px);}
+ 30% {-webkit-transform: translateY(0px);}
+ 50% {-webkit-transform: translateY(0px);}
+ 99% {-webkit-transform: translateY(-48px);}
+ 100% {-webkit-transform: translateY(-45px);}
+}
+@-webkit-keyframes scrollIconTouchtrace {
+ 0% {opacity: 0;}
+ 50% {opacity: 0;}
+ 60% {opacity: 0;}
+ 90% {opacity: 1;}
+}
+.scroll-icon-base {
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	z-index: 1;
+	-webkit-animation-name: scrollIconFadeIn;
+	-webkit-animation-duration: 1.0s;
+	-webkit-animation-delay: 0.8s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: both;
+}
+.scroll-icon {
+	width: 52px;
+	height: 124px;
+	background: url('../img/img_scroll_arrow.png');
+}
+.scroll-icon.shown {
+	display: block;
+	opacity: 1;
+}
+.scroll-icon.hidden {
+	-webkit-animation-name: scrollIconFadeOut;
+	-webkit-animation-duration: 0.3s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: both;
+}
+/* MEMO: 本当は hidden だけでハンドリングしたいのだが、animation で display:none にしても
+クリックイベントを吸収してしまうので、止む無くクラスを分けている */
+.scroll-icon.hidden-end {
+	display: none;
+}
+.scroll-icon-touchpen {
+	position: absolute;
+	left: 24px;
+	bottom: 34px;
+	width: 48px;
+	height: 81px;
+	background: url('../img/img_scroll_pen.png');
+	-webkit-animation-name: scrollIconTouchpen;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+}
+.scroll-icon-touchtrace {
+	position: absolute;
+	left: 19px;
+	bottom: 21px;
+	width: 14px;
+	height: 21px;
+	background: url('../img/img_scroll_line.png');
+	-webkit-animation-name: scrollIconTouchpen, scrollIconTouchtrace;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+}
+
+
+
